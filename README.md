@@ -3,14 +3,14 @@ HelpTheHomeless staging tree 0.14.0
 
 `master:` [![Build Status](https://travis-ci.org/dashpay/dash.svg?branch=master)](https://travis-ci.org/dashpay/dash) `develop:` [![Build Status](https://travis-ci.org/dashpay/dash.svg?branch=develop)](https://travis-ci.org/dashpay/dash/branches)
 
-https://www.dash.org
+https://www.helpthehomeless.org
 
 
-What is Dash?
-----------------
+What is HelpTheHomeless?
+------------------------
 
-Dash is an experimental digital currency that enables anonymous, instant
-payments to anyone, anywhere in the world. Dash uses peer-to-peer technology
+HelpTheHomeless is an experimental digital currency that enables anonymous, instant
+payments to anyone, anywhere in the world. HelpTheHomeless uses peer-to-peer technology
 to operate with no central authority: managing transactions and issuing money
 are carried out collectively by the network. HelpTheHomeless is the name of the open
 source software which enables the use of this currency.
@@ -29,7 +29,7 @@ Development Process
 -------------------
 
 The `master` branch is meant to be stable. Development is normally done in separate branches.
-[Tags](https://github.com/dashpay/dash/tags) are created to indicate new official,
+[Tags](https://github.com/HTHcoin/HTH/tags) are created to indicate new official,
 stable release versions of HelpTheHomeless.
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).
