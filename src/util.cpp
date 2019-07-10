@@ -5,7 +5,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/dash-config.h"
+#include "config/helpthehomeless-config.h"
 #endif
 
 #include "util.h"
@@ -122,8 +122,8 @@ bool fLiteMode = false;
 */
 int nWalletBackups = 10;
 
-const char * const BITCOIN_CONF_FILENAME = "dash.conf";
-const char * const BITCOIN_PID_FILENAME = "dashd.pid";
+const char * const BITCOIN_CONF_FILENAME = "helpthehomeless.conf";
+const char * const BITCOIN_PID_FILENAME = "helpthehomelessd.pid";
 
 CCriticalSection cs_args;
 std::unordered_map<std::string, std::string> mapArgs;
@@ -571,7 +571,7 @@ boost::filesystem::path GetDefaultDataDir()
     // Unix: ~/.dashcore
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "DashCore";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "HelpTheHomeless";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -581,10 +581,10 @@ boost::filesystem::path GetDefaultDataDir()
         pathRet = fs::path(pszHome);
 #ifdef MAC_OSX
     // Mac
-    return pathRet / "Library/Application Support/DashCore";
+    return pathRet / "Library/Application Support/HelpTheHomeless";
 #else
     // Unix
-    return pathRet / ".dashcore";
+    return pathRet / ".helpthehomeless";
 #endif
 #endif
 }

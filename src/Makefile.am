@@ -368,7 +368,7 @@ libhelpthehomeless_wallet_a_SOURCES = \
 
 # crypto primitives library
 crypto_libhelpthehomeless_crypto_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_CONFIG_INCLUDES) $(PIC_FLAGS)
-crypto_libhelpthehomeless_crypto_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS) $(PIC_FLAGS)
+crypto_libhelpthehomeless_crypto_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS) $(PIC_FLAGS) $(SSL_CFLAGS)
 crypto_libhelpthehomeless_crypto_a_SOURCES = \
   crypto/aes.cpp \
   crypto/aes.h \
@@ -379,16 +379,6 @@ crypto_libhelpthehomeless_crypto_a_SOURCES = \
   crypto/hmac_sha512.h \
   crypto/ripemd160.cpp \
   crypto/aes_helper.c \
-  crypto/ripemd160.h \
-  crypto/sha1.cpp \
-  crypto/sha1.h \
-  crypto/sha256.cpp \
-  crypto/sha256.h \
-  crypto/sha512.cpp \
-  crypto/sha512.h
-
-# x11
-crypto_libhelpthehomeless_crypto_a_SOURCES += \
   crypto/blake.c \
   crypto/bmw.c \
   crypto/cubehash.c \
@@ -400,6 +390,19 @@ crypto_libhelpthehomeless_crypto_a_SOURCES += \
   crypto/shavite.c \
   crypto/simd.c \
   crypto/skein.c \
+  crypto/sph_hamsi.c \
+  crypto/sph_hamsi_helper.c \
+  crypto/sph_fugue.c \
+  crypto/sph_shabal.c \
+  crypto/sph_whirlpool.c \
+  crypto/sph_sha2.c \
+  crypto/sph_sha512.c \
+  crypto/ripemd160.h \
+  crypto/sha1.cpp \
+  crypto/sha1.h \
+  crypto/sha256.cpp \
+  crypto/sha256.h \
+  crypto/sha512.h \
   crypto/sph_blake.h \
   crypto/sph_bmw.h \
   crypto/sph_cubehash.h \
@@ -411,7 +414,15 @@ crypto_libhelpthehomeless_crypto_a_SOURCES += \
   crypto/sph_shavite.h \
   crypto/sph_simd.h \
   crypto/sph_skein.h \
-  crypto/sph_types.h
+  crypto/sph_hamsi.h \
+  crypto/sph_fugue.h \
+  crypto/sph_shabal.h \
+  crypto/sph_whirlpool.h \
+  crypto/sph_sha2.h \
+  crypto/sph_types.h \
+  crypto/sha512.cpp \
+  crypto/sha512.h
+
 
 # consensus: shared between all executables that validate any consensus rules.
 libhelpthehomeless_consensus_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
@@ -594,8 +605,8 @@ if GLIBC_BACK_COMPAT
 endif
 
 libhelpthehomelessconsensus_la_LDFLAGS = $(AM_LDFLAGS) -no-undefined $(RELDFLAGS)
-libhelpthehomelessconsensus_la_LIBADD = $(LIBSECP256K1) $(BLS_LIBS)
-libhelpthehomelessconsensus_la_CPPFLAGS = $(AM_CPPFLAGS) -I$(builddir)/obj -I$(srcdir)/secp256k1/include -DBUILD_BITCOIN_INTERNAL
+libhelpthehomelessconsensus_la_LIBADD = $(LIBSECP256K1) $(BLS_LIBS) $(CRYPTO_LIBS)
+libhelpthehomelessconsensus_la_CPPFLAGS = $(AM_CPPFLAGS) -I$(builddir)/obj -I$(srcdir)/secp256k1/include -DBUILD_BITCOIN_INTERNAL $(SSL_CFLAGS)
 libhelpthehomelessconsensus_la_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 
 endif
@@ -673,18 +684,18 @@ if EMBEDDED_LEVELDB
 include Makefile.leveldb.include
 endif
 
-if ENABLE_TESTS
-include Makefile.test.include
-endif
+#if ENABLE_TESTS
+#include Makefile.test.include
+#endif
 
-if ENABLE_BENCH
-include Makefile.bench.include
-endif
+#if ENABLE_BENCH
+#include Makefile.bench.include
+#endif
 
 if ENABLE_QT
 include Makefile.qt.include
 endif
 
-if ENABLE_QT_TESTS
-include Makefile.qttest.include
-endif
+#if ENABLE_QT_TESTS
+#include Makefile.qttest.include
+#endif
