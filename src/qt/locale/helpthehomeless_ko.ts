@@ -62,11 +62,11 @@
         <translation>받기 주소</translation>
     </message>
     <message>
-        <source>These are your Dash addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your HelpTheHomeless addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>송금을 위한 대시 주소입니다. 코인을 보내기 전에 항상 금액과 받는 주소를 확인하세요.</translation>
     </message>
     <message>
-        <source>These are your Dash addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your HelpTheHomeless addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>대시를 송금 받기 위한 주소입니다. 매 거래시 새로운 주소를 사용할 것을 권장합니다.</translation>
     </message>
     <message>
@@ -270,7 +270,7 @@
         <translation>보내기(&amp;S)</translation>
     </message>
     <message>
-        <source>Send coins to a Dash address</source>
+        <source>Send coins to a HelpTheHomeless address</source>
         <translation>대시 주소로 코인 전송</translation>
     </message>
     <message>
@@ -378,7 +378,7 @@
         <translation>메시지 서명...(&amp;M)</translation>
     </message>
     <message>
-        <source>Sign messages with your Dash addresses to prove you own them</source>
+        <source>Sign messages with your HelpTheHomeless addresses to prove you own them</source>
         <translation>본인의 대시 주소임을 증명하기 위하여 메시지에 서명합니다.</translation>
     </message>
     <message>
@@ -386,7 +386,7 @@
         <translation>메시지 검증...(&amp;V)</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Dash addresses</source>
+        <source>Verify messages to ensure they were signed with specified HelpTheHomeless addresses</source>
         <translation>특정 대시 주소에 서명된 것인지 확인하기 위하여 메시지를 검증합니다.</translation>
     </message>
     <message>
@@ -510,7 +510,7 @@
         <translation>도구 모음 탭</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Dash network</source>
+        <source>%n active connection(s) to HelpTheHomeless network</source>
         <translation><numerusform>대시 네트워크의 활성 연결 수는 %n 입니다.</numerusform></translation>
     </message>
     <message>
@@ -861,7 +861,7 @@
         <translation>보내기 주소 편집</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Dash address.</source>
+        <source>The entered address "%1" is not a valid HelpTheHomeless address.</source>
         <translation>입력한 주소 "%1" 는 올바른 대시 주소가 아닙니다.</translation>
     </message>
     <message>
@@ -1136,7 +1136,7 @@
         <translation>유형</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the Dash network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the HelpTheHomeless network, as detailed below.</source>
         <translation>최근 거래는 아직 표시되지 않을 수 있으며, 따라서 당신 지갑의 잔고 역시 실제와 다를 수 있습니다. 이는 당신의 지갑이 대시 네트워크와 동기화를 마치는대로 아래의 세부 내용과 같이 정확히 표시될 예정입니다.</translation>
     </message>
     <message>
@@ -1294,7 +1294,7 @@
         <translation>수신 연결 허용</translation>
     </message>
     <message>
-        <source>Connect to the Dash network through a SOCKS5 proxy.</source>
+        <source>Connect to the HelpTheHomeless network through a SOCKS5 proxy.</source>
         <translation>SOCKS5 프록시를 통해 대시 네트워크 연결</translation>
     </message>
     <message>
@@ -1390,7 +1390,7 @@
         <translation>Tor</translation>
     </message>
     <message>
-        <source>Connect to the Dash network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <source>Connect to the HelpTheHomeless network through a separate SOCKS5 proxy for Tor hidden services.</source>
         <translation>Tor 숨김 서비스를 위한 별도의 SOCKS5 프록시를 사용하여 대시 네트워크에 연결</translation>
     </message>
     <message>
@@ -1515,7 +1515,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>유형</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Dash network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the HelpTheHomeless network after a connection is established, but this process has not completed yet.</source>
         <translation>표시된 정보가 오래된 것으로 보입니다. 당신의 지갑은 대시 네트워크에 연결되는 대로 동기화 될 예정입니다. 이 과정은 아직 종료되지 않았습니다.</translation>
     </message>
     <message>
@@ -1796,7 +1796,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>유효하지 않은 지불 주소 %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Dash address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid HelpTheHomeless address or malformed URI parameters.</source>
         <translation>URI를 분석할 수 없습니다! 대시 주소가 유효하지 않거나 URI 파라미터 구성에 오류가 존재할 수 있습니다.</translation>
     </message>
     <message>
@@ -1894,7 +1894,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>거래액</translation>
     </message>
     <message>
-        <source>Enter a Dash address (e.g. %1)</source>
+        <source>Enter a HelpTheHomeless address (e.g. %1)</source>
         <translation>대시 주소 입력 (예: %1)</translation>
     </message>
     <message>
@@ -2412,7 +2412,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>이미 존재하는 받기 주소를 다시 사용하기(권장하지 않음) (&amp;R)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Dash network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the HelpTheHomeless network.</source>
         <translation>지불 요청에 메시지를 첨부할 지 선택할 수 있습니다. 해당 메세지는 지불 요청이 열릴 때 표시될 것 입니다. 메모: 이 메시지는 대시 네트워크로 전송되지 않습니다.</translation>
     </message>
     <message>
@@ -2424,7 +2424,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>새로운 받기 주소와 결합하는 임의의 라벨</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Dash network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the HelpTheHomeless network.</source>
         <translation>지불 요청에 메시지를 첨부할 지 선택할 수 있습니다. 해당 메세지는 지불 요청이 열릴 때 표시될 것 입니다. 메모: 이 메시지는 대시 네트워크로 전송되지 않습니다.</translation>
     </message>
     <message>
@@ -2881,7 +2881,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation><numerusform>%n 블록 내 거래 확인을 시작하기 위해 추정 완료</numerusform></translation>
     </message>
     <message>
-        <source>Warning: Invalid Dash address</source>
+        <source>Warning: Invalid HelpTheHomeless address</source>
         <translation>경고: 잘못된 대시 주소입니다</translation>
     </message>
     <message>
@@ -2912,7 +2912,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>송금할 대상(&amp;T):</translation>
     </message>
     <message>
-        <source>The Dash address to send the payment to</source>
+        <source>The HelpTheHomeless address to send the payment to</source>
         <translation>이 대시 주소로 송금합니다.</translation>
     </message>
     <message>
@@ -2960,7 +2960,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>메시지:</translation>
     </message>
     <message>
-        <source>A message that was attached to the dash: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Dash network.</source>
+        <source>A message that was attached to the dash: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the HelpTheHomeless network.</source>
         <translation>대시: URI에 첨부된 메시지는 거래와 함께 참고용으로 저장됩니다. 주의: 이 메시지는 대시 네트워크로 전송되지 않습니다.</translation>
     </message>
     <message>
@@ -3017,7 +3017,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>당신의 주소로 대시를 받을 수 있다는 점을 증명하기 위하여 메시지/계약서에 서명할 수 있습니다. 내용이 분명하지 않거나 무작위인 경우 서명하지 않도록 주의하세요. 피싱 공격이 당신의 서명을 얻기 위해 유도하는 것일 수 있습니다. 오직 완전한 세부 내용을 갖추고 당신이 동의하는 내용에만 서명하세요.</translation>
     </message>
     <message>
-        <source>The Dash address to sign the message with</source>
+        <source>The HelpTheHomeless address to sign the message with</source>
         <translation>메시지에 서명하기 위한 대시 주소</translation>
     </message>
     <message>
@@ -3049,7 +3049,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>현재 서명을 시스템 클립보드에 복사</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Dash address</source>
+        <source>Sign the message to prove you own this HelpTheHomeless address</source>
         <translation>이 대시 주소가 당신의 소유임을 증명하기 위해 메시지에 서명하세요.</translation>
     </message>
     <message>
@@ -3073,11 +3073,11 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>메시지를 검증하기 위하여 아래에 수신인의 주소, 메시지(띄어쓰기, 들여쓰기, 행 나눔 등을 정확히 입력하기 위해 복사하여 입력) 및 서명을 입력하세요. 중간자 공격에 의한 피해를 피하기 위해 서명된 메시지 자체에 필요한 것 보다 많은 정보를 읽어 들이지 않도록 주의하세요. 이 기능은 서명 당사자가 해당 주소로 수신하였다는 점을 증명할 뿐이며, 거래의 발송 정보를 담지 않습니다.</translation>
     </message>
     <message>
-        <source>The Dash address the message was signed with</source>
+        <source>The HelpTheHomeless address the message was signed with</source>
         <translation>메시지에 서명된 대시 주소</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Dash address</source>
+        <source>Verify the message to ensure it was signed with the specified HelpTheHomeless address</source>
         <translation>특정 대시 주소에 서명된 것인지 확인하기 위하여 메시지를 검증합니다.</translation>
     </message>
     <message>

@@ -70,11 +70,11 @@
         <translation>Adresa prijatia</translation>
     </message>
     <message>
-        <source>These are your Dash addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your HelpTheHomeless addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Toto sú vaše Dash adresy pre posielanie platieb. Pred poslaním mincí vždy overte sumu a doručovaciu adresu.</translation>
     </message>
     <message>
-        <source>These are your Dash addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your HelpTheHomeless addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Toto sú vaše Dash adresy pre posielanie platieb. Pre každú transakciu sa doporučuje použiť novú doručovaciu adresu.</translation>
     </message>
     <message>
@@ -286,7 +286,7 @@
         <translation>&amp;Odoslať</translation>
     </message>
     <message>
-        <source>Send coins to a Dash address</source>
+        <source>Send coins to a HelpTheHomeless address</source>
         <translation>Poslať mince na Dash adresu</translation>
     </message>
     <message>
@@ -394,7 +394,7 @@
         <translation>Podpísať &amp;správu...</translation>
     </message>
     <message>
-        <source>Sign messages with your Dash addresses to prove you own them</source>
+        <source>Sign messages with your HelpTheHomeless addresses to prove you own them</source>
         <translation>Podpísať správy s vašimi Dash adresami ako dôkaz že ich vlastníte</translation>
     </message>
     <message>
@@ -402,7 +402,7 @@
         <translation>&amp;Overiť správu...</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Dash addresses</source>
+        <source>Verify messages to ensure they were signed with specified HelpTheHomeless addresses</source>
         <translation>Overiť správy pre uistenie, že boli podpísané zadanými Dash adresami</translation>
     </message>
     <message>
@@ -526,7 +526,7 @@
         <translation>Lišta záložiek</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Dash network</source>
+        <source>%n active connection(s) to HelpTheHomeless network</source>
         <translation><numerusform>%n aktívne spojenie so sieťou Dash</numerusform><numerusform>%n aktívne spojenia so sieťou Dash</numerusform><numerusform>%n aktívnych spojení so sieťou Dash</numerusform><numerusform>%n aktívnych spojení so sieťou Dash</numerusform></translation>
     </message>
     <message>
@@ -877,7 +877,7 @@
         <translation>Upraviť adresu pre odoslanie</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Dash address.</source>
+        <source>The entered address "%1" is not a valid HelpTheHomeless address.</source>
         <translation>Zadaná adresa "%1" nie je platná Dash adresa.</translation>
     </message>
     <message>
@@ -1160,7 +1160,7 @@
         <translation>Forma</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the Dash network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the HelpTheHomeless network, as detailed below.</source>
         <translation>Nedávne transakcie ešte nemusia byť viditeľné, a preto stav vašej peňaženky môže byť nesprávny. Informácia bude správna hneď ako vaša peňaženka dokončí synchronizáciu so sieťou Dash. Viac detailov nájdete nižšie.</translation>
     </message>
     <message>
@@ -1318,7 +1318,7 @@
         <translation>Povoliť prichádzajúce spojenia</translation>
     </message>
     <message>
-        <source>Connect to the Dash network through a SOCKS5 proxy.</source>
+        <source>Connect to the HelpTheHomeless network through a SOCKS5 proxy.</source>
         <translation>Pripojiť sa do siete Dash cez proxy SOCKS5.</translation>
     </message>
     <message>
@@ -1414,7 +1414,7 @@
         <translation>Tor</translation>
     </message>
     <message>
-        <source>Connect to the Dash network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <source>Connect to the HelpTheHomeless network through a separate SOCKS5 proxy for Tor hidden services.</source>
         <translation>Pripojiť sa do siete Dash cez oddelené SOCKS5 proxy pre skryté služby Tor.</translation>
     </message>
     <message>
@@ -1539,7 +1539,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Forma</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Dash network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the HelpTheHomeless network after a connection is established, but this process has not completed yet.</source>
         <translation>Zobrazené informácie môžu byť zastaralé. Vaša peňaženka sa automaticky zosynchronizuje so sieťou Dash akonáhle nadviaže spojenie, avšak tento proces ešte nebol dokončený.</translation>
     </message>
     <message>
@@ -1821,7 +1821,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Neplatná adresa platby %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Dash address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid HelpTheHomeless address or malformed URI parameters.</source>
         <translation>URI sa nedá analyzovať! Toto môže byť spôsobené neplatnou Dash adresou, alebo nesprávnym tvarom URI parametrov.</translation>
     </message>
     <message>
@@ -1919,7 +1919,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Suma</translation>
     </message>
     <message>
-        <source>Enter a Dash address (e.g. %1)</source>
+        <source>Enter a HelpTheHomeless address (e.g. %1)</source>
         <translation>Zadajte Dash adresu (e.g. %1)</translation>
     </message>
     <message>
@@ -2441,7 +2441,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Z&amp;novu použiť jestvujúcu prijímaciu adresu (neodporúča sa)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Dash network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the HelpTheHomeless network.</source>
         <translation>Pripojiť ku vyžiadanej platbe voliteľnú správu, ktorá sa zobrazí, keď bude žiadosť otvorená. Poznámka: Správa nebude poslaná spolu s platbou cez sieť Dash.</translation>
     </message>
     <message>
@@ -2453,7 +2453,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Voliteľný popis ktorý sa pridá k tejto novej prijímajúcej adrese.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Dash network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the HelpTheHomeless network.</source>
         <translation>Pripojiť ku vyžiadanej platbe voliteľnú správu, ktorá sa zobrazí, keď bude žiadosť otvorená. &lt;br&gt;Poznámka: Správa nebude poslaná spolu s platbou cez sieť Dash.</translation>
     </message>
     <message>
@@ -2910,7 +2910,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation><numerusform>Odhad pre začiatok potvrdzovania je %n blok.</numerusform><numerusform>Odhad pre začiatok potvrdzovania sú %n bloky.</numerusform><numerusform>Odhad pre začiatok potvrdzovania je %n blokov.</numerusform><numerusform>Odhad pre začiatok potvrdzovania je %n blokov.</numerusform></translation>
     </message>
     <message>
-        <source>Warning: Invalid Dash address</source>
+        <source>Warning: Invalid HelpTheHomeless address</source>
         <translation>Upozornenie: Neplatná Dash adresa</translation>
     </message>
     <message>
@@ -2941,7 +2941,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Zapla&amp;tiť:</translation>
     </message>
     <message>
-        <source>The Dash address to send the payment to</source>
+        <source>The HelpTheHomeless address to send the payment to</source>
         <translation>Dash adresa pre poslanie platby</translation>
     </message>
     <message>
@@ -2989,7 +2989,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Správa:</translation>
     </message>
     <message>
-        <source>A message that was attached to the dash: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Dash network.</source>
+        <source>A message that was attached to the dash: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the HelpTheHomeless network.</source>
         <translation>Správa ktorá bola pripojená ku dash: URI ktorá sa uchová spolu s transakciou pre vašu referenciu. Poznámka: Táto správa nebude poslaná cez sieť Dash.</translation>
     </message>
     <message>
@@ -3046,7 +3046,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Môžete podpísať správy/dohody svojou adresou aby ste dokázali, že na ňu prijať Dash. Buďte opatrní a nepodpisuje nič vágne alebo náhodné, nakoľko útoky typu "phishing" vás môžu lákať k ich podpísaniu vašej identity. Podpisujte iba vyhlásenia s úplnými detailami s ktorými súhlasíte.</translation>
     </message>
     <message>
-        <source>The Dash address to sign the message with</source>
+        <source>The HelpTheHomeless address to sign the message with</source>
         <translation>Dash adresa na podpísanie správy</translation>
     </message>
     <message>
@@ -3078,7 +3078,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Kopírovať práve zvolenú adresu do systémovej schránky</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Dash address</source>
+        <source>Sign the message to prove you own this HelpTheHomeless address</source>
         <translation>Podpísať spravu aby ste dokázali, že vlastníte túto Dash adresu</translation>
     </message>
     <message>
@@ -3102,11 +3102,11 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Vložte adresu príjemcu, správu (uistite sa, že presne kopírujete ukončenia riadkov, medzery, odrážky, atď.) a podpis pre potvrdenie správy. Buďte opatrní a nedomýšľajte si viac než je uvedené v samotnej podpísanej správe a môžete sa tak vyhnúť podvodu MITM útokom. Toto len potvrdzuje, že podpisujúca strana môže prijímať na tejto adrese, nepotvrdzuje to vlastníctvo žiadnej transakcie!</translation>
     </message>
     <message>
-        <source>The Dash address the message was signed with</source>
+        <source>The HelpTheHomeless address the message was signed with</source>
         <translation>Adresa Dash s ktorou bola podpísaná správa</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Dash address</source>
+        <source>Verify the message to ensure it was signed with the specified HelpTheHomeless address</source>
         <translation>Overiť správu pre uistenie, že bola podpísaná zadanou Dash adresou</translation>
     </message>
     <message>

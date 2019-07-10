@@ -62,11 +62,11 @@
         <translation>Alım adresleri</translation>
     </message>
     <message>
-        <source>These are your Dash addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your HelpTheHomeless addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Bunlar ödemeleri göndermek için kullanacağınız Dash adreslerinizdir. Dash yollamadan önce tutarı ve alıcının alım adresini her zaman kontrol ediniz.</translation>
     </message>
     <message>
-        <source>These are your Dash addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your HelpTheHomeless addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Bunlar ödemeleri almak için kullanacağınız Dash adreslerinizdir. Her işlem için yeni bir alım adresi kullanmanız tavsiye edilir.</translation>
     </message>
     <message>
@@ -270,7 +270,7 @@
         <translation>&amp;Gönder</translation>
     </message>
     <message>
-        <source>Send coins to a Dash address</source>
+        <source>Send coins to a HelpTheHomeless address</source>
         <translation>Bir Dash adresine coin gönder</translation>
     </message>
     <message>
@@ -378,7 +378,7 @@
         <translation>&amp;İleti imzala...</translation>
     </message>
     <message>
-        <source>Sign messages with your Dash addresses to prove you own them</source>
+        <source>Sign messages with your HelpTheHomeless addresses to prove you own them</source>
         <translation>İletileri adreslerin size ait olduğunu ispatlamak için Dash adresleri ile imzala</translation>
     </message>
     <message>
@@ -386,7 +386,7 @@
         <translation>İletiyi &amp;kontrol et...</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Dash addresses</source>
+        <source>Verify messages to ensure they were signed with specified HelpTheHomeless addresses</source>
         <translation>Belirtilen Dash adresleri ile imzalandıklarından emin olmak için iletileri kontrol et</translation>
     </message>
     <message>
@@ -510,7 +510,7 @@
         <translation>Sekme araç çubuğu</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Dash network</source>
+        <source>%n active connection(s) to HelpTheHomeless network</source>
         <translation><numerusform>Dash ağına %n aktif bağlantı</numerusform><numerusform>Dash ağına %n aktif bağlantı</numerusform></translation>
     </message>
     <message>
@@ -861,7 +861,7 @@
         <translation>Gönderi adresini düzenle</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Dash address.</source>
+        <source>The entered address "%1" is not a valid HelpTheHomeless address.</source>
         <translation>Girilen %1 adresi, geçerli bir Dash adresi değildir.</translation>
     </message>
     <message>
@@ -1132,7 +1132,7 @@
         <translation>Form</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the Dash network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the HelpTheHomeless network, as detailed below.</source>
         <translation>Son işlemler henüz görünmeyebilir ve bu nedenle cüzdanınızın bakiyesi yanlış olabilir. Bu bilgiler, aşağıda detaylandırıldığı gibi, cüzdanınız Dash ağı ile senkronizasyonunu tamamladığında doğru olacaktır. </translation>
     </message>
     <message>
@@ -1290,7 +1290,7 @@
         <translation>Gelen bağlantılara izin ver</translation>
     </message>
     <message>
-        <source>Connect to the Dash network through a SOCKS5 proxy.</source>
+        <source>Connect to the HelpTheHomeless network through a SOCKS5 proxy.</source>
         <translation>Dash ağına bir SOCKS5 vekil sunucusu aracılığıyla bağlan.</translation>
     </message>
     <message>
@@ -1386,7 +1386,7 @@
         <translation>Tor</translation>
     </message>
     <message>
-        <source>Connect to the Dash network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <source>Connect to the HelpTheHomeless network through a separate SOCKS5 proxy for Tor hidden services.</source>
         <translation>Dash ağına gizli Tor servisleri için ayrı bir SOCKS5 vekil sunucusu aracılığıyla bağlan.</translation>
     </message>
     <message>
@@ -1511,7 +1511,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Form</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Dash network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the HelpTheHomeless network after a connection is established, but this process has not completed yet.</source>
         <translation>Görüntülenen bilgiler güncel olmayabilir. Bağlantı kurulduğunda cüzdanınız otomatik olarak Dash ağı ile senkronize olur ancak bu işlem henüz tamamlanmamıştır.</translation>
     </message>
     <message>
@@ -1792,7 +1792,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>%1 ödeme adresi geçersizdir</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Dash address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid HelpTheHomeless address or malformed URI parameters.</source>
         <translation>URI ayrıştırılamıyor! Bunun nedeni geçersiz bir Dash adresi veya hatalı biçimlendirilmiş URI değişkenleri olabilir.</translation>
     </message>
     <message>
@@ -1890,7 +1890,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Tutar</translation>
     </message>
     <message>
-        <source>Enter a Dash address (e.g. %1)</source>
+        <source>Enter a HelpTheHomeless address (e.g. %1)</source>
         <translation>Bir Dash adresi giriniz (mesela %1)</translation>
     </message>
     <message>
@@ -2408,7 +2408,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>&amp;Hâlihazırda bulunan bir alım adresini kullan (önerilmez)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Dash network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the HelpTheHomeless network.</source>
         <translation>Talep açıldığında gösterilecek, isteğinize dayalı, ödeme talebi ile ilişkilendirilecek bir ileti. Not: Bu ileti ödeme ile birlikte Dash ağı üzerinden gönderilmeyecektir.</translation>
     </message>
     <message>
@@ -2420,7 +2420,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Yeni alım adresi ile ilişkili, seçiminize dayalı etiket.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Dash network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the HelpTheHomeless network.</source>
         <translation>Ödeme talebine eklenecek isteğe bağlı bir mesaj, talep açıldığında gösterilecektir.&lt;br&gt;Not: Mesaj ödeme ile birlikte Dash ağı üzerinden gönderilmez.</translation>
     </message>
     <message>
@@ -2877,7 +2877,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation><numerusform>%n blok içinde onaylamanın başlayacağı tahmin ediliyor.</numerusform><numerusform>%n blok içinde onaylamanın başlayacağı tahmin ediliyor.</numerusform></translation>
     </message>
     <message>
-        <source>Warning: Invalid Dash address</source>
+        <source>Warning: Invalid HelpTheHomeless address</source>
         <translation>UYARI: Geçersiz Dash adresi</translation>
     </message>
     <message>
@@ -2908,7 +2908,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>&amp;Şu adrese öde:</translation>
     </message>
     <message>
-        <source>The Dash address to send the payment to</source>
+        <source>The HelpTheHomeless address to send the payment to</source>
         <translation>Ödemenin yollanacağı Dash adresi</translation>
     </message>
     <message>
@@ -2956,7 +2956,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Mesaj:</translation>
     </message>
     <message>
-        <source>A message that was attached to the dash: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Dash network.</source>
+        <source>A message that was attached to the dash: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the HelpTheHomeless network.</source>
         <translation>Referans için Dash: URI'siyle iliştirilmiş işlemle birlikte depolanacak bir ileti. Not: Bu mesaj Dash ağı üzerinden gönderilmeyecektir.</translation>
     </message>
     <message>
@@ -3013,7 +3013,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Onlara gönderilen Dash'i alabildiğinizi ispatlamak için mesajları/anlaşmaları adresleriniz ile imzalayabilirsiniz. Muallak ya da rastgele bir şeyi imzalamamaya dikkat edin çünkü kimlik avı saldırıları ile sizi kimliğinizi açık etmek için dolandırabilirler. Sadece anlaştığınız tam ayrıntılı beyanları imzalayın.</translation>
     </message>
     <message>
-        <source>The Dash address to sign the message with</source>
+        <source>The HelpTheHomeless address to sign the message with</source>
         <translation>İletinin imzalanmasında kullanılacak Dash adresi</translation>
     </message>
     <message>
@@ -3045,7 +3045,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Güncel imzayı sistem panosuna kopyala</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Dash address</source>
+        <source>Sign the message to prove you own this HelpTheHomeless address</source>
         <translation>Bu Dash adresine sahip olduğunuzu ispatlamak için mesajı imzala</translation>
     </message>
     <message>
@@ -3069,11 +3069,11 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Alıcının adresini, iletiyi (satır sonları, boşluklar, sekmeler vs. karakterleri tam olarak kopyaladığınızdan emin olunuz) ve imzayı aşağıya giriniz. Bir ortadaki adam saldırısı tarafından kandırılmaya engel olmak için imzadan, imzalı iletinin içeriğini aşan bir anlam çıkarmamaya dikkat ediniz. Bunun sadece imzalayan tarafın adres ile alım yapabildiğini ispatladığını ve herhangi bir işlemin gönderi tarafını kanıtlayamayacağını unutmayınız!</translation>
     </message>
     <message>
-        <source>The Dash address the message was signed with</source>
+        <source>The HelpTheHomeless address the message was signed with</source>
         <translation>İletinin imzalanmasında kullanılan Dash adresi</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Dash address</source>
+        <source>Verify the message to ensure it was signed with the specified HelpTheHomeless address</source>
         <translation>Belirtilen Dash adresi ile imzalandığını doğrulamak için iletiyi kontrol et</translation>
     </message>
     <message>

@@ -62,11 +62,11 @@
         <translation>ที่อยู่ผู้รับ</translation>
     </message>
     <message>
-        <source>These are your Dash addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your HelpTheHomeless addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>นี่คือที่อยู่ Dash ของคุณสำหรับการส่งการชำระเงิน โปรดตรวจสอบจำนวนเงินและที่อยู่ผู้รับก่อนที่จะส่งเหรียญ</translation>
     </message>
     <message>
-        <source>These are your Dash addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your HelpTheHomeless addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>นี่เป็นที่อยู่ Dash ของคุณสำหรับการรับการชำระเงิน แนะนำให้ใช้ที่อยู่รับใหม่สำหรับแต่ละธุรกรรม</translation>
     </message>
     <message>
@@ -270,7 +270,7 @@
         <translation>&amp;ส่ง</translation>
     </message>
     <message>
-        <source>Send coins to a Dash address</source>
+        <source>Send coins to a HelpTheHomeless address</source>
         <translation>ส่ง เหรียญ ไปยัง ที่อยู่ Dash</translation>
     </message>
     <message>
@@ -378,7 +378,7 @@
         <translation>เซ็นต์ชื่อด้วย &amp;ข้อความ...</translation>
     </message>
     <message>
-        <source>Sign messages with your Dash addresses to prove you own them</source>
+        <source>Sign messages with your HelpTheHomeless addresses to prove you own them</source>
         <translation>เซ็นชื่อด้วยข้อความ ที่เก็บ Dash เพื่อแสดงว่าท่านเป็นเจ้าของ Dash นี้จริง</translation>
     </message>
     <message>
@@ -386,7 +386,7 @@
         <translation>&amp;ยืนยันข้อความ...</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Dash addresses</source>
+        <source>Verify messages to ensure they were signed with specified HelpTheHomeless addresses</source>
         <translation>ตรวจสอบ ข้อความ เพื่อให้แน่ใจว่า การเซ็นต์ชื่อ ด้วยที่เก็บ Dash แล้ว</translation>
     </message>
     <message>
@@ -510,7 +510,7 @@
         <translation>แถบเครื่องมือ</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Dash network</source>
+        <source>%n active connection(s) to HelpTheHomeless network</source>
         <translation><numerusform>%n เชื่อมต่อใช้งานกับเครือข่าย Dash</numerusform></translation>
     </message>
     <message>
@@ -861,7 +861,7 @@
         <translation>แก้ไขที่อยู่ผู้ส่ง</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Dash address.</source>
+        <source>The entered address "%1" is not a valid HelpTheHomeless address.</source>
         <translation>ที่อยู่ที่ป้อน "%1" ไม่ใช่ที่อยู่ Dash ที่ถูกต้อง</translation>
     </message>
     <message>
@@ -1108,7 +1108,7 @@
         <translation>รูป</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the Dash network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the HelpTheHomeless network, as detailed below.</source>
         <translation>การทำธุรกรรมล่าสุดอาจยังไม่สามารถเห็นได้และทำให้ยอดคงเหลือของ wallet ของคุณไม่ถูกต้อง ข้อมูลนี้จะถูกต้องก่อนที่ Wallet ของคุณจะเสร็จสิ้นการซิงค์กับเครือข่าย Dash ตามรายละเอียดด้านล่างนี้</translation>
     </message>
     <message>
@@ -1266,7 +1266,7 @@
         <translation>อนุญาตการเชื่อมต่อขาเข้า</translation>
     </message>
     <message>
-        <source>Connect to the Dash network through a SOCKS5 proxy.</source>
+        <source>Connect to the HelpTheHomeless network through a SOCKS5 proxy.</source>
         <translation>เชื่อมต่อกับเครือข่าย Dash ผ่านพร็อกซี่แบบ SOCKS5</translation>
     </message>
     <message>
@@ -1362,7 +1362,7 @@
         <translation>Tor</translation>
     </message>
     <message>
-        <source>Connect to the Dash network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <source>Connect to the HelpTheHomeless network through a separate SOCKS5 proxy for Tor hidden services.</source>
         <translation>เชื่อมต่อกับ เครือข่าย Dash ผ่านทาง พร้อกซี่ SOCKS5 แยกต่างหาก สำหรับ Tor เซอร์วิส</translation>
     </message>
     <message>
@@ -1487,7 +1487,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>รูป</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Dash network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the HelpTheHomeless network after a connection is established, but this process has not completed yet.</source>
         <translation>ข้อมูลที่แสดงอาจล้าสมัย  Wallet ของคุณจะทำข้อมูลให้ตรงกับเครือข่าย Dash โดยอัตโนมัติหลังจากที่มีการเชื่อมต่อแล้ว แต่กระบวนการนี้ยังไม่เสร็จสมบูรณ์</translation>
     </message>
     <message>
@@ -1768,7 +1768,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>ที่อยู่การชำระเงินไม่ถูกต้อง %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Dash address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid HelpTheHomeless address or malformed URI parameters.</source>
         <translation>ไม่สามารถประมวลผล URI ได้สำเร็จ ! ซึ่งอาจเกิดจากที่อยู่ Dash ไม่ถูกต้องหรือพารามิเตอร์ URI ที่มีรูปแบบไม่ถูกต้อง</translation>
     </message>
     <message>
@@ -1866,7 +1866,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>จำนวน</translation>
     </message>
     <message>
-        <source>Enter a Dash address (e.g. %1)</source>
+        <source>Enter a HelpTheHomeless address (e.g. %1)</source>
         <translation>ป้อนที่อยู่ Dash (เช่น %1)</translation>
     </message>
     <message>
@@ -2384,7 +2384,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>ใช้ที่อยู่รับที่มีอยู่ (ไม่แนะนำ)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Dash network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the HelpTheHomeless network.</source>
         <translation>ข้อความเสริมที่จะแนบไปกับคำขอการชำระเงินซึ่งจะแสดงขึ้นเมื่อมีการเปิดคำขอ หมายเหตุ: ข้อความจะไม่ถูกส่งพร้อมกับการชำระเงินผ่านเครือข่าย Dash</translation>
     </message>
     <message>
@@ -2396,7 +2396,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>ป้ายกำกับเพิ่มเติมสำหรับเชื่อมโยงกับที่อยู่รับใหม่</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Dash network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the HelpTheHomeless network.</source>
         <translation>ข้อความเสริมที่จะแนบไปกับคำขอการชำระเงินซึ่งจะแสดงขึ้นเมื่อมีการเปิดคำขอ&lt;br&gt; หมายเหตุ: ข้อความจะไม่ถูกส่งพร้อมกับการชำระเงินผ่านเครือข่าย Dash</translation>
     </message>
     <message>
@@ -2853,7 +2853,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation><numerusform>คาดว่าจะเริ่มการยืนยันภายใน %n บล็อค</numerusform></translation>
     </message>
     <message>
-        <source>Warning: Invalid Dash address</source>
+        <source>Warning: Invalid HelpTheHomeless address</source>
         <translation>คำเตือน: ที่อยู่ Dash ไม่ถูกต้อง</translation>
     </message>
     <message>
@@ -2884,7 +2884,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>จ่ายไปยัง:</translation>
     </message>
     <message>
-        <source>The Dash address to send the payment to</source>
+        <source>The HelpTheHomeless address to send the payment to</source>
         <translation>ที่อยู่ Dash เพื่อส่งการชำระเงินไปที่</translation>
     </message>
     <message>
@@ -2932,7 +2932,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>ข้อความ: </translation>
     </message>
     <message>
-        <source>A message that was attached to the dash: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Dash network.</source>
+        <source>A message that was attached to the dash: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the HelpTheHomeless network.</source>
         <translation>ข้อความที่แนบมาไปยัง Dash: URI ซึ่งจะถูกเก็บไว้กับธุรกรรมเพื่อเป็นข้อมูลอ้างอิงของคุณ  หมายเหตุ: ข้อความนี้จะถูกส่งไปยังเครือข่าย Dash </translation>
     </message>
     <message>
@@ -2989,7 +2989,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>คุณสามารถลงนามในข้อความ / ข้อตกลงกับที่อยู่ของคุณเพื่อพิสูจน์ว่าคุณสามารถรับ Dash ส่งถึงพวกเขาได้  ระวังอย่าเซ็นชื่ออะไรที่กำกวม เนื่องจากการโจมตีแบบฟิชชิ่งอาจพยายามหลอกล่อให้คุณเซ็นชื่อตัวคุณเอง เพียงลงนามในคำชี้แจงอย่างละเอียดที่คุณเห็นด้วยเท่านั้น</translation>
     </message>
     <message>
-        <source>The Dash address to sign the message with</source>
+        <source>The HelpTheHomeless address to sign the message with</source>
         <translation>ที่อยู่ Dash เพื่อเซ็นชื่อ</translation>
     </message>
     <message>
@@ -3021,7 +3021,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>คัดลอกลายเซ็นปัจจุบันไปยังคลิปบอร์ดของระบบ</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Dash address</source>
+        <source>Sign the message to prove you own this HelpTheHomeless address</source>
         <translation>ลงนามข้อความเพื่อพิสูจน์ว่าคุณเป็นเจ้าของที่อยู่ Dash นี้</translation>
     </message>
     <message>
@@ -3045,11 +3045,11 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>ป้อนที่อยู่ของผู้รับข้อความ (ตรวจสอบให้แน่ใจว่าคุณได้คัดลอกเว้นวรรค ช่องว่าง ย่อหน้า ฯลฯ ) และลายเซ็นด้านล่างเพื่อยืนยันข้อความ โปรดระวังอย่าใช้ข้อมูลมากกว่าข้อความที่เซ็นชื่อไว้เพื่อหลีกเลี่ยงการฉ้อโกงโดยอาศัยการโจมตีแบบ man-in-the-middle โปรดทราบว่าสิ่งนี้พิสูจน์ให้เห็นว่าบุคคลที่ลงนามได้รับพร้อมกับที่อยู่แล้วไม่สามารถพิสูจน์ว่ามีผู้ส่งรายการใด ๆ !</translation>
     </message>
     <message>
-        <source>The Dash address the message was signed with</source>
+        <source>The HelpTheHomeless address the message was signed with</source>
         <translation>ข้อความที่อยู่ Dash ถูกเซ็นชื่อด้วย</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Dash address</source>
+        <source>Verify the message to ensure it was signed with the specified HelpTheHomeless address</source>
         <translation>ยืนยันข้อความเพื่อให้แน่ใจว่าข้อความถูกเซ็นชื่อด้วยที่อยู่ Dash ที่ระบุ</translation>
     </message>
     <message>

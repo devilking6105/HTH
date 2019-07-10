@@ -62,11 +62,11 @@
         <translation>受取アドレス</translation>
     </message>
     <message>
-        <source>These are your Dash addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your HelpTheHomeless addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>これらは送金するためのあなたの Dash アドレスです。送金する前に常に金額と受取アドレスを確認してください。</translation>
     </message>
     <message>
-        <source>These are your Dash addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your HelpTheHomeless addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>これらは送金を受取用のあなたのDashアドレスです。トランザクションごとに新しい受け取り用アドレスの作成を推奨します。</translation>
     </message>
     <message>
@@ -270,7 +270,7 @@
         <translation>送金 (&amp;S)</translation>
     </message>
     <message>
-        <source>Send coins to a Dash address</source>
+        <source>Send coins to a HelpTheHomeless address</source>
         <translation>Dash アドレスに送金</translation>
     </message>
     <message>
@@ -378,7 +378,7 @@
         <translation>メッセージの署名… (&amp;M)</translation>
     </message>
     <message>
-        <source>Sign messages with your Dash addresses to prove you own them</source>
+        <source>Sign messages with your HelpTheHomeless addresses to prove you own them</source>
         <translation>あなたがDash アドレスを所有していることを証明するために、あなたのDashアドレスでメッセージに署名してください。</translation>
     </message>
     <message>
@@ -386,7 +386,7 @@
         <translation>メッセージの検証… (&amp;V)</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Dash addresses</source>
+        <source>Verify messages to ensure they were signed with specified HelpTheHomeless addresses</source>
         <translation>指定されたDashアドレスで署名されたことを確認するためにメッセージを検証してください。</translation>
     </message>
     <message>
@@ -510,7 +510,7 @@
         <translation>タブツールバー</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Dash network</source>
+        <source>%n active connection(s) to HelpTheHomeless network</source>
         <translation><numerusform>%n アクティブコネクション</numerusform></translation>
     </message>
     <message>
@@ -861,7 +861,7 @@
         <translation>送金アドレスを編集</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Dash address.</source>
+        <source>The entered address "%1" is not a valid HelpTheHomeless address.</source>
         <translation>入力されたアドレス "%1" は有効なDashアドレスではありません。</translation>
     </message>
     <message>
@@ -1137,7 +1137,7 @@
         <translation>フォーム</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the Dash network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the HelpTheHomeless network, as detailed below.</source>
         <translation>確認できない最新のトランザクションがあるかもしれません。これによりウォレットの残高は不正確なものである可能性があります。この情報はウォレットが一度Dashのネットワークへの同期が完了すると正確なものとなります。詳細は下記を参照してください。</translation>
     </message>
     <message>
@@ -1295,7 +1295,7 @@
         <translation>受信中の接続を許可</translation>
     </message>
     <message>
-        <source>Connect to the Dash network through a SOCKS5 proxy.</source>
+        <source>Connect to the HelpTheHomeless network through a SOCKS5 proxy.</source>
         <translation>SOCKS5プロキシ経由でDashネットワークに接続</translation>
     </message>
     <message>
@@ -1391,7 +1391,7 @@
         <translation>Tor</translation>
     </message>
     <message>
-        <source>Connect to the Dash network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <source>Connect to the HelpTheHomeless network through a separate SOCKS5 proxy for Tor hidden services.</source>
         <translation>Tor秘匿サービスを利用するため独立なSOCKS5プロキシ経由でDashネットワークに接続</translation>
     </message>
     <message>
@@ -1516,7 +1516,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>フォーム</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Dash network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the HelpTheHomeless network after a connection is established, but this process has not completed yet.</source>
         <translation>表示された情報は古いかもしれません。接続が確立されればあなたのウォレットは Dashネットワークと自動的に同期しますが、このプロセスはまだ完了していません。</translation>
     </message>
     <message>
@@ -1797,7 +1797,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>支払いのアドレス　%1　は無効です</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Dash address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid HelpTheHomeless address or malformed URI parameters.</source>
         <translation>URI を解析できません! これは無効な Dash アドレスあるいは不正な形式の URI パラメーターによって引き起こされた可能性があります。</translation>
     </message>
     <message>
@@ -1895,7 +1895,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>総額</translation>
     </message>
     <message>
-        <source>Enter a Dash address (e.g. %1)</source>
+        <source>Enter a HelpTheHomeless address (e.g. %1)</source>
         <translation>Dashアドレスを入力してください (例 %1)</translation>
     </message>
     <message>
@@ -2413,7 +2413,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>既存の受け取り用アドレスを再使用する (非推奨) (&amp;E)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Dash network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the HelpTheHomeless network.</source>
         <translation>支払いリクエストが開始された時に表示される、支払いリクエストに添付される任意のメッセージです。注意：このメッセージはDashネットワークを通じて支払いと共に送信されるわけではありません。</translation>
     </message>
     <message>
@@ -2425,7 +2425,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>新しい受け取り用アドレスに紐づく任意のラベル。</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Dash network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the HelpTheHomeless network.</source>
         <translation>支払いリクエストが開始された時に表示される、支払いリクエストに添付される任意のメッセージです。注意：このメッセージはDashネットワークを通じて支払いと共に送信されるわけではありません。</translation>
     </message>
     <message>
@@ -2882,7 +2882,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation><numerusform>%n ブロック以内に検証が開始されると予想されます</numerusform></translation>
     </message>
     <message>
-        <source>Warning: Invalid Dash address</source>
+        <source>Warning: Invalid HelpTheHomeless address</source>
         <translation>警告：Dashアドレスが無効です</translation>
     </message>
     <message>
@@ -2913,7 +2913,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>送り先: (&amp;T)</translation>
     </message>
     <message>
-        <source>The Dash address to send the payment to</source>
+        <source>The HelpTheHomeless address to send the payment to</source>
         <translation>送金先Dashアドレス</translation>
     </message>
     <message>
@@ -2961,7 +2961,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>メッセージ：</translation>
     </message>
     <message>
-        <source>A message that was attached to the dash: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Dash network.</source>
+        <source>A message that was attached to the dash: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the HelpTheHomeless network.</source>
         <translation>Dash: URIに添付されていたメッセージです。これは参照用としてトランザクションとともに保存されます。注意：このメッセージはDashネットワークを経由して送信されるわけではありません。</translation>
     </message>
     <message>
@@ -3018,7 +3018,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>あなたのアドレスを使用してあなたがDashを受け取ることができるようにメッセージやアグリーメントに署名できます。充分に詳細が判明していてあなたが確認しているものだけに署名してください。フィッシングによってあなたの署名を読み取られないように注意してください。</translation>
     </message>
     <message>
-        <source>The Dash address to sign the message with</source>
+        <source>The HelpTheHomeless address to sign the message with</source>
         <translation>メッセージを署名する際に使用するDashアドレス</translation>
     </message>
     <message>
@@ -3050,7 +3050,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>現在の署名をシステムのクリップボードにコピー</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Dash address</source>
+        <source>Sign the message to prove you own this HelpTheHomeless address</source>
         <translation>この Dash アドレスを所有していることを証明するためにメッセージに署名</translation>
     </message>
     <message>
@@ -3074,11 +3074,11 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>受取人のアドレスとメッセージ（改行やスペース、タブなども完全に一致するよう注意してください）および署名を以下に入力し、メッセージを検証してください。中間者攻撃により騙されるのを防ぐため、署名対象のメッセージに書かれていること以上の意味を署名から読み取ろうとしないよう注意してください。これは署名作成者がこのアドレスで受け取ることを証明するだけであり、トランザクションの送信者を証明するものではないことに注意してください！</translation>
     </message>
     <message>
-        <source>The Dash address the message was signed with</source>
+        <source>The HelpTheHomeless address the message was signed with</source>
         <translation>メッセージの署名に使用されたDashアドレス</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Dash address</source>
+        <source>Verify the message to ensure it was signed with the specified HelpTheHomeless address</source>
         <translation>指定されたDashアドレスで署名されたことを確認するためメッセージを検証</translation>
     </message>
     <message>
