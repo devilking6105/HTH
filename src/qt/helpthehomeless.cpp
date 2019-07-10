@@ -4,7 +4,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/dash-config.h"
+#include "config/helpthehomeless-config.h"
 #endif
 
 #include "bitcoingui.h"
@@ -257,7 +257,7 @@ private:
     void startThread();
 };
 
-#include "dash.moc"
+#include "helpthehomeless.moc"
 
 BitcoinCore::BitcoinCore():
     QObject()
@@ -581,8 +581,8 @@ int main(int argc, char *argv[])
     QTextCodec::setCodecForCStrings(QTextCodec::codecForTr());
 #endif
 
-    Q_INIT_RESOURCE(dash);
-    Q_INIT_RESOURCE(dash_locale);
+    Q_INIT_RESOURCE(helpthehomeless);
+    // Q_INIT_RESOURCE(helpthehomeless_locale);
 
     BitcoinApplication app(argc, argv);
 #if QT_VERSION > 0x050100
