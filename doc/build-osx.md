@@ -33,7 +33,7 @@ Follow the instructions in [build-generic](build-generic.md)
 Running
 -------
 
-Dash Core is now available at `./src/dashd`
+HelpTheHomeless is now available at `./src/dashd`
 
 Before running, it's recommended you create an RPC configuration file.
 

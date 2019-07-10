@@ -722,7 +722,7 @@ inline void Serialize(Stream& os, const T& a)
 }
 
 template<typename Stream, typename T>
-inline void Unserialize(Stream& is, T& a)
+inline void Unserialize(Stream& is, T&& a)
 {
     a.Unserialize(is);
 }

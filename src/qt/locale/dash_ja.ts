@@ -172,7 +172,7 @@
         <translation>ウォレットの暗号化を確認</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DASH&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HTH&lt;/b&gt;!</source>
         <translation>警告: ウォレットを暗号化しパスフレーズを紛失した場合、あなたは &lt;b&gt;すべてのDash&lt;/b&gt;を失います!</translation>
     </message>
     <message>
@@ -242,12 +242,12 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>A fatal error occurred. Dash Core can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. HelpTheHomeless can no longer continue safely and will quit.</source>
         <translation>重大なエラーが発生しました。 Dash Coreは安全に続行できなくなり終了します。</translation>
     </message>
     <message>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>HelpTheHomeless</source>
+        <translation>HelpTheHomeless</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -306,7 +306,7 @@
         <translation>アプリケーションを終了</translation>
     </message>
     <message>
-        <source>Show information about Dash Core</source>
+        <source>Show information about HelpTheHomeless</source>
         <translation>Dash Coreについての情報を表示</translation>
     </message>
     <message>
@@ -959,8 +959,8 @@
         <translation>プライベートセンドの情報</translation>
     </message>
     <message>
-        <source>&lt;h3&gt;PrivateSend Basics&lt;/h3&gt; PrivateSend gives you true financial privacy by obscuring the origins of your funds. All the Dash in your wallet is comprised of different "inputs" which you can think of as separate, discrete coins.&lt;br&gt; PrivateSend uses an innovative process to mix your inputs with the inputs of two other people, without having your coins ever leave your wallet. You retain control of your money at all times.&lt;hr&gt; &lt;b&gt;The PrivateSend process works like this:&lt;/b&gt;&lt;ol type="1"&gt; &lt;li&gt;PrivateSend begins by breaking your transaction inputs down into standard denominations. These denominations are 0.001 DASH, 0.01 DASH, 0.1 DASH, 1 DASH and 10 DASH -- sort of like the paper money you use every day.&lt;/li&gt; &lt;li&gt;Your wallet then sends requests to specially configured software nodes on the network, called "masternodes." These masternodes are informed then that you are interested in mixing a certain denomination. No identifiable information is sent to the masternodes, so they never know "who" you are.&lt;/li&gt; &lt;li&gt;When two other people send similar messages, indicating that they wish to mix the same denomination, a mixing session begins. The masternode mixes up the inputs and instructs all three users' wallets to pay the now-transformed input back to themselves. Your wallet pays that denomination directly to itself, but in a different address (called a change address).&lt;/li&gt; &lt;li&gt;In order to fully obscure your funds, your wallet must repeat this process a number of times with each denomination. Each time the process is completed, it's called a "round." Each round of PrivateSend makes it exponentially more difficult to determine where your funds originated.&lt;/li&gt; &lt;li&gt;This mixing process happens in the background without any intervention on your part. When you wish to make a transaction, your funds will already be anonymized. No additional waiting is required.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; Your wallet only contains 1000 of these "change addresses." Every time a mixing event happens, up to 9 of your addresses are used up. This means those 1000 addresses last for about 100 mixing events. When 900 of them are used, your wallet must create more addresses. It can only do this, however, if you have automatic backups enabled.&lt;br&gt; Consequently, users who have backups disabled will also have PrivateSend disabled. &lt;hr&gt;For more information, see the &lt;a href="https://docs.dash.org/en/latest/wallets/dashcore/privatesend-instantsend.html"&gt;PrivateSend documentation&lt;/a&gt;.</source>
-        <translation>&lt;h3&gt;プライベートセンドの基本&lt;/h3&gt; プライベートセンドはあなたのファンドの起源を不明瞭にすることによって真のファイナンシャルプライバシーを提供します。あなたのウォレットにあるDashは別々の異なるコインとして考えられる”インプット”から構成されています。&lt;br&gt; プライベートセンドは画期的なプロセスを使用し、ウォレットからあなたのコインが移動させられることなく、他の二人の人々のインプットとあなたのインプットをミックスします。あなたは常にあなたのファンドをコントロールしています。&lt;hr&gt; &lt;b&gt;プライベートセンドのプロセスは以下のように機能します:&lt;/b&gt;&lt;ol type="1"&gt; &lt;li&gt;プライベートセンドは、あなたのトランザクションインプットをスタンダードな通貨単位に分割します。これらの通貨単位は0.001 DASH, 0.01 DASH, 0.1 DASH, 1 DASH そして 10 DASH -- 日常的に使われる紙幣のようなものです。&lt;/li&gt; &lt;li&gt;あなたのウォレットは次に、 "マスターノード"と呼ばれるネットワーク上に特別に設定されたソフトウェアノードにリクエストを送信します。これらのマスターノードは、特定の通貨単位をミキシングしたいというあなたの要望を知らされます。送信者を特定できる情報は送信されないので、マスターノードはあなたが誰かわかりません。 &lt;/li&gt; &lt;li&gt;二人の別の人たちが同じようなメッセージを送信して、同じ通貨単位をミキシングしたいという要望を伝え、ミキシングセッションが開始されます。マスターノードはインプットをミックスし、すべての三人のユーザーのウォレットに命じて変更されたインプットをもとのウォレットに戻させます。あなたのウォレットはその通貨単位を直接もとのウォレットに支払いますが、アドレスは異なっています（チェンジアドレスといいます）&lt;/li&gt; &lt;li&gt;完全にあなたのファンドを匿名化するには、あなたのウォレットはこのプロセスをそれぞれの通貨単位で何回もリピートする必要があります。このプロセスは "ラウンド"と呼びます。プライベートセンドのラウンドが進めば、あなたのファンドの起源を遡ることは指数関数的に困難になっていきます。&lt;/li&gt; &lt;li&gt;このミキシングのプロセスはあなたになにも干渉することなくバックグラウンドで実行されます。あなたがトランザクションを実行したいとき、あなたのファンドはすでに匿名化されています。追加の待ち時間は必要ありません。&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;重要:&lt;/b&gt; あなたのウォレットは、 1000個の "チェンジアドレス"しか保有できません。ミキシングが実行されるたびに、9個のアドレスが使用されます。これは1000個のアドレスを使い切るまでに約100回のミキシングがきることを意味します。900個のアドレスが使用されると、あなたのウォレットは追加のアドレスを生成しなくてはなりません。しかし、あなたが自動バックアップを有効にしていれば可能です。&lt;br&gt; つまりバックアップが無効なユーザーはプライベートセンドが無効になります。 &lt;hr&gt;詳細は &lt;a href="https://docs.dash.org/en/latest/wallets/dashcore/privatesend-instantsend.html"&gt;プライベートセンドドキュメンテーション&lt;/a&gt;参照.         </translation>
+        <source>&lt;h3&gt;PrivateSend Basics&lt;/h3&gt; PrivateSend gives you true financial privacy by obscuring the origins of your funds. All the Dash in your wallet is comprised of different "inputs" which you can think of as separate, discrete coins.&lt;br&gt; PrivateSend uses an innovative process to mix your inputs with the inputs of two other people, without having your coins ever leave your wallet. You retain control of your money at all times.&lt;hr&gt; &lt;b&gt;The PrivateSend process works like this:&lt;/b&gt;&lt;ol type="1"&gt; &lt;li&gt;PrivateSend begins by breaking your transaction inputs down into standard denominations. These denominations are 0.001 HTH, 0.01 HTH, 0.1 HTH, 1 HTH and 10 HTH -- sort of like the paper money you use every day.&lt;/li&gt; &lt;li&gt;Your wallet then sends requests to specially configured software nodes on the network, called "masternodes." These masternodes are informed then that you are interested in mixing a certain denomination. No identifiable information is sent to the masternodes, so they never know "who" you are.&lt;/li&gt; &lt;li&gt;When two other people send similar messages, indicating that they wish to mix the same denomination, a mixing session begins. The masternode mixes up the inputs and instructs all three users' wallets to pay the now-transformed input back to themselves. Your wallet pays that denomination directly to itself, but in a different address (called a change address).&lt;/li&gt; &lt;li&gt;In order to fully obscure your funds, your wallet must repeat this process a number of times with each denomination. Each time the process is completed, it's called a "round." Each round of PrivateSend makes it exponentially more difficult to determine where your funds originated.&lt;/li&gt; &lt;li&gt;This mixing process happens in the background without any intervention on your part. When you wish to make a transaction, your funds will already be anonymized. No additional waiting is required.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; Your wallet only contains 1000 of these "change addresses." Every time a mixing event happens, up to 9 of your addresses are used up. This means those 1000 addresses last for about 100 mixing events. When 900 of them are used, your wallet must create more addresses. It can only do this, however, if you have automatic backups enabled.&lt;br&gt; Consequently, users who have backups disabled will also have PrivateSend disabled. &lt;hr&gt;For more information, see the &lt;a href="https://docs.dash.org/en/latest/wallets/dashcore/privatesend-instantsend.html"&gt;PrivateSend documentation&lt;/a&gt;.</source>
+        <translation>&lt;h3&gt;プライベートセンドの基本&lt;/h3&gt; プライベートセンドはあなたのファンドの起源を不明瞭にすることによって真のファイナンシャルプライバシーを提供します。あなたのウォレットにあるDashは別々の異なるコインとして考えられる”インプット”から構成されています。&lt;br&gt; プライベートセンドは画期的なプロセスを使用し、ウォレットからあなたのコインが移動させられることなく、他の二人の人々のインプットとあなたのインプットをミックスします。あなたは常にあなたのファンドをコントロールしています。&lt;hr&gt; &lt;b&gt;プライベートセンドのプロセスは以下のように機能します:&lt;/b&gt;&lt;ol type="1"&gt; &lt;li&gt;プライベートセンドは、あなたのトランザクションインプットをスタンダードな通貨単位に分割します。これらの通貨単位は0.001 HTH, 0.01 HTH, 0.1 HTH, 1 HTH そして 10 HTH -- 日常的に使われる紙幣のようなものです。&lt;/li&gt; &lt;li&gt;あなたのウォレットは次に、 "マスターノード"と呼ばれるネットワーク上に特別に設定されたソフトウェアノードにリクエストを送信します。これらのマスターノードは、特定の通貨単位をミキシングしたいというあなたの要望を知らされます。送信者を特定できる情報は送信されないので、マスターノードはあなたが誰かわかりません。 &lt;/li&gt; &lt;li&gt;二人の別の人たちが同じようなメッセージを送信して、同じ通貨単位をミキシングしたいという要望を伝え、ミキシングセッションが開始されます。マスターノードはインプットをミックスし、すべての三人のユーザーのウォレットに命じて変更されたインプットをもとのウォレットに戻させます。あなたのウォレットはその通貨単位を直接もとのウォレットに支払いますが、アドレスは異なっています（チェンジアドレスといいます）&lt;/li&gt; &lt;li&gt;完全にあなたのファンドを匿名化するには、あなたのウォレットはこのプロセスをそれぞれの通貨単位で何回もリピートする必要があります。このプロセスは "ラウンド"と呼びます。プライベートセンドのラウンドが進めば、あなたのファンドの起源を遡ることは指数関数的に困難になっていきます。&lt;/li&gt; &lt;li&gt;このミキシングのプロセスはあなたになにも干渉することなくバックグラウンドで実行されます。あなたがトランザクションを実行したいとき、あなたのファンドはすでに匿名化されています。追加の待ち時間は必要ありません。&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;重要:&lt;/b&gt; あなたのウォレットは、 1000個の "チェンジアドレス"しか保有できません。ミキシングが実行されるたびに、9個のアドレスが使用されます。これは1000個のアドレスを使い切るまでに約100回のミキシングがきることを意味します。900個のアドレスが使用されると、あなたのウォレットは追加のアドレスを生成しなくてはなりません。しかし、あなたが自動バックアップを有効にしていれば可能です。&lt;br&gt; つまりバックアップが無効なユーザーはプライベートセンドが無効になります。 &lt;hr&gt;詳細は &lt;a href="https://docs.dash.org/en/latest/wallets/dashcore/privatesend-instantsend.html"&gt;プライベートセンドドキュメンテーション&lt;/a&gt;参照.         </translation>
     </message>
 </context>
 <context>
@@ -1283,7 +1283,7 @@
         <translation>この設定は閾値として機能し、この量に達するとプライベートセンドが無効になります。</translation>
     </message>
     <message>
-        <source>Automatically open the Dash Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the HelpTheHomeless client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>自動的にルーターのDash Core クライアントポートを開放します。これはルーターがUPnP機能をサポートしておりUPnP機能が有効な場合にのみ機能します。</translation>
     </message>
     <message>
@@ -1616,8 +1616,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>金額とラウンド</translation>
     </message>
     <message>
-        <source>0 DASH / 0 Rounds</source>
-        <translation>0 DASH / 0 ラウンド</translation>
+        <source>0 HTH / 0 Rounds</source>
+        <translation>0 HTH / 0 ラウンド</translation>
     </message>
     <message>
         <source>Submitted Denom:</source>
@@ -3709,7 +3709,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>送金</translation>
     </message>
     <message>
-        <source>InstantSend doesn't support sending values that high yet. Transactions are currently limited to %1 DASH.</source>
+        <source>InstantSend doesn't support sending values that high yet. Transactions are currently limited to %1 HTH.</source>
         <translation>インスタントセンドには現在送金できる上限があり、トランザクションは %1 DASHに限定されています。</translation>
     </message>
     <message>
@@ -4395,7 +4395,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>&lt;category&gt; が与えられなかった場合や &lt;category&gt; = 1 の場合には、すべてのデバッグ情報が出力されます。</translation>
     </message>
     <message>
-        <source>InstantSend doesn't support sending values that high yet. Transactions are currently limited to %1 DASH.</source>
+        <source>InstantSend doesn't support sending values that high yet. Transactions are currently limited to %1 HTH.</source>
         <translation>インスタントセンドはこのような高額の送金をサポートしていません。トランザクションは現在%1 DASHに限定されています。</translation>
     </message>
     <message>
@@ -4831,7 +4831,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>RPCサーバのオプション：</translation>
     </message>
     <message>
-        <source>Dash Core</source>
+        <source>HelpTheHomeless</source>
         <translation>Dashコア</translation>
     </message>
     <message>
@@ -5035,8 +5035,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>-sporkaddrに指定された無効なスポークアドレスI</translation>
     </message>
     <message>
-        <source>Keep N DASH anonymized (%u-%u, default: %u)</source>
-        <translation>匿名化された N DASH を保持 (%u-%u, 初期設定: %u)</translation>
+        <source>Keep N HTH anonymized (%u-%u, default: %u)</source>
+        <translation>匿名化された N HTH を保持 (%u-%u, 初期設定: %u)</translation>
     </message>
     <message>
         <source>Loading P2P addresses...</source>

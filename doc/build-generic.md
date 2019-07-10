@@ -1,6 +1,6 @@
 GENERIC BUILD NOTES
 ====================
-Some notes on how to build Dash Core based on the [depends](../depends/README.md) build system.
+Some notes on how to build HelpTheHomeless based on the [depends](../depends/README.md) build system.
 
 Note on old build instructions
 ------------------------------
@@ -10,7 +10,7 @@ is supported today.
 
 Required build tools and environment
 ------------------------------------
-Building the dependencies and Dash Core requires some essential build tools to be installed before. Please see
+Building the dependencies and HelpTheHomeless requires some essential build tools to be installed before. Please see
 [build-unix](build-unix.md), [build-osx](build-osx.md) and [build-windows](build-windows.md) for details.
 
 Building dependencies
@@ -24,7 +24,7 @@ $ make -j4 # Choose a good -j value, depending on the number of CPU cores availa
 $ cd ..
 ```
 
-This will download and build all dependencies required to build Dash Core. Caching of build results will ensure that only
+This will download and build all dependencies required to build HelpTheHomeless. Caching of build results will ensure that only
 the packages are rebuilt which have changed since the last depends build.
 
 It is required to re-run the above commands from time to time when dependencies have been updated or added. If this is
@@ -34,7 +34,7 @@ Please read the [depends](../depends/README.md) documentation for more details o
 options. If no host is specified (as in the above example) when calling `make`, the depends system will default to your
 local host system. 
 
-Building Dash Core
+Building HelpTheHomeless
 ---------------------
 
 ```bash
@@ -62,7 +62,7 @@ If you want to build for the same host but different distro, add `--enable-glibc
 ccache
 ------
 The depends system also contains [ccache](https://ccache.samba.org/), which caches build results on source->object
-level. `./configure` of Dash Core will autodetect the presence of ccache and enable use of it. To disable ccache, use
+level. `./configure` of HelpTheHomeless will autodetect the presence of ccache and enable use of it. To disable ccache, use
 `./configure --prefix=<prefix> --disable-ccache`.
 
 The default maximum cache size is 5G, which might not be enough to cache multiple builds when switching Git branches

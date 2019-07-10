@@ -57,7 +57,7 @@ public:
      */
     enum Unit
     {
-        DASH,
+        HTH,
         mDASH,
         uDASH,
         duffs
