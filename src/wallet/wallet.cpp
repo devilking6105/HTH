@@ -51,7 +51,7 @@ CFeeRate payTxFee(DEFAULT_TRANSACTION_FEE);
 unsigned int nTxConfirmTarget = DEFAULT_TX_CONFIRM_TARGET;
 bool bSpendZeroConfChange = DEFAULT_SPEND_ZEROCONF_CHANGE;
 bool bBIP69Enabled = true;
-CAmount collateralAmount = 2500000;
+CAmount collateralAmount = 1000000;
 
 const char * DEFAULT_WALLET_DAT = "wallet.dat";
 
