@@ -15,7 +15,8 @@ include_directories(
         src/qt/forms
         src/leveldb/include
         src/univalue/include
-)
+        )
+include_directories(${Protobuf_INCLUDE_DIRS})
 
 if(UNIX AND NOT APPLE)
     set(DEPENDS_PREFIX depends/x86_64-pc-linux-gnu)
