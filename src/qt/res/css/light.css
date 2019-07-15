@@ -933,7 +933,7 @@ QWidget .QFrame#framePrivateSend .QLabel#labelPrivateSendHeader { /* PrivateSend
 qproperty-alignment: 'AlignVCenter | AlignCenter';
 max-width: 421px;
 min-width: 421px;
-background-color: #34bcaa;opacity:0.4;
+background-color: #34bcaa; opacity:0.2;
 color: #debf12;
 margin-right: 5px;
 padding-right: 5px;
