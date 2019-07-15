@@ -128,9 +128,8 @@
              <item>
               <widget class="QLabel" name="infoText">
                <property name="text">
-                <font color="#34bcaa">
                  <string>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the HelpTheHomeless network, as detailed below.</string>
-                </font>
+                
                </property>
                <property name="textFormat">
                 <enum>Qt::RichText</enum>
@@ -149,9 +148,9 @@
                 </font>
                </property>
                <property name="text">
-                <font color="#34bcaa">
+                
                  <string>Attempting to spend Dash that are affected by not-yet-displayed transactions will not be accepted by the network.</string>
-                </font>
+               
                </property>
                <property name="textFormat">
                 <enum>Qt::RichText</enum>
