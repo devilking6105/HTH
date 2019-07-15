@@ -997,13 +997,14 @@ width:1px;
 QWidget .QFrame#framePrivateSend #privateSendFormLayoutWidget .QLabel#labelAnonymizedText { /* PrivateSend Balance Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
-background-color:#F8F6F6;
+background-color: transparent;
+font-color: #debf12;
 margin-right:5px;
 padding-right:5px;
 }
 
 QWidget .QFrame#framePrivateSend #privateSendFormLayoutWidget .QLabel#labelAnonymized { /* PrivateSend Balance */
-
+font-color: #34bcaa;
 }
 
 QWidget .QFrame#framePrivateSend #privateSendFormLayoutWidget .QLabel#labelAmountAndRoundsText { /* PrivateSend Amount and Rounds Label */
