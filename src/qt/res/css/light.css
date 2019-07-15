@@ -794,6 +794,7 @@ min-width:490px;
 QWidget .QFrame#frame > .QLabel {
 min-width:190px;
 font-weight:normal;
+font-color: #debf12 !important;
 min-height:30px;
 }
 
