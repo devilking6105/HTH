@@ -1135,7 +1135,7 @@ background-repeat:none;
 
 QWidget .QFrame#frame_2 .QLabel#label_4 { /* Recent Transactions Label */
 min-width:180px;
-color:#999;
+color: #debf12;
 margin-left:67px;
 margin-top:83px;
 margin-right:5px;
@@ -1156,6 +1156,7 @@ min-height:16px;
 
 QWidget .QFrame#frame_2 QListView { /* Transaction List */
 font-weight:normal;
+font-color: #34bcaa;
 font-size:12px;
 max-width:369px;
 margin-top:12px;
@@ -1166,7 +1167,7 @@ margin-left:0px; /* CSS Voodoo - set to -66px to hide default transaction icons 
 
 QWidget#bgWidget { /* The 'frame' overlaying the overview-page */
     background:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: .01 #f6f6f6, stop: .1 rgba(250, 250, 250, 128), stop: .95 rgba(250, 250, 250, 255), stop: 1 #ebebeb);
-    color:#616161;
+    color:#34bcaa;
     padding-left:10px;
     padding-right:10px;
 }
@@ -1176,6 +1177,7 @@ width:64px;
 height:64px;
 padding:5px;
 background-color:transparent;
+color: #34bcaa;
 }
 
 QWidget#contentWidget { /* The actual content with the text/buttons/etc... */
