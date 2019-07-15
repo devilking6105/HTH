@@ -207,7 +207,7 @@
             <item row="5" column="0">
              <widget class="QLabel" name="labelTotalText">
               <property name="text">
-               <string>Total:</string>
+                <font color= "#debf12"><string>Total:</string> </font color>
               </property>
              </widget>
             </item>
@@ -376,14 +376,14 @@
             <item row="2" column="0">
              <widget class="QLabel" name="labelPendingText">
               <property name="text">
-               <string>Pending:</string>
-              </property>
+                <font color= "#debf12"><string>Pending:</string> </font color>
+                </property>
              </widget>
             </item>
             <item row="0" column="1">
              <widget class="QLabel" name="labelSpendable">
               <property name="text">
-               <string>Spendable:</string>
+               <font color= "#debf12"><string>Spendable:</string> </font color>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
