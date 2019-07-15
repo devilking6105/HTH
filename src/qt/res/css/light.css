@@ -1132,7 +1132,7 @@ background-repeat:none;
 
 QWidget .QFrame#frame_2 .QLabel#label_4 { /* Recent Transactions Label */
 min-width:180px;
-color:#999;
+color:#debf12;
 margin-left:67px;
 margin-top:83px;
 margin-right:5px;
@@ -1153,6 +1153,7 @@ min-height:16px;
 
 QWidget .QFrame#frame_2 QListView { /* Transaction List */
 font-weight:normal;
+font-color: #debf12 !important;
 font-size:12px;
 max-width:369px;
 margin-top:12px;
