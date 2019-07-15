@@ -855,7 +855,7 @@ QWidget .QFrame#frame .QLabel#labelPendingText { /* Pending Balance Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
 font-size:12px;
-background-color:#transparent;  /* Originally #F8F6F6 */
+background-color: transparent;  /* Originally #F8F6F6 */
 font-color: #debf12 !important;    
 margin-right:5px;
 padding-right:5px;
