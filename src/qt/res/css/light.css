@@ -802,7 +802,7 @@ QWidget .QFrame#frame .QLabel#label_5 { /* Wallet Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
 background-color:transparent;
-color: #debf12;  /* Originally #f4f4f5 */
+font-color: #debf12;  /* Originally #f4f4f5 */
 margin-right:5px;
 padding-right:5px;
 }
@@ -830,7 +830,7 @@ QWidget .QFrame#frame .QLabel#labelBalanceText { /* Available Balance Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
 background-color: transparent; /* Originally #1c75bc */
-color:#debf12;
+font-color:#debf12;
 margin-right:5px;
 padding-right:5px;
 font-size:14px;
@@ -841,7 +841,7 @@ min-height:35px;
 QWidget .QFrame#frame .QLabel#labelBalance { /* Available Balance */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 font-size:16px;
-color: #34bcaa; /* Originally #1c75bc */
+font-color: #34bcaa; /* Originally #1c75bc */
 margin-left:0px;
 font-weight: bold;
 }
