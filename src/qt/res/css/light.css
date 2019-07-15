@@ -794,7 +794,6 @@ min-width:490px;
 QWidget .QFrame#frame > .QLabel {
 min-width:190px;
 font-weight:normal;
-font-color: #debf12;
 min-height:30px;
 }
 
@@ -830,7 +829,7 @@ QWidget .QFrame#frame .QLabel#labelBalanceText { /* Available Balance Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
 background-color: transparent; /* Originally #1c75bc */
-font-color:#debf12;
+font-color: #debf12;
 margin-right:5px;
 padding-right:5px;
 font-size:14px;
