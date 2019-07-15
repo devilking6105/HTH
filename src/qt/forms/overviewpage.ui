@@ -63,7 +63,7 @@
                </font>
               </property>
               <property name="text">
-               <string>Balances</string>
+               <string>Balances:</string>
               </property>
              </widget>
             </item>
