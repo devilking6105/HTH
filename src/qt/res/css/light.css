@@ -801,7 +801,7 @@ QWidget .QFrame#frame .QLabel#label_5 { /* Wallet Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
 background-color:transparent;
-color:#f4f4f5;
+color: #debf12;
 margin-right:5px;
 padding-right:5px;
 }
@@ -826,8 +826,8 @@ margin-left:16px;
 QWidget .QFrame#frame .QLabel#labelBalanceText { /* Available Balance Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
-background-color:#1c75bc;
-color:#ffffff;
+background-color: transparent;
+color: #debf12;
 margin-right:5px;
 padding-right:5px;
 font-size:14px;
@@ -838,7 +838,7 @@ min-height:35px;
 QWidget .QFrame#frame .QLabel#labelBalance { /* Available Balance */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 font-size:16px;
-color:#1c75bc;
+color: #debf12;
 margin-left:0px;
     font-weight: bold;
 }
@@ -853,7 +853,8 @@ QWidget .QFrame#frame .QLabel#labelPendingText { /* Pending Balance Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
 font-size:12px;
-background-color:#F8F6F6;
+background-color: transparent;
+font-color-: #debf12;    
 margin-right:5px;
 padding-right:5px;
 }
@@ -874,7 +875,8 @@ QWidget .QFrame#frame .QLabel#labelImmatureText { /* Immature Balance Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
 font-size:12px;
-background-color:#F8F6F6;
+background-color: transparent;
+font-color: #debf12;    
 margin-right:5px;
 padding-right:5px;
 }
@@ -895,7 +897,8 @@ QWidget .QFrame#frame .QLabel#labelTotalText { /* Total Balance Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
 font-size:12px;
-background-color:#F8F6F6;
+background-color: transparent;
+font-color: #debf12;    
 margin-right:5px;
 padding-right:5px;
 }
