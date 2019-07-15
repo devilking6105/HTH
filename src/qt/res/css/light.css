@@ -801,7 +801,7 @@ QWidget .QFrame#frame .QLabel#label_5 { /* Wallet Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
 background-color:transparent;
-color:#f4f4f5;
+color: #debf12;  /* Originally #f4f4f5 */
 margin-right:5px;
 padding-right:5px;
 }
@@ -814,12 +814,14 @@ margin-left:3px;
 QWidget .QFrame#frame .QLabel#labelSpendable { /* Spendable Header */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 font-size:12px;
+font-color: #debf12 !important;
 margin-left:18px;
 }
 
 QWidget .QFrame#frame .QLabel#labelWatchonly { /* Watch-only Header */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 font-size:12px;
+font-color: #debf12 !important;
 margin-left:16px;
 }
 
