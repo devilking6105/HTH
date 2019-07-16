@@ -5,6 +5,7 @@
 
 #include "overviewpage.h"
 #include "ui_overviewpage.h"
+#include "ui_treewidgetbutton.h"
 
 #include "bitcoinunits.h"
 #include "clientmodel.h"
