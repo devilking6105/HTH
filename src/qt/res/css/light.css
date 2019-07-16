@@ -2,8 +2,8 @@ WalletFrame {
 border-image: url(':/images/light/drkblue_walletFrame_bg') 0 0 0 0 stretch stretch;
 border-top:0px solid #000;
 margin:0;
-padding-top:250px;  /* Originally 20px */
-padding-bottom: 250px;  /* Originally 20px */
+padding-top:100px;  /* Originally 20px */
+padding-bottom: 100px;  /* Originally 20px */
 }
 
 QStatusBar {
