@@ -296,17 +296,20 @@ void OverviewPage::setWalletModel(WalletModel *model)
         connect(model->getOptionsModel(), SIGNAL(privateSendRoundsChanged()), this, SLOT(updatePrivateSendProgress()));
         connect(model->getOptionsModel(), SIGNAL(privateSentAmountChanged()), this, SLOT(updatePrivateSendProgress()));
         connect(model->getOptionsModel(), SIGNAL(advancedPSUIChanged(bool)), this, SLOT(updateAdvancedPSUI(bool)));
-
+        connect(ui->hthCoinInfo, SIGNAL(clicked()), this, SLOT(hthCoinInfo()));  /* Added */
         connect(ui->privateSendAuto, SIGNAL(clicked()), this, SLOT(privateSendAuto()));
         connect(ui->privateSendReset, SIGNAL(clicked()), this, SLOT(privateSendReset()));
         connect(ui->privateSendInfo, SIGNAL(clicked()), this, SLOT(privateSendInfo()));
+        
         connect(ui->togglePrivateSend, SIGNAL(clicked()), this, SLOT(togglePrivateSend()));
+        
 
         // privatesend buttons will not react to spacebar must be clicked on
         ui->privateSendAuto->setFocusPolicy(Qt::NoFocus);
         ui->privateSendReset->setFocusPolicy(Qt::NoFocus);
         ui->privateSendInfo->setFocusPolicy(Qt::NoFocus);
         ui->togglePrivateSend->setFocusPolicy(Qt::NoFocus);
+        ui->hthCoinInfo->setFocusPolicy(Qt::NoFocus);
     }
 }
 
