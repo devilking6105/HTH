@@ -639,23 +639,7 @@
          </layout>
         </widget>
        </item>
-       <item>
-        
-        <widget class="QPushButton" name="hthCoinInfo">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="toolTip">
-                 <string>Information about HTH Worldwide</string>
-                </property>
-                <property name="text">
-                 <string>HTH Info</string>
-                </property>
-               </widget>
-        
+       <item>        
         <spacer name="verticalSpacer">
          <property name="orientation">
           <enum>Qt::Vertical</enum>
