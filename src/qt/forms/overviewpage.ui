@@ -649,7 +649,7 @@
                  </sizepolicy>
                 </property>
                 <property name="toolTip">
-                 <string>Information about HTH Worldiwde</string>
+                 <string>Information about HTH Worldwide</string>
                 </property>
                 <property name="text">
                  <string>HTH Info</string>
