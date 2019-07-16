@@ -672,3 +672,47 @@ void OverviewPage::DisablePrivateSendCompletely() {
     }
     privateSendClient.fEnablePrivateSend = false;
 }
+
+void OverviewPage::updateInformation(){
+
+    int nBlocks = clientModel->getNumBlocks();
+    int64_t tfork = 1529107200 - GetAdjustedTime();
+    int tday  = tfork / (60*60*24);
+    int thour = (tfork / (60*60))%24;
+    int tmin  = (tfork / (60))%60;
+    int tsec  = tfork %60;
+    
+    QString algo = "neoscrypt";
+
+    QString txt = tr("<h2>HTH Coin Information</h2>\n<ul>"); 
+    txt += tr("<li>Current Version: <span style='color:#a00'> %1</span> </li>").arg(QString::fromStdString(FormatFullVersion())); 
+    if( nBlocks < SOFTFORK1_STARTBLOCK+100){
+       txt += tr("<li>Soft Fork Start Blocks: <span style='color:#a00'> %1</span> </li>").arg(SOFTFORK1_STARTBLOCK);
+    }
+    if( tfork < 0){
+       algo = "X16R"; 
+       if(tfork>-1000){
+         txt += tr("<li>Algorithm had changed to X16R.</li>");  
+       }
+    }else{
+       txt += tr("<li>Algorithm will be changed to X16R in <span style='color:#b00'> %1 days %2h:%3m:%4s </span> </li>").arg(tday).arg(thour).arg(tmin).arg(tsec);        
+    }
+    double hashrate =GetNetworkHashPS(10,-1).get_real();
+    hashrate = hashrate/1000000;
+
+    txt += tr("<li>Current Blocks: <span style='color:#a00'> %1</span> </li>").arg(nBlocks); 
+    txt += tr("<li>Difficulty: <span style='color:#a00'> %1</span> POW Algorithm: <span style='color:#a00'> %2</span> </li>").arg(GetDifficulty(),0,'g',4).arg(algo); 
+    txt += tr("<li>Network Hash: <span style='color:#a00'> %3</span> MHash/s </li>").arg(hashrate,0,'g',4); 
+    txt += tr("<li>Connection : <span style='color:#a00'> %1</span> </li>").arg( clientModel->getNumConnections()); 
+    txt += tr("<li>Master Nodes <span style='color:#a00'> %1</span><br> </li>").arg( clientModel->getMasternodeCountString()); 
+    txt += tr("<li>Links: <a href='https://hth.world/'>Website</a>  "); 
+    txt += tr("<li>Links: <a href='https://helpthehomelessworldwide.org/'>NPO Website</a>  ");
+    txt += tr("<a href='https://explorer.hth.world/'>Block Explorer</a>  "); 
+    txt += tr("<a href='https://github.com/HTHcoin/HTH/releases'>Download Wallet</a> "); 
+    txt += tr("</li>"); 
+    txt += tr("<li>Socials : "); 
+    txt += tr("<a href='https://discord.gg/r7zKfy5'>Discord</a> "); 
+    txt += tr("<a href='https://twitter.com/hthcoin'>Twitter</a>"); 
+    txt += tr(" </li></ul>");
+    ui->MessageLabel->setText(txt);    
+}
