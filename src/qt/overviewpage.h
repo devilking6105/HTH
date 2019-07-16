@@ -82,6 +82,6 @@ private Q_SLOTS:
     void handleOutOfSyncWarningClicks();
 };
 
-    void updateInformation();
+   
 
 #endif // BITCOIN_QT_OVERVIEWPAGE_H
