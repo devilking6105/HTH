@@ -672,24 +672,3 @@ void OverviewPage::DisablePrivateSendCompletely() {
     }
     privateSendClient.fEnablePrivateSend = false;
 }
-
-void OverviewPage::updateInformation(){
-
-    QString txt = tr("<h2>HTH Coin Information</h2>\n<ul>"); 
-    txt += tr("<li>Current Version: <span style='color:#a00'> %1</span> </li>").arg(QString::fromStdString(FormatFullVersion())); 
-    txt += tr("<li>Current Blocks: <span style='color:#a00'> %1</span> </li>").arg(nBlocks); 
-    txt += tr("<li>Difficulty: <span style='color:#a00'> %1</span> X16R POW Algorithm: <span style='color:#a00'> %2</span> </li>").arg(GetDifficulty(),0,'g',4).arg(algo); 
-    txt += tr("<li>Network Hash: <span style='color:#a00'> %3</span> Hash/s </li>").arg(hashrate,0,'g',4); 
-    txt += tr("<li>Connection : <span style='color:#a00'> %1</span> </li>").arg( clientModel->getNumConnections()); 
-    txt += tr("<li>Master Nodes <span style='color:#a00'> %1</span><br> </li>").arg( clientModel->getMasternodeCountString()); 
-    txt += tr("<li>Links: <a href='https://hth.world/'>Website</a>  "); 
-    txt += tr("<li>Links: <a href='https://helpthehomelessworldwide.org/'>NPO Website</a>  ");
-    txt += tr("<a href='https://explorer.hth.world/'>Block Explorer</a>  "); 
-    txt += tr("<a href='https://github.com/HTHcoin/HTH/releases'>Download Wallet</a> "); 
-    txt += tr("</li>"); 
-    txt += tr("<li>Socials : "); 
-    txt += tr("<a href='https://discord.gg/r7zKfy5'>Discord</a> "); 
-    txt += tr("<a href='https://twitter.com/hthcoin'>Twitter</a>"); 
-    txt += tr(" </li></ul>");
-    ui->MessageLabel->setText(txt);    
-}
