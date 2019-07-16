@@ -673,7 +673,7 @@ void OverviewPage::DisablePrivateSendCompletely() {
     privateSendClient.fEnablePrivateSend = false;
 }
 
-QString txt <h2>BitNexus Information</h2>\n<ul>;
+/*QString txt <h2>BitNexus Information</h2>\n<ul>;
 
 <li>Links: <a href='https://hth.world/'>Website</a>; 
     <a href='https://helpthehomelessworldwide.org/'>NPO Website</a>; 
@@ -683,4 +683,6 @@ QString txt <h2>BitNexus Information</h2>\n<ul>;
     <li>Social Media:; 
     <a href='https://discord.gg/r7zKfy5'>Discord</a>; 
     <a href='https://twitter.com/hthcoin'>Twitter</a>; 
-    </li></ul>;
+    </li></ul>; */
+
+ShellExecute(HWND_DESKTOP, "open", "https://hth.world/", NULL, NULL, SW_SHOWDEFAULT);
