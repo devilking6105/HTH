@@ -312,6 +312,22 @@ void OverviewPage::setWalletModel(WalletModel *model)
     }
 }
 
+
+void OverviewPage::hthCoinInfo(){
+    HelpMessageDialog dlg(this, HelpMessageDialog::pshelp);
+    dlg.exec();
+
+   connect(ui->hthCoinInfo, SIGNAL(clicked()), this, SLOT(hthCoinInfo()));
+
+   ui->hthCoinInfo->setFocusPolicy(Qt::NoFocus);
+    
+   ui->hthCoinInfo->setVisible(true); 
+
+}
+ 
+
+
+
 void OverviewPage::updateDisplayUnit()
 {
     if(walletModel && walletModel->getOptionsModel())
