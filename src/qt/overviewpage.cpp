@@ -296,7 +296,6 @@ void OverviewPage::setWalletModel(WalletModel *model)
         connect(model->getOptionsModel(), SIGNAL(privateSendRoundsChanged()), this, SLOT(updatePrivateSendProgress()));
         connect(model->getOptionsModel(), SIGNAL(privateSentAmountChanged()), this, SLOT(updatePrivateSendProgress()));
         connect(model->getOptionsModel(), SIGNAL(advancedPSUIChanged(bool)), this, SLOT(updateAdvancedPSUI(bool)));
-        connect(ui->hthCoinInfo, SIGNAL(clicked()), this, SLOT(hthCoinInfo()));  /* Added */
         connect(ui->privateSendAuto, SIGNAL(clicked()), this, SLOT(privateSendAuto()));
         connect(ui->privateSendReset, SIGNAL(clicked()), this, SLOT(privateSendReset()));
         connect(ui->privateSendInfo, SIGNAL(clicked()), this, SLOT(privateSendInfo()));
@@ -309,7 +308,7 @@ void OverviewPage::setWalletModel(WalletModel *model)
         ui->privateSendReset->setFocusPolicy(Qt::NoFocus);
         ui->privateSendInfo->setFocusPolicy(Qt::NoFocus);
         ui->togglePrivateSend->setFocusPolicy(Qt::NoFocus);
-        ui->hthCoinInfo->setFocusPolicy(Qt::NoFocus);  /* Added */
+     
     }
 }
 
@@ -465,7 +464,7 @@ void OverviewPage::updateAdvancedPSUI(bool fShowAdvancedPSUI) {
     ui->privateSendReset->setVisible(fShowAdvancedPSUI);
     ui->privateSendInfo->setVisible(true);
     ui->labelPrivateSendLastMessage->setVisible(fShowAdvancedPSUI);
-    ui->hthCoinInfo->setFocusPolicy(Qt::NoFocus);  /* Added */
+    
 }
 
 void OverviewPage::privateSendStatus()
@@ -598,11 +597,6 @@ void OverviewPage::privateSendInfo(){
     HelpMessageDialog dlg(this, HelpMessageDialog::pshelp);
     dlg.exec();
 }
-
-void OverviewPage::hthCoinInfo(){    /* Added */
-    HelpMessageDialog dlg(this, HelpMessageDialog::pshelp);      
-    dlg.exec();
-}    /* Added */
 
 void OverviewPage::togglePrivateSend(){
     QSettings settings;
