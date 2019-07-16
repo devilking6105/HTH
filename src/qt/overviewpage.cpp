@@ -672,3 +672,15 @@ void OverviewPage::DisablePrivateSendCompletely() {
     }
     privateSendClient.fEnablePrivateSend = false;
 }
+
+QString txt <h2>BitNexus Information</h2>\n<ul>;
+
+<li>Links: <a href='https://hth.world/'>Website</a>; 
+    <a href='https://helpthehomelessworldwide.org/'>NPO Website</a>; 
+    <a href='https://explorer.hth.world/'>Block Explorer</a>; 
+    <a href='https://github.com/HTHCoin/HTH/releases'>Download Wallet</a>; 
+    </li>; 
+    <li>Social Media:; 
+    <a href='https://discord.gg/r7zKfy5'>Discord</a>; 
+    <a href='https://twitter.com/hthcoin'>Twitter</a>; 
+    </li></ul>;
