@@ -73,7 +73,6 @@ private Q_SLOTS:
     void privateSendAuto();
     void privateSendReset();
     void privateSendInfo();
-    void hthCoinInfo();  /* Added */
     void updateDisplayUnit();
     void updatePrivateSendProgress();
     void updateAdvancedPSUI(bool fShowAdvancedPSUI);
