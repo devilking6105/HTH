@@ -17,6 +17,7 @@
 #include "transactiontablemodel.h"
 #include "utilitydialog.h"
 #include "walletmodel.h"
+#include "treewidgetbutton.cpp"
 
 #include "instantx.h"
 #include "masternode-sync.h"
