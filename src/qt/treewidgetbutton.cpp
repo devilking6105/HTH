@@ -1,5 +1,5 @@
 #include "treewidgetbutton.h"
-#include "ui_treewidgetbutton.h"
+#include "treewidgetbutton.ui"
 #include <QPushButton>
 #include <QTreeWidgetItem>
 #include <QDebug>
