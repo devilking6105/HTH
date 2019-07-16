@@ -309,7 +309,7 @@ void OverviewPage::setWalletModel(WalletModel *model)
         ui->privateSendReset->setFocusPolicy(Qt::NoFocus);
         ui->privateSendInfo->setFocusPolicy(Qt::NoFocus);
         ui->togglePrivateSend->setFocusPolicy(Qt::NoFocus);
-        ui->hthCoinInfo->setFocusPolicy(Qt::NoFocus);
+        ui->hthCoinInfo->setFocusPolicy(Qt::NoFocus);  /* Added */
     }
 }
 
@@ -465,6 +465,7 @@ void OverviewPage::updateAdvancedPSUI(bool fShowAdvancedPSUI) {
     ui->privateSendReset->setVisible(fShowAdvancedPSUI);
     ui->privateSendInfo->setVisible(true);
     ui->labelPrivateSendLastMessage->setVisible(fShowAdvancedPSUI);
+    ui->hthCoinInfo->setFocusPolicy(Qt::NoFocus);  /* Added */
 }
 
 void OverviewPage::privateSendStatus()
@@ -597,6 +598,11 @@ void OverviewPage::privateSendInfo(){
     HelpMessageDialog dlg(this, HelpMessageDialog::pshelp);
     dlg.exec();
 }
+
+void OverviewPage::hthCoinInfo(){    /* Added */
+    HelpMessageDialog dlg(this, HelpMessageDialog::pshelp);      
+    dlg.exec();
+}    /* Added */
 
 void OverviewPage::togglePrivateSend(){
     QSettings settings;
