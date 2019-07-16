@@ -641,6 +641,7 @@
        </item>
        <item>
         
+        <item>
         <widget class="QPushButton" name="hthCoinInfo">
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
