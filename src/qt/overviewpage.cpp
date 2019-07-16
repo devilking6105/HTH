@@ -5,7 +5,7 @@
 
 #include "overviewpage.h"
 #include "ui_overviewpage.h"
-#include "treewidgetbutton.ui"
+
 
 #include "bitcoinunits.h"
 #include "clientmodel.h"
@@ -18,7 +18,7 @@
 #include "transactiontablemodel.h"
 #include "utilitydialog.h"
 #include "walletmodel.h"
-#include "treewidgetbutton.cpp"
+
 
 #include "instantx.h"
 #include "masternode-sync.h"
