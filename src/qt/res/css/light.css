@@ -1131,7 +1131,7 @@ min-width:410px;
 margin-right:20px;
 margin-left:0;
 margin-top:15px;
-/* background-image: url(':/images/light/dash_logo_horizontal');  Removed for Main Background Image */  
+background-image: url(':/images/light/dash_logo_horizontal'); /* Removed for Main Background Image */  
 background-repeat:none;
 }
 
