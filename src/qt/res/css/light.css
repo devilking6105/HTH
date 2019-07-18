@@ -931,8 +931,8 @@ min-width: 421px;
 
 QWidget .QFrame#framePrivateSend .QLabel#labelPrivateSendHeader { /* PrivateSend Header */
 qproperty-alignment: 'AlignVCenter | AlignCenter';
-max-width: 421px;
-min-width: 421px;
+max-width: 221px;
+min-width: 221px;
 background-color: #000;
 color: #34bcaa;
 margin-right: 5px;
