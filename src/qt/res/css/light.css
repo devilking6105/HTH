@@ -1,5 +1,5 @@
 WalletFrame {
-border-image: url(':/images/light/traditional') 0 0 0 0 stretch stretch;
+border-image: url(':/images/light/traditional.png') 0 0 0 0 stretch stretch;
 border-top:0px solid #000;
 margin:0;
 padding-top: 20px;  /* Originally 20px */
