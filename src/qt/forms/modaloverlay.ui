@@ -149,7 +149,7 @@
                </property>
                <property name="text">
                 
-                 <string>Attempting to spend Dash that are affected by not-yet-displayed transactions will not be accepted by the network.</string>
+                 <string>Attempting to spend HTH that are affected by not-yet-displayed transactions will not be accepted by the network.</string>
                
                </property>
                <property name="textFormat">
