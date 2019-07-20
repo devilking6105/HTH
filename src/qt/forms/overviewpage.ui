@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <color name="black">#000000</color>
  <class>OverviewPage</class>
  <widget class="QWidget" name="OverviewPage">
   <property name="geometry">
@@ -71,7 +70,7 @@
             <item>
              <widget class="QLabel" name="labelWalletStatus">
               <property name="toolTip">
-              <string color="#000000"> The displayed information may be out of date. Your wallet automatically synchronizes with the HelpTheHomeless network after a connection is established, but this process has not completed yet. </string>
+              <string @color/black> The displayed information may be out of date. Your wallet automatically synchronizes with the HelpTheHomeless network after a connection is established, but this process has not completed yet. </string>
               </property>
               <property name="styleSheet">
                <string notr="true">QLabel { color: red; }</string>
