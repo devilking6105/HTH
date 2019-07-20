@@ -74,6 +74,7 @@ background-color:#F8F6F6;
 QLabel { /* Base Text Size & Color */
 font-size:12px;
 color:#fff;
+    background-color: #000; /*remove if nec*/
 }
 
 .QCheckBox { /* Checkbox Labels */
@@ -119,7 +120,7 @@ padding-bottom:5px;
 }
 
 QPushButton:hover {
-background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: .01 #000, stop: .1 #000, stop: .95 #000, stop: 1 #000);
+background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: .01 #34bcaa, stop: .1 #34bcaa, stop: .95 #34bcaa, stop: 1 #34bcaa);
 }
 
 QPushButton:focus {
@@ -410,6 +411,7 @@ background-image: url(':/images/light/drkblue_rightArrow_small');
 
 QDialog .QTabWidget {
 border-bottom:1px solid #333;
+background-color: #000; /* remove if nec */
 }
 
 QDialog .QTabWidget::pane {
