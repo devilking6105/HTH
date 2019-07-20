@@ -1062,8 +1062,8 @@ outline:none;
 QWidget .QFrame#framePrivateSend .QPushButton#togglePrivateSend { /* Start PrivateSend Mixing */
 min-height: 40px;
 font-size:15px;
-font-weight:normal;
-color:#debf12;
+font-weight:bold;
+color:#000;
 padding-left:10px;
 padding-right:10px;
 padding-top:5px;
@@ -1117,6 +1117,7 @@ color:#000;
 min-height:25px;
 font-size:9px;
 padding:0px;
+font-weight: bold;
 }
 
 QWidget .QFrame#framePrivateSend .QPushButton#privateSendInfo:hover {
