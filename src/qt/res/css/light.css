@@ -7,16 +7,16 @@ padding-bottom: 50px;  /* Originally 20px */
 }
 
 QStatusBar {
-background-color:#ffffff;
+background-color:#000;
 }
 
 .QFrame {
 background-color:transparent;
-border:0px solid #fff;
+border:0px solid #000;
 }
 
 QMenuBar {
-background-color:#fff;
+background-color:#000;
 }
 
 QMenuBar::item {
@@ -41,7 +41,7 @@ color:#333;
 }
 
 QToolBar {
-background-color:#fff;
+background-color:#000;
 border:0px solid #000;
 padding:0;
 margin:0;
