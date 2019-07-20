@@ -69,13 +69,8 @@
             </item>
             <item>
              <widget class="QLabel" name="labelWalletStatus">
-              <property name="toolTip"; name="font">
-               
-               <font>
-                <color>#000000</color>
-               </font>
-             
-              <string> The displayed information may be out of date. Your wallet automatically synchronizes with the HelpTheHomeless network after a connection is established, but this process has not completed yet. </string>
+              <property name="toolTip">                            
+              <string> The displayed information may be out of date. Your wallet automatically synchronizes with the HelpTheHomeless network after a connection is established, but this process has not completed yet. { color: black; } </string>
               </property>
               <property name="styleSheet">
                <string notr="true">QLabel { color: red; }</string>
