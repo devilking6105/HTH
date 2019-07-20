@@ -20,7 +20,7 @@ background-color:#000;
 }
 
 QMenuBar::item {
-background-color:#34bcaa;
+background-color:#000;
 color: #fff !important;
 }
 
@@ -37,7 +37,7 @@ color:#333;
 }
 
 QMenu::item:selected {
-background-color:#f2f0f0;
+background-color:#34bcaa;
 color:#333;
 }
 
