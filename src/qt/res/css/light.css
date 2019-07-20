@@ -417,7 +417,6 @@ border-bottom:1px solid #333;
 
 QDialog .QTabWidget::pane {
 border: 1px solid #d7d7d7;
-background-color: #000; /* remove if nec */
 }
 
 QDialog .QTabWidget QTabBar::tab {
@@ -756,6 +755,7 @@ background:#ff0000;
 /* Command Line Options Dialog */
 QDialog#HelpMessageDialog {
 background-color:#F8F6F6;
+color: #000 !important;
 }
 
 QDialog#HelpMessageDialog QScrollArea * {
@@ -769,6 +769,7 @@ border:0;
 /* About Dash Dialog */
 QDialog#AboutDialog {
 background-color:#F8F6F6;
+color: #000 !important;
 }
 
 QDialog#AboutDialog QLabel#label, QDialog#AboutDialog QLabel#copyrightLabel, QDialog#AboutDialog QLabel#label_2 { /* About Dash Contents */
