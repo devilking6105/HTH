@@ -1065,7 +1065,7 @@ QWidget .QFrame#framePrivateSend .QPushButton#togglePrivateSend { /* Start Priva
 min-height: 40px;
 font-size:15px;
 font-weight:bold;
-color:#000;
+color:#fff;
 padding-left:10px;
 padding-right:10px;
 padding-top:5px;
@@ -1191,7 +1191,7 @@ color: #34bcaa;
 }
 
 QWidget#contentWidget { /* The actual content with the text/buttons/etc... */
-border-image: url(':/images/light/drkblue_walletFrame_bg' !important) 0 0 0 0 stretch stretch;
+border-image: url(':/images/light/drkblue_walletFrame_bg') 0 0 0 0 stretch stretch;
 border-top:0px solid #000;
 margin:0;
 padding-top:20px;
