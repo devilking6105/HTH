@@ -78,7 +78,7 @@ color:#fff;
 }
 
 .QCheckBox { /* Checkbox Labels */
-color:#333333;
+color:#000;
 background-color:transparent;
 }
 
@@ -666,7 +666,7 @@ min-height:33px; /* base width of 25px for QLineEdit, plus padding and border */
 
 /* Options Dialog */
 QDialog#OptionsDialog {
-background-color:#F8F6F6;
+background-color:#000;
 }
 
 QDialog#OptionsDialog QValueComboBox, QDialog#OptionsDialog QSpinBox {
@@ -754,7 +754,7 @@ background:#ff0000;
 
 /* Command Line Options Dialog */
 QDialog#HelpMessageDialog {
-background-color:#F8F6F6;
+background-color:#000;
 }
 
 QDialog#HelpMessageDialog QScrollArea * {
@@ -767,7 +767,7 @@ border:0;
 
 /* About Dash Dialog */
 QDialog#AboutDialog {
-background-color:#F8F6F6;
+background-color:#000;
 }
 
 QDialog#AboutDialog QLabel#label, QDialog#AboutDialog QLabel#copyrightLabel, QDialog#AboutDialog QLabel#label_2 { /* About Dash Contents */
@@ -1187,7 +1187,7 @@ width:64px;
 height:64px;
 padding:5px;
 background-color:transparent;
-color: #f8f6f6;
+color: #fff;
 }
 
 QWidget#contentWidget { /* The actual content with the text/buttons/etc... */
