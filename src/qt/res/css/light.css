@@ -311,13 +311,13 @@ border:0px solid #000;
 }
 
 QTableView::item { /* Table Item */
-background-color:#fcfcfc;
+background-color:#000;
 font-size:12px;
 }
 
 QTableView::item:selected { /* Table Item Selected */
-background-color:#f0f0f0;
-color:#333;
+background-color:#000;
+color:#fff;
 }
 
 QScrollBar { /* Scroll Bar */
@@ -772,6 +772,7 @@ background-color:#F8F6F6;
 
 QDialog#AboutDialog QLabel#label, QDialog#AboutDialog QLabel#copyrightLabel, QDialog#AboutDialog QLabel#label_2 { /* About Dash Contents */
 margin-left:10px;
+background-color: #000; /* remove if nec */   
 }
 
 QDialog#AboutDialog QLabel#label_2 { /* Margin for About Dash text */
@@ -1045,7 +1046,8 @@ qproperty-alignment: 'AlignVCenter | AlignCenter';
 min-width: 288px;
 min-height: 43px;
 font-size:11px;
-color:#818181;
+color:#fff;
+background-color: #000; /* remove if nec */
 }
 
 /* PRIVATESEND BUTTONS */
