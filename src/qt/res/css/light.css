@@ -1114,7 +1114,7 @@ border:1px solid #9e9e9e;
 
 QWidget .QFrame#framePrivateSend .QPushButton#privateSendInfo { /* Info Button */
 background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: .01 #000, stop: .1 rgba(0,0,0), stop: .95 rgba(0,0,0), stop: 1 #000);
-border:1px solid #d2d2d2;
+border:1px solid #000;
 color:#fff;
 min-height:25px;
 font-size:9px;
@@ -1128,7 +1128,7 @@ color:#fff;
 }
 
 QWidget .QFrame#framePrivateSend .QPushButton#privateSendInfo:pressed {
-border:1px solid #9e9e9e;
+border:1px solid #000;
 }
 
 
