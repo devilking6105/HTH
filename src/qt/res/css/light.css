@@ -1644,6 +1644,7 @@ margin-bottom:2px;
 margin-right:1px;
 min-width:111px;
 text-align:center;
+color: #000 !important;
 }
 
 TransactionView QLineEdit#addressWidget { /* Address Filter */
@@ -1651,6 +1652,7 @@ margin-bottom:2px;
 margin-right:1px;
 min-width:405px;
 text-align:center;
+color: #000 !important;   
 }
 
 TransactionView QLineEdit#amountWidget { /* Amount Filter */
@@ -1658,6 +1660,7 @@ margin-bottom:2px;
 margin-right:1px;
 max-width:100px;
 text-align:center;
+color: #000 !important;   
 }
 
 TransactionView QComboBox {
@@ -1666,12 +1669,12 @@ margin-right:1px;
 }
 
 QLabel#transactionSumLabel { /* Example of setObjectName for widgets without name */
-color:#333333;
+color:#fff;
 font-weight:bold;
 }
  
 QLabel#transactionSum { /* Example of setObjectName for widgets without name */
-color:#333333;
+color:#fff;
 }
 
 /* TRANSACTION DETAIL DIALOG */
