@@ -1,6 +1,5 @@
 WalletFrame {
 border-image: url(':/images/crownium/drkblue_walletFrame_bg') 0 0 0 0 stretch stretch;
-/* background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #222222, stop: .1 #EEEEEE, stop: .9 #EEEEEE, stop: 1 #222222); */
 border-top:0px solid #000;
 margin:0;
 padding-top: 20px;  /* Originally 20px */
@@ -28,6 +27,7 @@ color: #fff !important;
 QMenuBar::item:selected {
 background-color:#34bcaa;
 color: #000 !important;
+font-weight: bold !important;
 }
 
 QMenu {
@@ -67,7 +67,7 @@ font-weight:bold;
 }
 
 QMessageBox {
-background-color:#F8F6F6;
+background-color:#000;
 }
 
 /*******************************************************/
@@ -79,7 +79,7 @@ color:#fff;
 }
 
 .QCheckBox { /* Checkbox Labels */
-color:#333333;
+color:#fff;
 background-color:transparent;
 }
 
@@ -139,7 +139,7 @@ border:1px solid #82C3E6;
 padding: 3px 5px 3px 5px;
 background:#fcfcfc;
 min-height:25px;
-color:#818181;
+color:#000;
 }
 
 QComboBox:checked {
@@ -148,7 +148,7 @@ background:#f2f2f2;
 
 QComboBox:editable {
 background: #1c75bc;
-color:#616161;
+color:#000;
 border:0px solid transparent;
 }
 
@@ -298,7 +298,7 @@ padding-bottom:2px;
 }
 
 QHeaderView::section:last {
-border-right: 0px solid #d7d7d7;
+border-right: 0px solid #000;
 }
 
 .QScrollArea {
@@ -308,17 +308,17 @@ border:0px;
 
 .QTableView { /* Table - has to be selected as a class otherwise it throws off QCalendarWidget */
 background:transparent;
-border:0px solid #fff;
+border:0px solid #000;
 }
 
 QTableView::item { /* Table Item */
-background-color:#fcfcfc;
+background-color:#000;
 font-size:12px;
 }
 
 QTableView::item:selected { /* Table Item Selected */
-background-color:#f0f0f0;
-color:#333;
+background-color:#000;
+color:#fff;
 }
 
 QScrollBar { /* Scroll Bar */
@@ -412,40 +412,40 @@ background-image: url(':/images/light/drkblue_rightArrow_small');
 /* DIALOG BOXES */
 
 QDialog .QTabWidget {
-border-bottom:1px solid #333;
+border-bottom:1px solid #000;
 
 }
 
 QDialog .QTabWidget::pane {
-border: 1px solid #d7d7d7;
+border: 1px solid #000;
 }
 
 QDialog .QTabWidget QTabBar::tab {
-background-color:#f2f0f0;
-color:#333;
+background-color:#000;
+color:#fff;
 padding-left:10px;
 padding-right:10px;
 padding-top:5px;
 padding-bottom:5px;
-border-top: 1px solid #d7d7d7;
+border-top: 1px solid #000;
 }
 
 QDialog .QTabWidget QTabBar::tab:first {
-border-left: 1px solid #d7d7d7;
+border-left: 1px solid #000;
 }
 
 QDialog .QTabWidget QTabBar::tab:last {
-border-right: 1px solid #d7d7d7;
+border-right: 1px solid #000;
 }
 
 QDialog .QTabWidget QTabBar::tab:selected, QDialog .QTabWidget QTabBar::tab:hover {
-background-color:#ffffff;
-color:#333;
+background-color:#000;
+color:#fff;
 }
 
 QDialog .QTabWidget .QWidget {
-background-color:#fff;
-color:#333;
+background-color:#000;
+color:#fff;
 }
 
 QDialog .QTabWidget .QWidget QAbstractSpinBox {
@@ -667,7 +667,7 @@ min-height:33px; /* base width of 25px for QLineEdit, plus padding and border */
 
 /* Options Dialog */
 QDialog#OptionsDialog {
-background-color:#F8F6F6;
+background-color:#000;
 }
 
 QDialog#OptionsDialog QValueComboBox, QDialog#OptionsDialog QSpinBox {
@@ -755,12 +755,11 @@ background:#ff0000;
 
 /* Command Line Options Dialog */
 QDialog#HelpMessageDialog {
-background-color:#F8F6F6;
-color: #000 !important;
+background-color:#000;
 }
 
 QDialog#HelpMessageDialog QScrollArea * {
-background-color:#ffffff;
+background-color:#000;
 }
 
 QDialog#HelpMessageDialog QScrollBar:vertical, QDialog#HelpMessageDialog QScrollBar:horizontal {
@@ -769,8 +768,7 @@ border:0;
 
 /* About Dash Dialog */
 QDialog#AboutDialog {
-background-color:#F8F6F6;
-color: #000 !important;
+background-color:#000;
 }
 
 QDialog#AboutDialog QLabel#label, QDialog#AboutDialog QLabel#copyrightLabel, QDialog#AboutDialog QLabel#label_2 { /* About Dash Contents */
@@ -1048,7 +1046,8 @@ qproperty-alignment: 'AlignVCenter | AlignCenter';
 min-width: 288px;
 min-height: 43px;
 font-size:11px;
-color:#818181;
+color:#fff;
+background-color: #000;
 }
 
 /* PRIVATESEND BUTTONS */
@@ -1192,7 +1191,7 @@ color: #34bcaa;
 }
 
 QWidget#contentWidget { /* The actual content with the text/buttons/etc... */
-border-image: url(':/images/light/modal_BG' !important) 0 0 0 0 stretch stretch;
+border-image: url(':/images/crownium/drkblue_walletFrame_bg') 0 0 0 0 stretch stretch;
 border-top:0px solid #000;
 margin:0;
 padding-top:20px;
@@ -1666,12 +1665,12 @@ margin-right:1px;
 }
 
 QLabel#transactionSumLabel { /* Example of setObjectName for widgets without name */
-color:#333333;
+color:#debf12;
 font-weight:bold;
 }
  
 QLabel#transactionSum { /* Example of setObjectName for widgets without name */
-color:#333333;
+color:#34bcaa;
 }
 
 /* TRANSACTION DETAIL DIALOG */
