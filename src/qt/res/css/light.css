@@ -1,6 +1,7 @@
 WalletFrame {
 border-image: url(':/images/light/drkblue_walletFrame_bg') 0 0 0 0 stretch stretch;
 border-top:0px solid #000;
+color: #fff;
 margin:0;
 padding-top: 20px;  /* Originally 20px */
 padding-bottom: 50px;  /* Originally 20px */
@@ -14,6 +15,7 @@ color: #fff;
 .QFrame {
 background-color:transparent;
 border:0px solid #000;
+color: #fff;
 }
 
 QMenuBar {
@@ -81,7 +83,7 @@ color:#fff;
 
 .QCheckBox { /* Checkbox Labels */
 color:#fff;
-background-color:transparent;
+background-color: #000;
 }
 
 .QCheckBox:hover {
@@ -237,6 +239,7 @@ image:url(':/images/light/drkblue_downArrow_small');
 
 QCheckBox {
 spacing: 5px;
+color: #fff; /* remove if nec */
 }
 
 QCheckBox::indicator {
@@ -279,7 +282,8 @@ image:url(':/images/light/checked');
 /*******************************************************/
 
 QHeaderView { /* Table Header */
-background-color:transparent;
+background-color: #000;
+color: #fff;
 }
 
 QHeaderView::section { /* Table Header Sections */
@@ -300,6 +304,7 @@ padding-bottom:2px;
 
 QHeaderView::section:last {
 border-right: 0px solid #000;
+color: #fff; /* remove if nec */
 }
 
 .QScrollArea {
@@ -308,8 +313,9 @@ border:0px;
 }
 
 .QTableView { /* Table - has to be selected as a class otherwise it throws off QCalendarWidget */
-background:transparent;
+background: #000;
 border:0px solid #000;
+color: #fff; /* remove if nec */
 }
 
 QTableView::item { /* Table Item */
