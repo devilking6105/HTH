@@ -434,11 +434,9 @@ background-color: #000;
 
 QDialog .QTabWidget::pane {
 border: 1px solid #000;
-background-color: #000;
 }
 
 QDialog .QTabWidget QTabBar::tab {
-background-color:#000;
 color:#fff;
 padding-left:10px;
 padding-right:10px;
@@ -491,12 +489,12 @@ outline: 0;
 
 /* Dialog: Open URI */
 QDialog#OpenURIDialog {
-background-color: #000;
+
 }
 
 QDialog#OpenURIDialog QLabel#label { /* URI Label */
 font-weight:bold;
-background-color: #000;
+
 
 QDialog#OpenURIDialog QPushButton#selectFileButton { /* ... Button */
 background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: .01 #000, stop: .1 rgba(0,0,0), stop: .95 rgba(0,0,0), stop: 1 #000);
