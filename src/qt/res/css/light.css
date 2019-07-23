@@ -1712,11 +1712,11 @@ color:#fff;
 /* TRANSACTION DETAIL DIALOG */
 
 QDialog#TransactionDescDialog {
-background-color:#000;
+background-color:red;
 }
 
 QDialog#TransactionDescDialog QTextEdit { /* Contents of Receive Coin Dialog */
-border:1px solid #000;
+border:1px solid red;
 }
 
 
