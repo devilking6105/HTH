@@ -84,6 +84,7 @@ background-color: #000;
 
 .QCheckBox { /* Checkbox Labels */
 color:#fff;
+background-color: #000;
 }
 
 .QCheckBox:hover {
