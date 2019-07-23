@@ -288,7 +288,7 @@ color: #fff;
 
 QHeaderView::section { /* Table Header Sections */
 qproperty-alignment:center;
-background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 0.25, stop: 0 #000, stop: 1 #000);
+background-color: #000;
 color:#fff;
 min-height:25px;
 font-weight:bold;
@@ -304,6 +304,7 @@ padding-bottom:2px;
 
 QHeaderView::section:last {
 border-right: 0px solid #000;
+background-color: #000;
 color: #fff; /* remove if nec */
 }
 
