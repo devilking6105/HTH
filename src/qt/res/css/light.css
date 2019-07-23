@@ -13,7 +13,7 @@ color: #fff;
 }
 
 .QFrame {
-background-color:transparent;
+background-color: #000;
 border:0px solid #000;
 color: #fff;
 }
@@ -1712,11 +1712,11 @@ color:#fff;
 /* TRANSACTION DETAIL DIALOG */
 
 QDialog#TransactionDescDialog {
-background-color:red;
+background-color: #000;
 }
 
 QDialog#TransactionDescDialog QTextEdit { /* Contents of Receive Coin Dialog */
-border:1px solid red;
+border:1px solid: #000;
 }
 
 
