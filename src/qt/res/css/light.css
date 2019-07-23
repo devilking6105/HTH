@@ -174,16 +174,17 @@ padding-left:1px;
 QComboBox QAbstractItemView::item { margin:4px; }
 
 QComboBox::item {
-color:#818181;
+color:#fff;
+background-color: #000;
 }
 
 QComboBox::item:alternate {
-background:#fff;
+background:#000;
 }
 
 QComboBox::item:selected {
 border:0px solid transparent;
-background:#f2f2f2;
+background:#000;
 }
 
 QComboBox::indicator {
