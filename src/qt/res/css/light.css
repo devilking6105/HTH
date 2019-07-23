@@ -96,18 +96,19 @@ font-size:11px;
 min-height:25px;
 outline:0;
 padding:3px;
-color: #fff;
-background-color:#000;
+color: #000;
+background-color:#fff;
 }
 
 .QLineEdit:!focus {
 font-size:12px;
+background-color: #000;
 
 }
 
 .QValidatedLineEdit:disabled, .QLineEdit:disabled {
-background-color:#000;
-color: #fff;
+background-color:#fff;
+
 }
 
 /*******************************************************/
