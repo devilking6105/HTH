@@ -143,20 +143,20 @@ border:1px solid #000;
 }
 
 QComboBox { /* Dropdown Menus */
-border:1px solid #82C3E6;
+border:1px solid #000;
 padding: 3px 5px 3px 5px;
-background:#fcfcfc;
+background:#000;
 min-height:25px;
-color:#000;
+color:#fff;
 }
 
 QComboBox:checked {
-background:#f2f2f2;
+background:#000;
 }
 
 QComboBox:editable {
-background: #1c75bc;
-color:#000;
+background: #000;
+color:#fff;
 border:0px solid transparent;
 }
 
@@ -170,8 +170,9 @@ border-image: url(':/images/light/drkblue_downArrow') 0 0 0 0 stretch stretch;
 }
 
 QComboBox QListView {
-background:#fff;
-border:1px solid #333;
+background:#000;
+border:1px solid #000;
+color: #fff;
 padding-right:1px;
 padding-left:1px;
 }
@@ -478,6 +479,7 @@ width:15px;
 
 QDialog .QTabWidget .QWidget QComboBox {
 min-height:15px;
+background-color: #000;
 }
 
 QDialog QWidget { /* Remove Annoying Focus Rectangle */
@@ -1184,6 +1186,7 @@ min-height:16px;
 QWidget .QFrame#frame_2 QListView { /* Transaction List */
 font-weight:normal;
 font-color: #fff;
+background-color: #000;
 font-size:12px;
 max-width:369px;
 margin-top:12px;
@@ -1678,7 +1681,8 @@ margin-bottom:2px;
 margin-right:1px;
 min-width:111px;
 text-align:center;
-color: #000 !important;
+color: #fff !important;
+background-color: #000;
 }
 
 TransactionView QLineEdit#addressWidget { /* Address Filter */
@@ -1686,7 +1690,8 @@ margin-bottom:2px;
 margin-right:1px;
 min-width:405px;
 text-align:center;
-color: #000 !important;   
+color: #fff !important; 
+background-color: #000;
 }
 
 TransactionView QLineEdit#amountWidget { /* Amount Filter */
@@ -1694,12 +1699,14 @@ margin-bottom:2px;
 margin-right:1px;
 max-width:100px;
 text-align:center;
-color: #000 !important;   
+color: #fff !important;
+background-color: #000;
 }
 
 TransactionView QComboBox {
 margin-bottom:1px;
 margin-right:1px;
+background-color: #000;
 }
 
 QLabel#transactionSumLabel { /* Example of setObjectName for widgets without name */
