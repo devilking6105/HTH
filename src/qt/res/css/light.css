@@ -420,11 +420,13 @@ background-image: url(':/images/light/drkblue_rightArrow_small');
 
 QDialog .QTabWidget {
 border-bottom:1px solid #000;
+background-color: #000;
 
 }
 
 QDialog .QTabWidget::pane {
 border: 1px solid #000;
+background-color: #000;
 }
 
 QDialog .QTabWidget QTabBar::tab {
@@ -1586,7 +1588,7 @@ padding-right:5px;
 
 QWidget#ReceiveCoinsDialog .QFrame#frame2 QPushButton#clearButton { /* Clear Button */
 background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: .01 #000, stop: .1 rgba(0,0,0), stop: .95 rgba(0,0,0), stop: 1 #000);
-border:1px solid #d2d2d2;
+border:1px solid #000;
 color:#616161;
 padding-left:10px;
 padding-right:10px;
