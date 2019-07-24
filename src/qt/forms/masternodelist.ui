@@ -1,5 +1,3 @@
-/* Added CSS to file */
-
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>MasternodeList</class>
@@ -194,3 +192,5 @@ color: rgb(238, 238, 236);</string>
  <resources/>
  <connections/>
 </ui>
+
+/* Added CSS to file */
