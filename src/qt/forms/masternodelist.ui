@@ -78,6 +78,10 @@ color: rgb(238, 238, 236);</string>
              <property name="toolTip">
               <string>Filter masternode list</string>
              </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+             </property>
             </widget>
            </item>
            <item>
@@ -192,5 +196,3 @@ color: rgb(238, 238, 236);</string>
  <resources/>
  <connections/>
 </ui>
-
-
