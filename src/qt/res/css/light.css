@@ -1401,7 +1401,7 @@ QStackedWidget#SendCoinsEntry .QLineEdit#addAsLabel { /* Pay To Input Field */
 /* COIN CONTROL POPUP */
 
 QDialog#CoinControlDialog { /* Coin Control Dialog Window */
-background-color: #000;
+border-image: url(':/images/light/drkblue_walletFrame_bg') 0 0 0 0 stretch stretch;
 
 }
 
