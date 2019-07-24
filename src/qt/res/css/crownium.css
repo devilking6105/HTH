@@ -1644,6 +1644,7 @@ background-color:#000;
 
 QDialog#QRDialog QTextEdit { /* Contents of QR-code Dialog */
 border:1px solid #000;
+background-color: #000;
 }
 
 /* TRANSACTIONS PAGE */
