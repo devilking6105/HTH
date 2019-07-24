@@ -172,7 +172,7 @@ padding-left:1px;
 QComboBox QAbstractItemView::item { margin:4px; }
 
 QComboBox::item {
-color:#818181;
+color:#fff;
 }
 
 QComboBox::item:alternate {
@@ -474,7 +474,7 @@ outline: 0;
 
 /* Dialog: Open URI */
 QDialog#OpenURIDialog {
-background-color:#F8F6F6;
+background-color:#000; /* just added */
 }
 
 QDialog#OpenURIDialog QLabel#label { /* URI Label */
@@ -500,7 +500,7 @@ border:1px solid #000;
 
 /* Dialog: Sign / Verify Message */
 QDialog#SignVerifyMessageDialog {
-background-color:#F8F6F6;
+background-color:#000;
 }
 
 QDialog#SignVerifyMessageDialog QPushButton#addressBookButton_SM { /* Address Book Button */
@@ -657,7 +657,7 @@ min-width:260px;
 
 /* Encrypt Wallet and Change Passphrase Dialog */
 QDialog#AskPassphraseDialog {
-background-color:#F8F6F6;
+background-color:#000;
 }
 
 QDialog#AskPassphraseDialog QLabel#passLabel1, QDialog#AskPassphraseDialog QLabel#passLabel2, QDialog#AskPassphraseDialog QLabel#passLabel3 {
@@ -1222,7 +1222,7 @@ min-height:25px;
 }
 
 QDialog#SendCoinsDialog .QFrame#frameCoinControl .QLabel#labelCoinControlFeatures { /* Coin Control Header */
-color:#fff;
+color: #fff;
 font-weight:normal;
 font-size:14px;
 background-color: #000;
@@ -1324,6 +1324,7 @@ border-radius:5px;
 padding-top:20px;
 padding-bottom:20px;*/
 min-height:27px;
+background-color: #000; /* just added */
 }
 
 QDialog#SendCoinsDialog QLabel#labelBalance {
@@ -1335,6 +1336,7 @@ border-radius:5px;
 padding-top:20px;
 padding-bottom:20px; */
 min-height:27px;
+background-color: #000; /* just added */
 }
 
 #checkboxSubtractFeeFromAmount {
