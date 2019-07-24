@@ -1207,6 +1207,7 @@ QWidget#bgWidget .QPushButton#closeButton {
 /* SEND DIALOG */
 
 QDialog#SendCoinsDialog .QFrame#frameCoinControl { /* Coin Control Section */
+ background-color: #000; /* just added */
 
 }
 
@@ -1219,7 +1220,7 @@ QDialog#SendCoinsDialog .QFrame#frameCoinControl .QPushButton#pushButtonCoinCont
 padding-left:10px;
 padding-right:10px;
 min-height:25px;
-background-color: #000; /* just added */
+
 }
 
 QDialog#SendCoinsDialog .QFrame#frameCoinControl .QLabel#labelCoinControlFeatures { /* Coin Control Header */
@@ -1250,7 +1251,7 @@ margin-right:112px;
 }
 
 QDialog#SendCoinsDialog .QScrollArea#scrollArea .QWidget#scrollAreaWidgetContents { /* Send To Widget */
-background: #000; /* was transparent */
+background-color: #000; /* was transparent */
 }
 
 QDialog#SendCoinsDialog .QPushButton#sendButton { /* Send Button */
