@@ -1207,8 +1207,6 @@ QWidget#bgWidget .QPushButton#closeButton {
 /* SEND DIALOG */
 
 QDialog#SendCoinsDialog .QFrame#frameCoinControl { /* Coin Control Section */
- background-color: #000; /* just added */
-
 }
 
 QDialog#SendCoinsDialog .QFrame#frameCoinControl > .QLabel { /* Default Font Color and  Size */
@@ -1231,10 +1229,12 @@ background-color: #000;
 }
 
 QDialog#SendCoinsDialog .QFrame#frameCoinControl .QWidget#widgetCoinControl { /* Coin Control Inputs */
+  background-color: #000;  /* just added */
 }
 
 QDialog#SendCoinsDialog .QFrame#frameCoinControl .QWidget#widgetCoinControl > .QLabel { /* Coin Control Inputs Labels */
 padding:2px;
+background-color: #000;  /* just added */   
 
 }
 
