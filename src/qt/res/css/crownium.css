@@ -1603,7 +1603,7 @@ border:1px solid #000;
 
 QWidget#ReceiveCoinsDialog .QFrame#frame QPushButton#removeRequestButton { /* Remove Button */
 background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: .01 #34bcaa, stop: .1 #34bcaa, stop: .95 #34bcaa, stop: 1 #34bcaa);
-border:1px solid #000;
+border:1px solid #34bcaa;
 color:#000;
 padding-left:10px;
 padding-right:10px;
