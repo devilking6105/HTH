@@ -138,13 +138,13 @@ border:1px solid #000;
 QComboBox { /* Dropdown Menus */
 border:1px solid #82C3E6;
 padding: 3px 5px 3px 5px;
-background:#fcfcfc;
+background:#000;
 min-height:25px;
-color:#000;
+color:#fff;
 }
 
 QComboBox:checked {
-background:#f2f2f2;
+background:#000;
 }
 
 QComboBox:editable {
