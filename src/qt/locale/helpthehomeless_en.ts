@@ -613,8 +613,8 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>Open a dash: URI or payment request</source>
-        <translation>Open a dash: URI or payment request</translation>
+        <source>Open a HTH: URI or payment request</source>
+        <translation>Open a HTH: URI or payment request</translation>
     </message>
     <message>
         <location line="+2"/>
