@@ -91,12 +91,13 @@ color: #fff;
 }
 
 .QValidatedLineEdit, .QLineEdit { /* Text Entry Fields */
-border: 1px solid #82C3E6;
+border: 1px solid #000;
 font-size:11px;
 min-height:25px;
 outline:0;
 padding:3px;
-background-color:#fcfcfc;
+background-color:#000;
+color: #fff;
 }
 
 .QLineEdit:!focus {
