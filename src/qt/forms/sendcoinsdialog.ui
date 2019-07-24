@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>Send Coins</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(0, 0, 0);</string>
+  </property>
   <layout class="QVBoxLayout" name="verticalLayout" stretch="0,1,0,0">
    <property name="bottomMargin">
     <number>8</number>
@@ -84,7 +87,9 @@
              </font>
             </property>
             <property name="styleSheet">
-             <string notr="true">font-weight:bold;</string>
+             <string notr="true">font-weight:bold;
+background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);</string>
             </property>
             <property name="text">
              <string>Coin Control Features</string>
@@ -104,7 +109,8 @@
           <item>
            <widget class="QPushButton" name="pushButtonCoinControl">
             <property name="styleSheet">
-             <string notr="true"/>
+             <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
             </property>
             <property name="text">
              <string>Inputs...</string>
@@ -116,6 +122,10 @@
           </item>
           <item>
            <widget class="QLabel" name="labelCoinControlAutomaticallySelected">
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
+            </property>
             <property name="text">
              <string>automatically selected</string>
             </property>
@@ -133,7 +143,8 @@
              </font>
             </property>
             <property name="styleSheet">
-             <string notr="true">color:red;font-weight:bold;</string>
+             <string notr="true">color:red;font-weight:bold;
+background-color: rgb(0, 0, 0);</string>
             </property>
             <property name="text">
              <string>Insufficient funds!</string>
@@ -224,6 +235,10 @@
                    <bold>true</bold>
                   </font>
                  </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
+                 </property>
                  <property name="text">
                   <string>Quantity:</string>
                  </property>
@@ -239,6 +254,10 @@
                  </property>
                  <property name="contextMenuPolicy">
                   <enum>Qt::ActionsContextMenu</enum>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
                  </property>
                  <property name="text">
                   <string notr="true">0</string>
@@ -259,6 +278,10 @@
                    <bold>true</bold>
                   </font>
                  </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
+                 </property>
                  <property name="text">
                   <string>Bytes:</string>
                  </property>
@@ -271,6 +294,10 @@
                  </property>
                  <property name="contextMenuPolicy">
                   <enum>Qt::ActionsContextMenu</enum>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
                  </property>
                  <property name="text">
                   <string notr="true">0</string>
@@ -307,6 +334,10 @@
                    <bold>true</bold>
                   </font>
                  </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
+                 </property>
                  <property name="text">
                   <string>Amount:</string>
                  </property>
@@ -322,6 +353,10 @@
                  </property>
                  <property name="contextMenuPolicy">
                   <enum>Qt::ActionsContextMenu</enum>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
                  </property>
                  <property name="text">
                   <string notr="true">0.00 HTH</string>
@@ -339,6 +374,10 @@
                    <bold>true</bold>
                   </font>
                  </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
+                 </property>
                  <property name="text">
                   <string>Dust:</string>
                  </property>
@@ -351,6 +390,10 @@
                  </property>
                  <property name="contextMenuPolicy">
                   <enum>Qt::ActionsContextMenu</enum>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
                  </property>
                  <property name="text">
                   <string notr="true">no</string>
@@ -387,6 +430,10 @@
                    <bold>true</bold>
                   </font>
                  </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
+                 </property>
                  <property name="text">
                   <string>Fee:</string>
                  </property>
@@ -402,6 +449,10 @@
                  </property>
                  <property name="contextMenuPolicy">
                   <enum>Qt::ActionsContextMenu</enum>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
                  </property>
                  <property name="text">
                   <string notr="true">0.00 HTH</string>
@@ -438,6 +489,10 @@
                    <bold>true</bold>
                   </font>
                  </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
+                 </property>
                  <property name="text">
                   <string>After Fee:</string>
                  </property>
@@ -453,6 +508,10 @@
                  </property>
                  <property name="contextMenuPolicy">
                   <enum>Qt::ActionsContextMenu</enum>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
                  </property>
                  <property name="text">
                   <string notr="true">0.00 HTH</string>
@@ -470,6 +529,10 @@
                    <bold>true</bold>
                   </font>
                  </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
+                 </property>
                  <property name="text">
                   <string>Change:</string>
                  </property>
@@ -482,6 +545,10 @@
                  </property>
                  <property name="contextMenuPolicy">
                   <enum>Qt::ActionsContextMenu</enum>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
                  </property>
                  <property name="text">
                   <string notr="true">0.00 HTH</string>
@@ -516,6 +583,10 @@
            <widget class="QCheckBox" name="checkBoxCoinControlChange">
             <property name="toolTip">
              <string>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
             </property>
             <property name="text">
              <string>Custom change address</string>
@@ -588,10 +659,10 @@
         <x>0</x>
         <y>0</y>
         <width>830</width>
-        <height>104</height>
+        <height>68</height>
        </rect>
       </property>
-      <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,1">
+      <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0">
        <property name="leftMargin">
         <number>0</number>
        </property>
@@ -610,19 +681,6 @@
           <number>6</number>
          </property>
         </layout>
-       </item>
-       <item>
-        <spacer name="verticalSpacer">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>40</height>
-          </size>
-         </property>
-        </spacer>
        </item>
       </layout>
      </widget>
@@ -721,7 +779,9 @@
                  </font>
                 </property>
                 <property name="styleSheet">
-                 <string notr="true">font-weight:bold;</string>
+                 <string notr="true">font-weight:bold;
+color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
                 </property>
                 <property name="text">
                  <string>Transaction Fee:</string>
@@ -737,6 +797,10 @@
               </item>
               <item>
                <widget class="QPushButton" name="buttonChooseFee">
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
+                </property>
                 <property name="text">
                  <string>Choose...</string>
                 </property>
@@ -761,14 +825,18 @@
           </item>
           <item>
            <widget class="QLabel" name="fallbackFeeWarningLabel">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
             <property name="toolTip">
              <string>Using the fallbackfee can result in sending a transaction that will take several hours or days (or never) to confirm. Consider choosing your fee manually or wait until your have validated the complete chain.</string>
             </property>
-            <property name="font">
-            <font>
-                <weight>75</weight>
-                <bold>true</bold>
-            </font>
+            <property name="styleSheet">
+             <string notr="true">color: red;
+background-color: rgb(0, 0, 0);</string>
             </property>
             <property name="text">
              <string>Warning: Fee estimation is currently not possible.</string>
@@ -798,6 +866,10 @@
            <widget class="QPushButton" name="buttonMinimizeFee">
             <property name="toolTip">
              <string>collapse fee-settings</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
             </property>
             <property name="text">
              <string>Hide</string>
@@ -850,6 +922,10 @@
                    <property name="toolTip">
                     <string>If the custom fee is set to 1000 duffs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 duffs in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 duffs. For transactions bigger than a kilobyte both pay by kilobyte.</string>
                    </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
+                   </property>
                    <property name="text">
                     <string>per kilobyte</string>
                    </property>
@@ -865,6 +941,10 @@
                   <widget class="QRadioButton" name="radioCustomAtLeast">
                    <property name="toolTip">
                     <string>If the custom fee is set to 1000 duffs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 duffs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 duffs. For transactions bigger than a kilobyte both pay by kilobyte.</string>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
                    </property>
                    <property name="text">
                     <string>total at least</string>
@@ -912,6 +992,10 @@
                    <property name="toolTip">
                     <string>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for dash transactions than the network can process.</string>
                    </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
+                   </property>
                    <property name="text">
                     <string>(read the tooltip)</string>
                    </property>
@@ -941,6 +1025,10 @@
               <layout class="QVBoxLayout" name="verticalLayoutFee4" stretch="0,1">
                <item>
                 <widget class="QRadioButton" name="radioSmartFee">
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
+                 </property>
                  <property name="text">
                   <string>Recommended:</string>
                  </property>
@@ -971,6 +1059,10 @@
               <layout class="QVBoxLayout" name="verticalLayoutFee9" stretch="0,1">
                <item>
                 <widget class="QRadioButton" name="radioCustomFee">
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
+                 </property>
                  <property name="text">
                   <string>Custom:</string>
                  </property>
@@ -1023,6 +1115,10 @@
                  </item>
                  <item>
                   <widget class="QLabel" name="labelSmartFee2">
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
+                   </property>
                    <property name="text">
                     <string>(Smart fee not initialized yet. This usually takes a few blocks...)</string>
                    </property>
@@ -1052,6 +1148,10 @@
                   <layout class="QVBoxLayout" name="verticalLayoutFee6">
                    <item>
                     <widget class="QLabel" name="labelSmartFee3">
+                     <property name="styleSheet">
+                      <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
+                     </property>
                      <property name="text">
                       <string>Confirmation time target:</string>
                      </property>
@@ -1112,6 +1212,10 @@
                     <layout class="QHBoxLayout" name="horizontalLayoutFee10">
                      <item>
                       <widget class="QLabel" name="labelSmartFeeNormal">
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
+                       </property>
                        <property name="text">
                         <string>normal</string>
                        </property>
@@ -1132,6 +1236,10 @@
                      </item>
                      <item>
                       <widget class="QLabel" name="confirmationTargetLabel">
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
+                       </property>
                        <property name="text">
                         <string notr="true">(count)</string>
                        </property>
@@ -1152,6 +1260,10 @@
                      </item>
                      <item>
                       <widget class="QLabel" name="labelSmartFeeFast">
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
+                       </property>
                        <property name="text">
                         <string>fast</string>
                        </property>
@@ -1214,6 +1326,10 @@
        <property name="toolTip">
         <string>Confirm the send action</string>
        </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
+       </property>
        <property name="text">
         <string>S&amp;end</string>
        </property>
@@ -1236,6 +1352,10 @@
        <property name="toolTip">
         <string>Clear all fields of the form.</string>
        </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
+       </property>
        <property name="text">
         <string>Clear &amp;All</string>
        </property>
@@ -1248,6 +1368,10 @@
       <widget class="QPushButton" name="addButton">
        <property name="toolTip">
         <string>Send to multiple recipients at once</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
        </property>
        <property name="text">
         <string>Add &amp;Recipient</string>
@@ -1283,6 +1407,10 @@
            <height>0</height>
           </size>
          </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
+         </property>
          <property name="text">
           <string>PrivateSend</string>
          </property>
@@ -1302,6 +1430,10 @@
            <height>0</height>
           </size>
          </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
+         </property>
          <property name="text">
           <string>InstantSend</string>
          </property>
@@ -1309,6 +1441,10 @@
        </item>
        <item>
         <widget class="QLabel" name="label">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
+         </property>
          <property name="text">
           <string>Balance:</string>
          </property>
@@ -1324,6 +1460,10 @@
          </property>
          <property name="cursor">
           <cursorShape>IBeamCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);</string>
          </property>
          <property name="text">
           <string notr="true">123.456 HTH</string>
@@ -1353,7 +1493,7 @@
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="../dash.qrc"/>
+  <include location="../helpthehomeless.qrc"/>
  </resources>
  <connections/>
  <buttongroups>
