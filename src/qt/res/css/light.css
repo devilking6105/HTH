@@ -2,6 +2,7 @@ WalletFrame {
 border-image: url(':/images/light/drkblue_walletFrame_bg') 0 0 0 0 stretch stretch;
 border-top:0px solid #000;
 margin:0;
+background-color: #000;
 padding-top: 20px;  /* Originally 20px */
 padding-bottom: 50px;  /* Originally 20px */
 }
@@ -11,7 +12,7 @@ background-color:#000;
 }
 
 .QFrame {
-background-color:transparent;
+background-color: #000;
 border:0px solid #000;
 }
 
@@ -86,6 +87,7 @@ background-color: #000;
 
 .QCheckBox:hover {
 background-color: #000;
+color: #fff;
 }
 
 .QValidatedLineEdit, .QLineEdit { /* Text Entry Fields */
