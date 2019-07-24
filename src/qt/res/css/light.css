@@ -176,7 +176,7 @@ color:#818181;
 }
 
 QComboBox::item:alternate {
-background:#fff;
+background:#000; /* just added */
 }
 
 QComboBox::item:selected {
@@ -1229,13 +1229,10 @@ background-color: #000;
 }
 
 QDialog#SendCoinsDialog .QFrame#frameCoinControl .QWidget#widgetCoinControl { /* Coin Control Inputs */
-  background-color: #000;  /* just added */
 }
 
 QDialog#SendCoinsDialog .QFrame#frameCoinControl .QWidget#widgetCoinControl > .QLabel { /* Coin Control Inputs Labels */
 padding:2px;
-background-color: #000;  /* just added */   
-
 }
 
 QDialog#SendCoinsDialog .QFrame#frameCoinControl .QCheckBox#checkBoxCoinControlChange { /* Custom Change Label */
