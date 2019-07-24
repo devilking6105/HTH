@@ -1176,8 +1176,8 @@ margin-left:0px; /* CSS Voodoo - set to -66px to hide default transaction icons 
 /* MODAL OVERLAY */
 
 QWidget#bgWidget { /* The 'frame' overlaying the overview-page */
-    background:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: .01 #f6f6f6, stop: .1 rgba(250, 250, 250, 128), stop: .95 rgba(250, 250, 250, 255), stop: 1 #ebebeb);
-    color:#34bcaa;
+    background:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: .01 #000, stop: .1 rgba(0,0,0), stop: .95 rgba(0,0,0), stop: 1 #000);
+    color:#fff;
     padding-left:10px;
     padding-right:10px;
 }
@@ -1186,8 +1186,8 @@ QWidget#bgWidget .QPushButton#warningIcon {
 width:64px;
 height:64px;
 padding:5px;
-background-color:transparent;
-color: #34bcaa;
+background-color: #000;
+color: #fff;
 }
 
 QWidget#contentWidget { /* The actual content with the text/buttons/etc... */
