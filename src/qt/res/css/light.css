@@ -8,13 +8,11 @@ padding-bottom: 50px;  /* Originally 20px */
 
 QStatusBar {
 background-color:#000;
-color: #fff;
 }
 
 .QFrame {
 background-color: #000;
 border:0px solid #000;
-color: #fff;
 }
 
 QMenuBar {
@@ -77,7 +75,7 @@ background-color:#000;
 QLabel { /* Base Text Size & Color */
 font-size:12px;
 color:#fff;
-background-color: #000;
+background-color: #000;  /* remove if nec */
    
 }
 
@@ -180,7 +178,7 @@ QComboBox QAbstractItemView::item { margin:4px; }
 
 QComboBox::item {
 color:#fff;
-background-color: #000;
+background-color: #000;  /* Remove if nec */
 }
 
 QComboBox::item:alternate {
