@@ -1403,7 +1403,7 @@ color: #fff;
 
 QDialog#CoinControlDialog .QLabel#labelCoinControlQuantity { /* Coin Control Quantity */
 min-height:30px;
-color: #fff;   /* just added */
+
 }
 
 QDialog#CoinControlDialog .QLabel#labelCoinControlBytesText { /* Coin Control Bytes Label */
@@ -1432,7 +1432,7 @@ color: #fff;
 }
 
 QDialog#CoinControlDialog .QLabel#labelCoinControlPriority { /* Coin Control Priority */
-color: #fff;   /* just added */
+
 }
 
 QDialog#CoinControlDialog .QLabel#labelCoinControlFeeText { /* Coin Control Fee Label */
@@ -1452,7 +1452,7 @@ color: #fff;
 }
 
 QDialog#CoinControlDialog .QLabel#labelCoinControlLowOutput { /* Coin Control Low Output */
-color: #fff;   /* just added */
+
 }
 
 QDialog#CoinControlDialog .QLabel#labelCoinControlAfterFeeText { /* Coin Control After Fee Label */
@@ -1472,7 +1472,7 @@ color: #fff;
 }
 
 QDialog#CoinControlDialog .QLabel#labelCoinControlChange { /* Coin Control Change */
-color: #fff;   /* just added */
+
 
 }
 
@@ -1493,7 +1493,7 @@ background-color: #000;
 }
 
 QDialog#CoinControlDialog .QDialogButtonBox#buttonBox QPushButton { /* Coin Control 'OK' button */
-color: #fff;   /* just added */
+
 }
 
 QDialog#CoinControlDialog .QFrame#frame .QRadioButton#radioTreeMode { /* Coin Control Tree Mode Selector */
@@ -1519,7 +1519,7 @@ border:0px solid #000;
 }
 
 QDialog#CoinControlDialog .CoinControlTreeWidget#treeWidget::item {
-color: #fff;   /* just added */
+
 }
 
 QDialog#CoinControlDialog .CoinControlTreeWidget#treeWidget::item:selected { /* Coin Control Item (selected) */
@@ -1549,12 +1549,12 @@ color:#fff
 }
 
 QDialog#CoinControlDialog .CoinControlTreeWidget#treeWidget::seperator {
-color: #fff;   /* just added */
+
 
 }
 
 QDialog#CoinControlDialog .CoinControlTreeWidget#treeWidget::indicator { /* Coin Control Widget Checkbox */
-color: #fff;   /* just added */
+
 
 }
 
