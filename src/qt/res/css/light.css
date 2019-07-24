@@ -1346,7 +1346,7 @@ padding-left:10px;
 /* SEND COINS ENTRY */
 
 QStackedWidget#SendCoinsEntry .QFrame#SendCoins > .QLabel { /* Send Coin Entry Labels */
-background-color:#F8F6F6;
+background-color:#000;
 min-width:102px;
 font-weight:normal;
 /*font-size:11px;*/
