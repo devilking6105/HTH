@@ -4,6 +4,7 @@ border-top:0px solid #000;
 margin:0;
 padding-top: 20px;  /* Originally 20px */
 padding-bottom: 50px;  /* Originally 20px */
+background-color: #000;
 }
 
 QStatusBar {
