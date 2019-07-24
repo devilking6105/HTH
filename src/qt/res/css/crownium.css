@@ -1628,10 +1628,12 @@ font-size:14px;
 
 QDialog#ReceiveRequestDialog {
 background-color:#F8F6F6;
+
 }
 
 QDialog#ReceiveRequestDialog QTextEdit { /* Contents of Receive Coin Dialog */
 border:1px solid #d7d7d7;
+color: #fff;
 }
 
 /* General QR-code DIALOG */
