@@ -80,11 +80,11 @@ color:#fff;
 
 .QCheckBox { /* Checkbox Labels */
 color:#fff;
-background-color:transparent;
+background-color: #000;
 }
 
 .QCheckBox:hover {
-background-color:transparent;
+background-color: #000;
 }
 
 .QValidatedLineEdit, .QLineEdit { /* Text Entry Fields */
