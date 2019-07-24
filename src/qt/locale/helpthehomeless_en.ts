@@ -378,8 +378,8 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>Request payments (generates QR codes and dash: URIs)</source>
-        <translation>Request payments (generates QR codes and dash: URIs)</translation>
+        <source>Request payments (generates QR codes and HTH: URIs)</source>
+        <translation>Request payments (generates QR codes and HTH: URIs)</translation>
     </message>
     <message>
         <location line="+14"/>
