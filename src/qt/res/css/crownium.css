@@ -1639,11 +1639,11 @@ color: #fff;
 /* General QR-code DIALOG */
 
 QDialog#QRDialog {
-background-color:#F8F6F6;
+background-color:#000;
 }
 
 QDialog#QRDialog QTextEdit { /* Contents of QR-code Dialog */
-border:1px solid #d7d7d7;
+border:1px solid #000;
 }
 
 /* TRANSACTIONS PAGE */
