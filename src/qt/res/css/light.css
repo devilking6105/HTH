@@ -420,6 +420,7 @@ background-image: url(':/images/light/drkblue_rightArrow_small');
 
 QDialog .QTabWidget {
 border-bottom:1px solid #000;
+background-color: #000;
 
 }
 
