@@ -476,7 +476,7 @@ outline: 0;
 
 /* Dialog: Open URI */
 QDialog#OpenURIDialog {
-background-color:#F8F6F6;
+background-color:#000;
 }
 
 QDialog#OpenURIDialog QLabel#label { /* URI Label */
@@ -502,7 +502,7 @@ border:1px solid #9e9e9e;
 
 /* Dialog: Sign / Verify Message */
 QDialog#SignVerifyMessageDialog {
-background-color:#F8F6F6;
+background-color:#000;
 }
 
 QDialog#SignVerifyMessageDialog QPushButton#addressBookButton_SM { /* Address Book Button */
@@ -576,7 +576,7 @@ border:1px solid #9e9e9e;
 
 /* Dialog: Send and Receive */
 QWidget#AddressBookPage {
-background-color:#F8F6F6;
+background-color:#000;
 }
 
 QWidget#AddressBookPage QPushButton#newAddress { /* New Address Button */
@@ -659,7 +659,7 @@ min-width:260px;
 
 /* Encrypt Wallet and Change Passphrase Dialog */
 QDialog#AskPassphraseDialog {
-background-color:#F8F6F6;
+background-color:#000;
 }
 
 QDialog#AskPassphraseDialog QLabel#passLabel1, QDialog#AskPassphraseDialog QLabel#passLabel2, QDialog#AskPassphraseDialog QLabel#passLabel3 {
@@ -1630,7 +1630,7 @@ font-size:14px;
 /* RECEIVE COINS DIALOG */
 
 QDialog#ReceiveRequestDialog {
-background-color:#F8F6F6;
+background-color:#000;
 
 }
 
@@ -1642,12 +1642,14 @@ color: #fff;
 /* General QR-code DIALOG */
 
 QDialog#QRDialog {
-background-color:#000;
+color: #000; !important
+background-color: #000;
 }
 
 QDialog#QRDialog QTextEdit { /* Contents of QR-code Dialog */
 border:1px solid #000;
 background-color: #000;
+color: #000; !important
 }
 
 /* TRANSACTIONS PAGE */
