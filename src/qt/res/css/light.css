@@ -167,6 +167,7 @@ border-image: url(':/images/light/drkblue_downArrow') 0 0 0 0 stretch stretch;
 }
 
 QComboBox QListView {
+color: #fff: /* just added now */
 background:#000;
 border:1px solid #000;
 padding-right:1px;
