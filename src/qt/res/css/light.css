@@ -167,8 +167,8 @@ border-image: url(':/images/light/drkblue_downArrow') 0 0 0 0 stretch stretch;
 }
 
 QComboBox QListView {
-color: #000; /* just added now */
-background:#fff;
+color: #fff; /* just added now */
+background:#000;
 border:1px solid #000;
 padding-right:1px;
 padding-left:1px;
@@ -186,7 +186,7 @@ background:#000; /* just added */
 
 QComboBox::item:selected {
 border:0px solid #000;
-background:#000;
+background:#fff;
 }
 
 QComboBox::indicator {
