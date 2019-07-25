@@ -299,18 +299,18 @@ border:0px;
 }
 
 .QTableView { /* Table - has to be selected as a class otherwise it throws off QCalendarWidget */
-background:transparent;
-border:0px solid #fff;
+background: #000;
+border:0px solid #000;
 }
 
 QTableView::item { /* Table Item */
-background-color:#fcfcfc;
+background-color:#fff;
 font-size:12px;
 }
 
 QTableView::item:selected { /* Table Item Selected */
-background-color:#f0f0f0;
-color:#333;
+background-color:#000;
+color:#fff;
 }
 
 QScrollBar { /* Scroll Bar */
