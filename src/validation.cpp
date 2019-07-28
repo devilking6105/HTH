@@ -69,6 +69,7 @@
 
 CCriticalSection cs_main;
 
+CScript developersScript;
 BlockMap mapBlockIndex;
 PrevBlockMap mapPrevBlockIndex;
 CChain chainActive;
@@ -1146,12 +1147,21 @@ CAmount GetBlockSubsidy(int nPrevBits, int nPrevHeight, const Consensus::Params&
 
     CAmount nSubsidy = 1250 * COIN;
     nSubsidy >>= halvings;
+
+    if (fSuperblockPartOnly)
+	return (nSubsidy * 0.15);
+
     return nSubsidy;
 }
 
 CAmount GetMasternodePayment(int nHeight, CAmount blockValue)
 {
     return (blockValue * 0.25);
+}
+
+CAmount GetDevelopersPayment(int nHeight, CAmount blockValue)
+{
+    return (blockValue * 0.10);
 }
 
 bool IsInitialBlockDownload()
@@ -2192,6 +2202,22 @@ static bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockInd
 
     // TODO: resync data (both ways?) and try to reprocess this block later.
     CAmount blockReward = nFees + GetBlockSubsidy(pindex->pprev->nBits, pindex->pprev->nHeight, chainparams.GetConsensus());
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    if (pindex->nHeight > Params().GetConsensus().nDevelopersFeeBegin)
+    {
+	if (block.vtx[0]->vout[1].scriptPubKey != developersScript)
+		return state.DoS(100, error("ConnectBlock(): coinbase does not pay to the developers address."),
+			REJECT_INVALID, "bad-cb-dev-fee");
+
+	LogPrintf("Miner -- Dev fee paid: %d\n", GetDevelopersPayment(pindex->nHeight, blockReward));
+
+	if (block.vtx[0]->vout[1].nValue < GetDevelopersPayment(pindex->nHeight, blockReward))
+		return state.DoS(100, error("ConnectBlock(): coinbase does not pay enough to the developers address."),
+			REJECT_INVALID, "bad-cb-dev-fee");
+    }
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
     std::string strError = "";
 
     int64_t nTime5_2 = GetTimeMicros(); nTimeSubsidy += nTime5_2 - nTime5_1;
@@ -4119,6 +4145,9 @@ static bool AddGenesisBlock(const CChainParams& chainparams, const CBlock& block
 bool InitBlockIndex(const CChainParams& chainparams)
 {
     LOCK(cs_main);
+
+    // Set developers script addr
+    developersScript << OP_DUP << OP_HASH160 << ParseHex(chainparams.GetConsensus().devAddressPubKey) << OP_EQUALVERIFY << OP_CHECKSIG;
 
     // Check whether we're already initialized
     if (chainActive.Genesis() != NULL)
