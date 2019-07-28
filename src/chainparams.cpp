@@ -210,9 +210,9 @@ public:
         consensus.nBudgetPaymentsStartBlock = -1;
         consensus.nBudgetPaymentsCycleBlocks = -1;
         consensus.nBudgetPaymentsWindowBlocks = 100;
-        consensus.nSuperblockStartBlock = 1000;
+        consensus.nSuperblockStartBlock = 1048576;
         consensus.nSuperblockStartHash = uint256S("0000000000000000000000000000000000000000000000000000000000000000");
-        consensus.nSuperblockCycle = 10000;
+        consensus.nSuperblockCycle = 1048576;
         consensus.nGovernanceMinQuorum = 10;
         consensus.nGovernanceFilterElements = 20000;
         consensus.nMasternodeMinimumConfirmations = 15;
@@ -234,8 +234,6 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime = 1544655600;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = NEVER32;
-        consensus.devAddressPubKey = "";
-        consensus.nDevelopersFeeBegin = 10000;
 
         // Deployment of BIP68, BIP112, and BIP113.
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].bit = 0;
@@ -288,28 +286,24 @@ public:
         vAlertPubKey = ParseHex("048240a8748a80a286b270ba126705ced4f2ce5a7847b3610ea3c06513150dade2a8512ed5ea86320824683fc0818f0ac019214973e677acd1244f6d0571fc5103");
         nDefaultPort = 65000;
         nPruneAfterHeight = 100000;
-	    
-	genesis = CreateGenesisBlock(1562732600, 306150, 0x1e0ffff0, 1, 50 * COIN);
-        consensus.hashGenesisBlock = genesis.GetHash();
 
 	// just for now
-	//uint32_t nTime = 1562732600;
-	//uint32_t nNonce = 0;
+	uint32_t nTime = 1562732600;
+	uint32_t nNonce = 0;
 
-  /*      while (UintToArith256(genesis.GetPoWHash()) >
+        while (UintToArith256(genesis.GetPoWHash()) >
 	       UintToArith256(consensus.powLimit))
         {
 		nNonce++;
-		genesis = CreateGenesisBlock(nTime, nNonce, 0x1e0ffff0, 1, 50 * COIN);
+		genesis = CreateGenesisBlock(nTime, nNonce, 0x1e0fffff, 1, 0 * COIN);
 		if (nNonce % 128 == 0) printf("\rnonce %08x", nNonce);
 	}
-        genesis = CreateGenesisBlock(nTime, nNonce, 0x1e0ffff0, 1, 50 * COIN);
-        printf("\n%s\n", genesis.ToString().c_str()); */
+        genesis = CreateGenesisBlock(nTime, nNonce, 0x1e0fffff, 1, 0 * COIN);
+        printf("\n%s\n", genesis.ToString().c_str());
         consensus.hashGenesisBlock = genesis.GetHash();
-         assert(consensus.hashGenesisBlock == uint256S("0x88bddd302313bf17e4068acae9eabdd55fe60abdd3436beb2a5e798addd682b8"));
-         assert(genesis.hashMerkleRoot == uint256S("0xb65534a1e2f0ff85de1ff4cd1a457b92a56abc182397d9cc1380482784acabfc"));
-	    
-	    
+        // assert(consensus.hashGenesisBlock == uint256S("2d90d3d8e3accb53f7315ffbd64d162a3697a0d8254ef7b1665dfa6e6f9a6fdb"));
+        // assert(genesis.hashMerkleRoot == uint256S("ae004ec47a1e7bae4dec15101dd97054e5b64704ccb4bd41a2754153bdf8ba9a"));
+
         // vSeeds.push_back(CDNSSeedData("dash.org", "dnsseed.dash.org"));
         // vSeeds.push_back(CDNSSeedData("dashdot.io", "dnsseed.dashdot.io"));
         // vSeeds.push_back(CDNSSeedData("masternode.io", "dnsseed.masternode.io"));
@@ -386,9 +380,9 @@ public:
         consensus.nBudgetPaymentsStartBlock = 4100;
         consensus.nBudgetPaymentsCycleBlocks = 50;
         consensus.nBudgetPaymentsWindowBlocks = 10;
-        consensus.nSuperblockStartBlock = 1000;
+        consensus.nSuperblockStartBlock = 4200; // NOTE: Should satisfy nSuperblockStartBlock > nBudgetPeymentsStartBlock
         consensus.nSuperblockStartHash = uint256(); // do not check this on testnet
-        consensus.nSuperblockCycle = 10000;
+        consensus.nSuperblockCycle = 24; // Superblocks can be issued hourly on testnet
         consensus.nGovernanceMinQuorum = 1;
         consensus.nGovernanceFilterElements = 500;
         consensus.nMasternodeMinimumConfirmations = 1;
@@ -412,8 +406,6 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime = 1199145601; // January 1, 2008
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; // December 31, 2008
-        consensus.devAddressPubKey = "";
-        consensus.nDevelopersFeeBegin = 10000;
 
         // Deployment of BIP68, BIP112, and BIP113.
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].bit = 0;
@@ -549,9 +541,9 @@ public:
         consensus.nBudgetPaymentsStartBlock = 4100;
         consensus.nBudgetPaymentsCycleBlocks = 50;
         consensus.nBudgetPaymentsWindowBlocks = 10;
-        consensus.nSuperblockStartBlock = 1000;
+        consensus.nSuperblockStartBlock = 4200; // NOTE: Should satisfy nSuperblockStartBlock > nBudgetPeymentsStartBlock
         consensus.nSuperblockStartHash = uint256(); // do not check this on devnet
-        consensus.nSuperblockCycle = 10000;
+        consensus.nSuperblockCycle = 24; // Superblocks can be issued hourly on devnet
         consensus.nGovernanceMinQuorum = 1;
         consensus.nGovernanceFilterElements = 500;
         consensus.nMasternodeMinimumConfirmations = 1;
@@ -574,8 +566,6 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime = 1199145601; // January 1, 2008
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; // December 31, 2008
-        consensus.devAddressPubKey = "";
-        consensus.nDevelopersFeeBegin = 10000;
 
         // Deployment of BIP68, BIP112, and BIP113.
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].bit = 0;
