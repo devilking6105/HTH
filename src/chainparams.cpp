@@ -288,16 +288,19 @@ public:
         vAlertPubKey = ParseHex("048240a8748a80a286b270ba126705ced4f2ce5a7847b3610ea3c06513150dade2a8512ed5ea86320824683fc0818f0ac019214973e677acd1244f6d0571fc5103");
         nDefaultPort = 65000;
         nPruneAfterHeight = 100000;
+	    
+	genesis = CreateGenesisBlock(1562732600, 306150, 0x1e0ffff0, 1, 50 * COIN);
+        consensus.hashGenesisBlock = genesis.GetHash();
 
 	// just for now
-	uint32_t nTime = 1562732600;
-	uint32_t nNonce = 0;
+	//uint32_t nTime = 1562732600;
+	//uint32_t nNonce = 0;
 
-        while (UintToArith256(genesis.GetPoWHash()) >
+  /*      while (UintToArith256(genesis.GetPoWHash()) >
 	       UintToArith256(consensus.powLimit))
         {
 		nNonce++;
-		genesis = CreateGenesisBlock(nTime, nNonce, 0x1e0fffff, 1, 0 * COIN);
+		genesis = CreateGenesisBlock(nTime, nNonce, 0x1e0ffff0, 1, 50 * COIN);
 		if (nNonce % 128 == 0) printf("\rnonce %08x", nNonce);
 	}
         genesis = CreateGenesisBlock(nTime, nNonce, 0x1e0ffff0, 1, 50 * COIN);
