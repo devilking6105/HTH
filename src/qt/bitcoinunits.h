@@ -58,8 +58,8 @@ public:
     enum Unit
     {
         HTH,
-        mDASH,
-        uDASH,
+        mHTH,
+        uHTH,
         duffs
     };
 

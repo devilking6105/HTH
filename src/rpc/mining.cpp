@@ -738,6 +738,11 @@ UniValue getblocktemplate(const JSONRPCRequest& request)
     result.push_back(Pair("superblocks_started", pindexPrev->nHeight + 1 > consensusParams.nSuperblockStartBlock));
     result.push_back(Pair("superblocks_enabled", sporkManager.IsSporkActive(SPORK_9_SUPERBLOCKS_ENABLED)));
 
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    result.push_back(Pair("payee", Params().GetConsensus().devAddressPubKey));
+    result.push_back(Pair("payee_amount", (int64_t)GetDevelopersPayment(pindexPrev->nHeight+1, pblock->vtx[0]->GetValueOut())));
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
     result.push_back(Pair("coinbase_payload", HexStr(pblock->vtx[0]->vExtraPayload)));
 
     return result;
