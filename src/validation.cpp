@@ -2206,6 +2206,8 @@ static bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockInd
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     if (pindex->nHeight > Params().GetConsensus().nDevelopersFeeBegin)
     {
+        LogPrintf("debug: %s\n", block.ToString().c_str());
+
 	if (block.vtx[0]->vout[1].scriptPubKey != developersScript)
 		return state.DoS(100, error("ConnectBlock(): coinbase does not pay to the developers address."),
 			REJECT_INVALID, "bad-cb-dev-fee");
@@ -4146,7 +4148,6 @@ bool InitBlockIndex(const CChainParams& chainparams)
 {
     LOCK(cs_main);
 
-    // Set developers script addr
     developersScript << OP_DUP << OP_HASH160 << ParseHex(chainparams.GetConsensus().devAddressPubKey) << OP_EQUALVERIFY << OP_CHECKSIG;
 
     // Check whether we're already initialized
