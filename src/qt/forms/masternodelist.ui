@@ -58,6 +58,9 @@ color: rgb(238, 238, 236);</string>
        </property>
        <widget class="QWidget" name="tabDIP3Masternodes">
         <attribute name="title">
+         <property name="styleSheet">
+        <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(238, 238, 236);</string>
          <string>DIP3 Masternodes</string>
         </attribute>
         <layout class="QGridLayout" name="gridLayout_3">
