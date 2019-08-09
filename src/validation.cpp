@@ -1137,7 +1137,10 @@ NOTE:   unlike bitcoin we are using PREVIOUS block height here,
 */
 CAmount GetBlockSubsidy(int nPrevBits, int nPrevHeight, const Consensus::Params& consensusParams, bool fSuperblockPartOnly)
 {
-    if (nPrevHeight >= 0 && nPrevHeight <= 500)
+    if (nPrevHeight == 0) 
+        return 50000000 * COIN;
+
+    if (nPrevHeight >= 1 && nPrevHeight <= 500)
         return 250 * COIN;
 
     // Otherwise, standard BTC halving type..
