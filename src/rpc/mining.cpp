@@ -705,6 +705,15 @@ UniValue getblocktemplate(const JSONRPCRequest& request)
     result.push_back(Pair("height", (int64_t)(pindexPrev->nHeight+1)));
 
     UniValue masternodeObj(UniValue::VARR);
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    UniValue devfee(UniValue::VOBJ);
+    devfee.push_back(Pair("payee", Params().GetConsensus().devAddress));
+    devfee.push_back(Pair("script", HexStr(developersScript)));
+    devfee.push_back(Pair("amount", GetDevelopersPayment(pindexPrev->nHeight+1, pblock->vtx[0]->GetValueOut())));
+    masternodeObj.push_back(devfee);
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
     for (const auto& txout : pblocktemplate->voutMasternodePayments) {
         CTxDestination address1;
         ExtractDestination(txout.scriptPubKey, address1);
@@ -737,11 +746,6 @@ UniValue getblocktemplate(const JSONRPCRequest& request)
     result.push_back(Pair("superblock", superblockObjArray));
     result.push_back(Pair("superblocks_started", pindexPrev->nHeight + 1 > consensusParams.nSuperblockStartBlock));
     result.push_back(Pair("superblocks_enabled", sporkManager.IsSporkActive(SPORK_9_SUPERBLOCKS_ENABLED)));
-
-    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    result.push_back(Pair("payee", Params().GetConsensus().devAddressPubKey));
-    result.push_back(Pair("payee_amount", (int64_t)GetDevelopersPayment(pindexPrev->nHeight+1, pblock->vtx[0]->GetValueOut())));
-    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     result.push_back(Pair("coinbase_payload", HexStr(pblock->vtx[0]->vExtraPayload)));
 
