@@ -2212,15 +2212,20 @@ static bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockInd
     {
         LogPrintf("debug: %s\n", block.ToString().c_str());
 
-	if (block.vtx[0]->vout[1].scriptPubKey != developersScript)
-		return state.DoS(100, error("ConnectBlock(): coinbase does not pay to the developers address."),
-			REJECT_INVALID, "bad-cb-dev-fee");
+        bool fDevPaymentValid = false;
+        for (unsigned int i = 1; i < block.vtx[0]->vout.size(); i++) {
+            if (block.vtx[0]->vout[i].scriptPubKey == developersScript) {
+                fDevPaymentValid = true;
+                if (block.vtx[0]->vout[i].nValue < GetDevelopersPayment(pindex->nHeight, blockReward))
+                    fDevPaymentValid = false;
+            }
+        }
 
-	LogPrintf("Miner -- Dev fee paid: %d\n", GetDevelopersPayment(pindex->nHeight, blockReward));
-
-	if (block.vtx[0]->vout[1].nValue < GetDevelopersPayment(pindex->nHeight, blockReward))
-		return state.DoS(100, error("ConnectBlock(): coinbase does not pay enough to the developers address."),
-			REJECT_INVALID, "bad-cb-dev-fee");
+        if (!fDevPaymentValid)
+                return state.DoS(100, error("ConnectBlock(): invalid developer fee payment."),
+                                 REJECT_INVALID, "bad-cb-dev-fee");
+        else
+	        LogPrintf("Miner -- Dev fee paid: %d\n", GetDevelopersPayment(pindex->nHeight, blockReward));
     }
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
