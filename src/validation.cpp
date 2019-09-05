@@ -2206,6 +2206,7 @@ static bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockInd
 
     // TODO: resync data (both ways?) and try to reprocess this block later.
     CAmount blockReward = nFees + GetBlockSubsidy(pindex->pprev->nBits, pindex->pprev->nHeight, chainparams.GetConsensus());
+    CAmount blockRewardNoFees = GetBlockSubsidy(pindex->pprev->nBits, pindex->pprev->nHeight, chainparams.GetConsensus());
 
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     if (pindex->nHeight > Params().GetConsensus().nDevelopersFeeBegin)
@@ -2216,7 +2217,7 @@ static bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockInd
         for (unsigned int i = 1; i < block.vtx[0]->vout.size(); i++) {
             if (block.vtx[0]->vout[i].scriptPubKey == developersScript) {
                 fDevPaymentValid = true;
-                if (block.vtx[0]->vout[i].nValue < GetDevelopersPayment(pindex->nHeight, blockReward))
+                if (block.vtx[0]->vout[i].nValue < GetDevelopersPayment(pindex->nHeight, blockRewardNoFees))
                     fDevPaymentValid = false;
             }
         }
