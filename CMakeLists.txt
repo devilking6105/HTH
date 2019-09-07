@@ -84,4 +84,3 @@ file(GLOB SOURCE_FILES
         )
 
 add_executable(dash ${SOURCE_FILES})
-include_directories(${Protobuf_INCLUDE_DIRS})
