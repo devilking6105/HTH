@@ -21,7 +21,7 @@ uint256 CBlockHeader::GetPoWHash() const
     std::vector<unsigned char> vch(80);
     CVectorWriter ss(SER_NETWORK, PROTOCOL_VERSION, vch, 0);
     ss << *this;
-    return HashX16R((const char *)vch.data(), (const char *)vch.data() + vch.size(), hashPrevBlock);
+    return HashX25X((const char *)vch.data(), (const char *)vch.data() + vch.size());
 }
 
 std::string CBlock::ToString() const
