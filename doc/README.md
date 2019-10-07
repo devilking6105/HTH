@@ -1,26 +1,26 @@
 HelpTheHomeless 0.14.0
 =====================
 
-This is the official reference wallet for Dash digital currency and comprises the backbone of the Dash peer-to-peer network. You can [download HelpTheHomeless](https://www.dash.org/downloads/) or [build it yourself](#building) using the guides below.
+This is the official reference wallet for HTH digital currency and comprises the backbone of the HTH peer-to-peer network. You can [download HelpTheHomeless](https://www.dash.org/downloads/) or [build it yourself](#building) using the guides below.
 
 Running
 ---------------------
-The following are some helpful notes on how to run Dash on your native platform.
+The following are some helpful notes on how to run HTH on your native platform.
 
 ### Unix
 
 Unpack the files into a directory and run:
 
-- `bin/dash-qt` (GUI) or
+- `bin/helpthehomeless-qt` (GUI) or
 - `bin/dashd` (headless)
 
 ### Windows
 
-Unpack the files into a directory, and then run dash-qt.exe.
+Unpack the files into a directory, and then run helpthehomeless-qt.exe.
 
 ### OS X
 
-Drag Dash-Qt to your applications folder, and then run Dash-Qt.
+Drag helpthehomeless-Qt to your applications folder, and then run helpthehomeless-Qt.
 
 ### Need Help?
 
@@ -28,8 +28,8 @@ Drag Dash-Qt to your applications folder, and then run Dash-Qt.
 for help and more information.
 * See the [Dash Developer Documentation](https://dash-docs.github.io/) 
 for technical specifications and implementation details.
-* Ask for help on [Dash Nation Discord](http://dashchat.org)
-* Ask for help on the [Dash Forum](https://dash.org/forum)
+* Ask for help on [HTH Discord](https://discord.gg/r7zKfy5)
+
 
 Building
 ---------------------
