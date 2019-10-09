@@ -16,8 +16,8 @@ RUN apt-get update && apt-get install -y python3-pip
 RUN pip3 install pyzmq # really needed?
 
 # x16r_hash
-RUN git clone https://github.com/HTHcoin/x16r_hash
-RUN cd x16r_hash && python3 setup.py install
+RUN git clone https://github.com/SINOVATEblockchain/node-x25x
+RUN cd node-x25x && python3 setup.py install
 
 ARG USER_ID=1000
 ARG GROUP_ID=1000
@@ -25,8 +25,8 @@ ARG GROUP_ID=1000
 # add user with specified (or default) user/group ids
 ENV USER_ID ${USER_ID}
 ENV GROUP_ID ${GROUP_ID}
-RUN groupadd -g ${GROUP_ID} hth
-RUN useradd -u ${USER_ID} -g hth -s /bin/bash -m -d /hth hth
+RUN groupadd -g ${GROUP_ID} helpthehomeless
+RUN useradd -u ${USER_ID} -g helpthehomeless -s /bin/bash -m -d /helpthehomeless helpthehomeless
 
 # Extra packages
 ARG BUILD_TARGET=linux64
@@ -44,13 +44,13 @@ RUN \
   update-alternatives --set x86_64-w64-mingw32-g++  /usr/bin/x86_64-w64-mingw32-g++-posix; \
   exit 0
 
-RUN mkdir /hth-src && \
+RUN mkdir /helpthehomeless-src && \
   mkdir -p /cache/ccache && \
   mkdir /cache/depends && \
   mkdir /cache/sdk-sources && \
-  chown $USER_ID:$GROUP_ID /hth-src && \
+  chown $USER_ID:$GROUP_ID /helpthehomeless-src && \
   chown $USER_ID:$GROUP_ID /cache && \
   chown $USER_ID:$GROUP_ID /cache -R
-WORKDIR /hth-src
+WORKDIR /helpthehomeless-src
 
-USER hth
+USER helpthehomeless

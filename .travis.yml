@@ -103,14 +103,14 @@ jobs:
     - <<: *runtests
       env: BUILD_TARGET=linux64_nowallet
     - <<: *runtests
-      env: BUILD_TARGET=linux64_release DOCKER_BUILD=true
+      env: BUILD_TARGET=linux64_release DOCKER_BUILD=false
     # build docker
     - <<: *builddocker
-      env: BUILD_TARGET=linux64_release DOCKER_BUILD=true
+      env: BUILD_TARGET=linux64_release DOCKER_BUILD=false
 
 before_cache:
   # Save builder image
-  - docker save hth-builder-$BUILD_TARGET-$TRAVIS_JOB_NUMBER $(docker history -q hth-builder-$BUILD_TARGET-$TRAVIS_JOB_NUMBER | grep -v \<missing\>) | gzip -2 > $HOME/cache/docker/hth-builder-$BUILD_TARGET.tar.gz
+  - docker save helpthehomeless-builder-$BUILD_TARGET-$TRAVIS_JOB_NUMBER $(docker history -q helpthehomeless-builder-$BUILD_TARGET-$TRAVIS_JOB_NUMBER | grep -v \<missing\>) | gzip -2 > $HOME/cache/docker/helpthehomeless-builder-$BUILD_TARGET.tar.gz
 
 before_install:
   - travis_retry travis_apt_get_update
@@ -128,7 +128,7 @@ install:
     # Keep this as it makes caching related debugging easier
     - ls -lah $HOST_CACHE_DIR && ls -lah $HOST_CACHE_DIR/depends && ls -lah $HOST_CACHE_DIR/ccache && ls -lah $HOST_CACHE_DIR/docker
     # Load cached builder image
-    - if [ -f $HOST_CACHE_DIR/docker/hth-builder-$BUILD_TARGET.tar.gz ]; then zcat $HOST_CACHE_DIR/docker/hth-builder-$BUILD_TARGET.tar.gz | docker load || true; fi
+    - if [ -f $HOST_CACHE_DIR/docker/helpthehomeless-builder-$BUILD_TARGET.tar.gz ]; then zcat $HOST_CACHE_DIR/docker/helpthehomeless-builder-$BUILD_TARGET.tar.gz | docker load || true; fi
     - travis_retry docker pull ubuntu:bionic
     - travis_retry docker build -t $BUILDER_IMAGE_NAME --build-arg=USER_ID=$UID --build-arg=GROUP_ID=$UID --build-arg=BUILD_TARGET=$BUILD_TARGET -f ci/Dockerfile.builder ci
 before_script:
