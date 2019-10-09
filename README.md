@@ -1,7 +1,7 @@
 HelpTheHomeless staging tree 0.14.0
 ===================================
 
-`master:` [![Build Status](https://travis-ci.org/dashpay/dash.svg?branch=master)](https://travis-ci.org/dashpay/dash) `develop:` [![Build Status](https://travis-ci.org/dashpay/dash.svg?branch=develop)](https://travis-ci.org/dashpay/dash/branches)
+`master:` [![Build Status](https://travis-ci.org/HTHcoin/hth.svg?branch=master)](https://travis-ci.org/HTHcoin/hth) `develop:` [![Build Status](https://travis-ci.org/HTHcoin/hth.svg?branch=develop)](https://travis-ci.org/HTHcoin/hth/branches)
 
 https://hth.world
 
@@ -16,7 +16,7 @@ are carried out collectively by the network. HelpTheHomeless is the name of the 
 source software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the HelpTheHomeless software, see https://www.dash.org/get-dash/.
+the HelpTheHomeless software, see https://hth.world/downloads.html.
 
 
 License
