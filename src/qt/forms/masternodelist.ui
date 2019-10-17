@@ -46,13 +46,6 @@
      </item>
      <item>
       <widget class="QTabWidget" name="tabWidget">
-       <property name="autoFillBackground">
-        <bool>false</bool>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(0, 0, 0);
-color: rgb(238, 238, 236);</string>
-       </property>
        <property name="currentIndex">
         <number>0</number>
        </property>
@@ -77,10 +70,6 @@ color: rgb(238, 238, 236);</string>
             <widget class="QLineEdit" name="filterLineEditDIP3">
              <property name="toolTip">
               <string>Filter masternode list</string>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">background-color: rgb(255, 255, 255);
-color: rgb(0, 0, 0);</string>
              </property>
             </widget>
            </item>
