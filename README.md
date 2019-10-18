@@ -16,7 +16,10 @@ are carried out collectively by the network. HelpTheHomeless is the name of the 
 source software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the HelpTheHomeless software, see https://www.dash.org/get-dash/.
+the HelpTheHomeless software, visit the discord https://discord.gg/VmRQXme.
+
+THIS REPOSITORY IS TESTNET ONLY. 
+Current x16r blockchain see https://github.com/HTHcoin/HTH-Legacy
 
 
 License
