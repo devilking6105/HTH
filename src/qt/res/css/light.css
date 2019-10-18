@@ -103,7 +103,7 @@ background-color:#f2f2f2;
 /*******************************************************/
 
 QPushButton { /* Global Button Style */
-background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: .01 #000, stop: .1 #000, stop: .95 #000, stop: 1 #000);
+background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: .01 #34bcaa: .1 #34bcaa: .95 #34bcaa: 1 #34bcaa);
 border:0;
 border-radius:3px;
 color:#ffffff;
@@ -839,7 +839,7 @@ min-height:35px;
 QWidget .QFrame#frame .QLabel#labelBalance { /* Available Balance */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 font-size:16px;
-color:#debf12;
+color:#34bcaa;
 margin-left:0px;
     font-weight: bold;
 }
@@ -864,7 +864,7 @@ QWidget .QFrame#frame .QLabel#labelUnconfirmed { /* Pending Balance */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 font-size:12px;
 margin-left:0px;
-color: #debf12;
+color: #34bcaa;
 }
 
 QWidget .QFrame#frame .QLabel#labelWatchPending { /* Watch-only Pending Balance */
@@ -887,7 +887,7 @@ QWidget .QFrame#frame .QLabel#labelImmature { /* Immature Balance */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 font-size:12px;
 margin-left:0px;
-color: #debf12;
+color: #34bcaa;
 }
 
 QWidget .QFrame#frame .QLabel#labelWatchImmature { /* Watch-only Immature Balance */
@@ -909,7 +909,7 @@ QWidget .QFrame#frame .QLabel#labelTotal { /* Total Balance */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 font-size:12px;
 margin-left:0px;
-color: #debf12;
+color: #34bcaa;
 }
 
 QWidget .QFrame#frame .QLabel#labelWatchTotal { /* Watch-only Total Balance */
@@ -936,8 +936,8 @@ QWidget .QFrame#framePrivateSend .QLabel#labelPrivateSendHeader { /* PrivateSend
 qproperty-alignment: 'AlignVCenter | AlignCenter';
 max-width: 421px;
 min-width: 421px;
-background-color:#000;
-color:#fff;
+background-color:#fff;
+color:#34bcaa;
 margin-right: 5px;
 padding-right: 5px;
 font-weight:bold;
