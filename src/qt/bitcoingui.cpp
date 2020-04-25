@@ -33,6 +33,7 @@
 #include "macdockiconhandler.h"
 #endif
 
+
 #include "chainparams.h"
 #include "init.h"
 #include "ui_interface.h"
@@ -59,10 +60,18 @@
 #include <QStyle>
 #include <QTimer>
 #include <QToolBar>
+#include <QToolButton>
+#include <QUrlQuery>
 #include <QVBoxLayout>
+#include <QtNetwork/QNetworkAccessManager>
+#include <QtNetwork/QNetworkReply>
+#include <QGraphicsDropShadowEffect>
+#include <QDesktopServices>
 
 #if QT_VERSION < 0x050000
 #include <QTextDocument>
+#include <QFontDatabase>
+#include "univalue/include/univalue.h"
 #include <QUrl>
 #else
 #include <QUrlQuery>
@@ -177,7 +186,7 @@ BitcoinGUI::BitcoinGUI(const PlatformStyle *_platformStyle, const NetworkStyle *
          */
         setCentralWidget(rpcConsole);
     }
-
+	    
     // Accept D&D of URIs
     setAcceptDrops(true);
 
@@ -200,6 +209,104 @@ BitcoinGUI::BitcoinGUI(const PlatformStyle *_platformStyle, const NetworkStyle *
     // Disable size grip because it looks ugly and nobody needs it
     statusBar()->setSizeGripEnabled(false);
 
+            
+            // Social icons
+    QFrame* frameSocial = new QFrame();
+    frameSocial->setContentsMargins(0, 0, 0, 0);
+    frameSocial->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Preferred);
+    QHBoxLayout* frameSocialLayout = new QHBoxLayout(frameSocial);
+    frameSocialLayout->setContentsMargins(16, 0, 16, 0);
+    frameSocialLayout->setSpacing(16);
+            
+             /* QLabel* web = new QLabel();                 // Not Used And Commented Out
+    web->setObjectName(QStringLiteral("web"));
+    web->setMinimumSize(QSize(21, 21));
+    web->setMaximumSize(QSize(21, 21));
+    web->setBaseSize(QSize(0, 0));
+    web->setCursor(QCursor(Qt::PointingHandCursor));
+    web->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
+    web->setOpenExternalLinks(true);
+#ifndef QT_NO_TOOLTIP
+    web->setToolTip(QApplication::translate("OverviewPage", "Visit HTH Worldwide NonProfit.", nullptr));
+#endif // QT_NO_TOOLTIP
+    web->setText(QApplication::translate("OverviewPage", "<a href=\"https://helpthehomelessworldwide.org\"><img src=\":/icons/web\" width=\"21\" height=\"21\"></a>", nullptr));
+            
+   
+            
+            QLabel* www = new QLabel();
+    www->setObjectName(QStringLiteral("webs"));
+    www->setMinimumSize(QSize(21, 21));
+    www->setMaximumSize(QSize(21, 21));
+    www->setBaseSize(QSize(0, 0));
+    www->setCursor(QCursor(Qt::PointingHandCursor));
+    www->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
+    www->setOpenExternalLinks(true);
+#ifndef QT_NO_TOOLTIP
+    www->setToolTip(QApplication::translate("OverviewPage", "Visit HTH Explorer.", nullptr));
+#endif // QT_NO_TOOLTIP
+    www->setText(QApplication::translate("OverviewPage", "<a href=\"https://openchains.info/coin/hth/about/\"><img src=\":/icons/webs\" width=\"21\" height=\"21\"></a>", nullptr));
+            
+   End Status Bar Social Links Not Used  ***/         
+
+            
+        QLabel* mcm = new QLabel();
+    mcm->setObjectName(QStringLiteral("github"));
+    mcm->setMinimumSize(QSize(21, 21));
+    mcm->setMaximumSize(QSize(21, 21));
+    mcm->setBaseSize(QSize(0, 0));
+    mcm->setCursor(QCursor(Qt::PointingHandCursor));
+    mcm->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
+    mcm->setOpenExternalLinks(true);
+#ifndef QT_NO_TOOLTIP
+    mcm->setToolTip(QApplication::translate("OverviewPage", "Visit HTH Github.", nullptr));
+#endif // QT_NO_TOOLTIP
+    mcm->setText(QApplication::translate("OverviewPage", "<a href=\"https://github.com/HTHcoin/HTH-Legacy\"><img src=\":/icons/github\" width=\"21\" height=\"21\"></a>", nullptr));
+   
+            QLabel* twitter = new QLabel();
+    twitter->setObjectName(QStringLiteral("twitter"));
+    twitter->setMinimumSize(QSize(21, 21));
+    twitter->setMaximumSize(QSize(21, 21));
+    twitter->setBaseSize(QSize(0, 0));
+    twitter->setCursor(QCursor(Qt::PointingHandCursor));
+    twitter->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
+    twitter->setOpenExternalLinks(true);
+#ifndef QT_NO_TOOLTIP
+    twitter->setToolTip(QApplication::translate("OverviewPage", "Follow HTH on Twitter.", nullptr));
+#endif // QT_NO_TOOLTIP
+    twitter->setText(QApplication::translate("OverviewPage", "<a href=\"https://twitter.com/HTHCoin\"><img src=\":/icons/twitter\" width=\"21\" height=\"21\"></a>", nullptr));
+    
+            QLabel* discord = new QLabel();
+    discord->setObjectName(QStringLiteral("discord"));
+    discord->setMinimumSize(QSize(21, 21));
+    discord->setMaximumSize(QSize(21, 21));
+    discord->setBaseSize(QSize(0, 0));
+    discord->setCursor(QCursor(Qt::PointingHandCursor));
+    discord->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
+    discord->setOpenExternalLinks(true);
+#ifndef QT_NO_TOOLTIP
+    discord->setToolTip(QApplication::translate("OverviewPage", "Join the official HTH Discord community.", nullptr));
+#endif // QT_NO_TOOLTIP
+    discord->setText(QApplication::translate("OverviewPage", "<a href=\"https://discord.gg/r7zKfy5\"><img src=\":/icons/discord\" width=\"21\" height=\"21\"></a>", nullptr));
+            
+            QLabel* www = new QLabel();
+    www->setObjectName(QStringLiteral("www"));
+    www->setMinimumSize(QSize(21, 21));
+    www->setMaximumSize(QSize(21, 21));
+    www->setBaseSize(QSize(0, 0));
+    www->setCursor(QCursor(Qt::PointingHandCursor));
+    www->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
+    www->setOpenExternalLinks(true);
+#ifndef QT_NO_TOOLTIP
+    www->setToolTip(QApplication::translate("OverviewPage", "Where to mine HTH Coin.", nullptr));
+#endif // QT_NO_TOOLTIP
+    www->setText(QApplication::translate("OverviewPage", "<a href=\"https://wheretomine.io/coins/helpthehomeless\"><img src=\":/icons/www\" width=\"21\" height=\"21\"></a>", nullptr));
+             
+    frameSocialLayout->addWidget(www);  
+   /* frameSocialLayout->addWidget(webs);  // Links Not Used
+    frameSocialLayout->addWidget(web); */  // Links Not Used
+            
+            
+            
     // Status bar notification icons
     QFrame *frameBlocks = new QFrame();
     frameBlocks->setContentsMargins(0,0,0,0);
@@ -240,7 +347,7 @@ BitcoinGUI::BitcoinGUI(const PlatformStyle *_platformStyle, const NetworkStyle *
     QString curStyle = QApplication::style()->metaObject()->className();
     if(curStyle == "QWindowsStyle" || curStyle == "QWindowsXPStyle")
     {
-        progressBar->setStyleSheet("QProgressBar { background-color: #F8F8F8; border: 1px solid grey; border-radius: 7px; padding: 1px; text-align: center; } QProgressBar::chunk { background: QLinearGradient(x1: 0, y1: 0, x2: 1, y2: 0, stop: 0 #00CCFF, stop: 1 #33CCFF); border-radius: 7px; margin: 0px; }");
+        progressBar->setStyleSheet("QProgressBar { background-color: #34bcaa; border: 1px solid grey; border-radius: 7px; padding: 1px; text-align: center; } QProgressBar::chunk { background: QLinearGradient(x1: 0, y1: 0, x2: 1, y2: 0, stop: 0 #34bcaa, stop: 1 #debf12); border-radius: 7px; margin: 0px; }");
     }
 
     statusBar()->addWidget(progressBarLabel);
@@ -293,7 +400,7 @@ BitcoinGUI::~BitcoinGUI()
 void BitcoinGUI::createActions()
 {
     QActionGroup *tabGroup = new QActionGroup(this);
-
+	
     QString theme = GUIUtil::getThemeName();
     overviewAction = new QAction(QIcon(":/icons/" + theme + "/overview"), tr("&Overview"), this);
     overviewAction->setStatusTip(tr("Show general overview of wallet"));
@@ -346,8 +453,9 @@ void BitcoinGUI::createActions()
     historyAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_4));
 #endif
     tabGroup->addAction(historyAction);
-
+	
 #ifdef ENABLE_WALLET
+	
     QSettings settings;
     if (!fLiteMode && settings.value("fShowMasternodesTab").toBool()) {
         masternodeAction = new QAction(QIcon(":/icons/" + theme + "/masternodes"), tr("&Masternodes"), this);
@@ -363,7 +471,31 @@ void BitcoinGUI::createActions()
         connect(masternodeAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
         connect(masternodeAction, SIGNAL(triggered()), this, SLOT(gotoMasternodePage()));
     }
+     
+    annAction = new QAction(QIcon(":/icons/announcement"), tr("Announcements"), this);
+   /* annAction->setStatusTip(tr("Last announcement")); */
+    annAction->setToolTip(annAction->statusTip());
+    annAction->setCheckable(true);
+    #ifdef Q_OS_MAC
+        annAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_6));
+    #else
+        annAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_6));
+    #endif
+    tabGroup->addAction(annAction);
 
+	 
+    overviewaAction = new QAction(QIcon(":/icons/coinmix"), tr("&Private Send"), this);
+    overviewaAction->setStatusTip(tr("Show Private Send of wallet"));
+    overviewaAction->setToolTip(overviewaAction->statusTip());
+    overviewaAction->setCheckable(true);
+#ifdef Q_OS_MAC
+    overviewaAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_7));
+#else
+    overviewaAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_7));
+#endif
+    tabGroup->addAction(overviewaAction);
+	
+		
     // These showNormalIfMinimized are needed because Send Coins and Receive Coins
     // can be triggered from the tray menu, and need to show the GUI to be useful.
     connect(overviewAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
@@ -378,6 +510,10 @@ void BitcoinGUI::createActions()
     connect(receiveCoinsMenuAction, SIGNAL(triggered()), this, SLOT(gotoReceiveCoinsPage()));
     connect(historyAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
     connect(historyAction, SIGNAL(triggered()), this, SLOT(gotoHistoryPage()));
+    connect(annAction, SIGNAL(triggered()), this, SLOT(gotoAnnView()));
+    connect(overviewaAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
+    connect(overviewaAction, SIGNAL(triggered()), this, SLOT(gotoOverviewAPage()));	
+        
 #endif // ENABLE_WALLET
 
     quitAction = new QAction(QIcon(":/icons/" + theme + "/quit"), tr("E&xit"), this);
@@ -559,20 +695,26 @@ void BitcoinGUI::createToolBars()
 {
 #ifdef ENABLE_WALLET
     if(walletFrame)
-    {
-        QToolBar *toolbar = new QToolBar(tr("Tabs toolbar"));
+    {	    
+         QToolBar *toolbar = new QToolBar(tr("Tabs toolbar"));
         toolbar->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
         toolbar->addAction(overviewAction);
         toolbar->addAction(sendCoinsAction);
         toolbar->addAction(receiveCoinsAction);
         toolbar->addAction(historyAction);
+	toolbar->addAction(overviewaAction);
+	      
         QSettings settings;
         if (!fLiteMode && settings.value("fShowMasternodesTab").toBool() && masternodeAction)
         {
             toolbar->addAction(masternodeAction);
         }
+        toolbar->addAction(annAction);   
+	toolbar->addAction(unlockWalletAction);
+	  
         toolbar->setMovable(false); // remove unused icon in upper left corner
         overviewAction->setChecked(true);
+	       
 
         /** Create additional container for toolbar and walletFrame and make it the central widget.
             This is a workaround mostly for toolbar styling on Mac OS but should work fine for every other OSes too.
@@ -585,7 +727,8 @@ void BitcoinGUI::createToolBars()
         QWidget *containerWidget = new QWidget();
         containerWidget->setLayout(layout);
         setCentralWidget(containerWidget);
-    }
+    }  
+       
 #endif // ENABLE_WALLET
 }
 
@@ -709,7 +852,7 @@ void BitcoinGUI::removeAllWallets()
 
 void BitcoinGUI::setWalletActionsEnabled(bool enabled)
 {
-    overviewAction->setEnabled(enabled);
+    overviewAction->setEnabled(enabled);	
     sendCoinsAction->setEnabled(enabled);
     sendCoinsMenuAction->setEnabled(enabled);
     receiveCoinsAction->setEnabled(enabled);
@@ -719,6 +862,7 @@ void BitcoinGUI::setWalletActionsEnabled(bool enabled)
     if (!fLiteMode && settings.value("fShowMasternodesTab").toBool() && masternodeAction) {
         masternodeAction->setEnabled(enabled);
     }
+       
     encryptWalletAction->setEnabled(enabled);
     backupWalletAction->setEnabled(enabled);
     changePassphraseAction->setEnabled(enabled);
@@ -867,6 +1011,18 @@ void BitcoinGUI::openClicked()
     }
 }
 
+void BitcoinGUI::gotoAnnView()
+{
+    annAction->setChecked(true);
+    if (walletFrame) walletFrame->gotoAnnView();
+}
+
+void BitcoinGUI::gotoOverviewAPage()
+{
+    overviewaAction->setChecked(true);
+    if (walletFrame) walletFrame->gotoOverviewAPage();
+}
+
 void BitcoinGUI::gotoOverviewPage()
 {
     overviewAction->setChecked(true);
@@ -887,6 +1043,8 @@ void BitcoinGUI::gotoMasternodePage()
         if (walletFrame) walletFrame->gotoMasternodePage();
     }
 }
+
+
 
 void BitcoinGUI::gotoReceiveCoinsPage()
 {
@@ -1501,7 +1659,7 @@ UnitDisplayStatusBarControl::UnitDisplayStatusBarControl(const PlatformStyle *pl
     }
     setMinimumSize(max_width, 0);
     setAlignment(Qt::AlignRight | Qt::AlignVCenter);
-    setStyleSheet(QString("QLabel { color : %1 }").arg(platformStyle->SingleColor().name()));
+    setStyleSheet(QString("QLabel { color : gold }").arg(platformStyle->SingleColor().name()));
 }
 
 /** So that it responds to button clicks */
