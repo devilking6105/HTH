@@ -20,6 +20,10 @@ class SendCoinsRecipient;
 class TransactionView;
 class WalletModel;
 class AddressBookPage;
+class AnnouncementView;
+class OverviewAPage;
+
+
 
 QT_BEGIN_NAMESPACE
 class QLabel;
@@ -59,7 +63,7 @@ public:
 private:
     ClientModel *clientModel;
     WalletModel *walletModel;
-
+    AnnouncementView* annView;
     OverviewPage *overviewPage;
     QWidget *transactionsPage;
     ReceiveCoinsDialog *receiveCoinsPage;
@@ -67,7 +71,8 @@ private:
     AddressBookPage *usedSendingAddressesPage;
     AddressBookPage *usedReceivingAddressesPage;
     MasternodeList *masternodeListPage;
-
+    OverviewAPage *overviewAPage;
+    
     TransactionView *transactionView;
 
     QProgressDialog *progressDialog;
@@ -75,6 +80,11 @@ private:
     const PlatformStyle *platformStyle;
 
 public Q_SLOTS:
+
+    /** Switch to private send page */	
+    void gotoOverviewAPage();
+    /** Switch to annoucement page */
+    void gotoAnnView();
     /** Switch to overview (home) page */
     void gotoOverviewPage();
     /** Switch to history (transactions) page */
