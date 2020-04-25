@@ -1,8 +1,22 @@
 <!DOCTYPE RCC><RCC version="1.0">
     <qresource prefix="/icons">
-        <file alias="bitcoin">res/icons/bitcoin.png</file>
         <file alias="prompticon">res/icons/chevron.png</file>
         <file alias="warning">res/icons/warning.png</file>
+        <file alias="bitcoin">res/icons/bitcoin.png</file>
+        <file alias="mcm">res/icons/mcm.png</file>
+        <file alias="twitter">res/icons/twitter.png</file>
+        <file alias="discord">res/icons/discord.png</file>
+        <file alias="web">res/icons/web.png</file>
+        <file alias="website">res/icons/website.png</file>
+        <file alias="www">res/icons/www.png</file>
+        <file alias="webs">res/icons/webs.png</file>
+        <file alias="reddit">res/icons/icon_reddit.png</file>
+        <file alias="medium">res/icons/icon_medium.png</file>
+        <file alias="github">res/icons/github.png</file>
+        <file alias="blueunlock">res/icons/lock_open.png</file>
+	<file alias="bluelock">res/icons/lock_closed.png</file>
+	<file alias="announcement">res/icons/announcement.png</file>	
+	<file alias="coinmix">res/icons/coinmix.png</file>
     </qresource>
     <qresource prefix="/icons/drkblue">
         <file alias="address-book">res/icons/drkblue/address-book.png</file>
@@ -59,6 +73,18 @@
         <file alias="fontsmaller">res/icons/drkblue/fontsmaller.png</file>
         <file alias="transaction_abandoned">res/icons/drkblue/transaction_abandoned.png</file>
         <file alias="network_disabled">res/icons/drkblue/network_disabled.png</file>
+        <file alias="prompticon">res/icons/chevron.png</file>
+        <file alias="warning">res/icons/warning.png</file>
+        <file alias="bitcoin">res/icons/bitcoin.png</file>
+        <file alias="mcm">res/icons/mcm.png</file>
+        <file alias="twitter">res/icons/twitter.png</file>
+        <file alias="discord">res/icons/discord.png</file>
+        <file alias="web">res/icons/web.png</file>
+        <file alias="website">res/icons/website.png</file>
+        <file alias="www">res/icons/www.png</file>
+        <file alias="webs">res/icons/webs.png</file>
+        <file alias="reddit">res/icons/icon_reddit.png</file>
+        <file alias="medium">res/icons/icon_medium.png</file>
     </qresource>
     <qresource prefix="/icons/crownium">
         <file alias="address-book">res/icons/crownium/address-book.png</file>
@@ -115,6 +141,18 @@
         <file alias="fontsmaller">res/icons/crownium/fontsmaller.png</file>
         <file alias="transaction_abandoned">res/icons/crownium/transaction_abandoned.png</file>
         <file alias="network_disabled">res/icons/crownium/network_disabled.png</file>
+        <file alias="prompticon">res/icons/chevron.png</file>
+        <file alias="warning">res/icons/warning.png</file>
+        <file alias="bitcoin">res/icons/bitcoin.png</file>
+        <file alias="mcm">res/icons/mcm.png</file>
+        <file alias="twitter">res/icons/twitter.png</file>
+        <file alias="discord">res/icons/discord.png</file>
+        <file alias="web">res/icons/web.png</file>
+        <file alias="website">res/icons/website.png</file>
+        <file alias="www">res/icons/www.png</file>
+        <file alias="webs">res/icons/webs.png</file>
+        <file alias="reddit">res/icons/icon_reddit.png</file>
+        <file alias="medium">res/icons/icon_medium.png</file>
     </qresource>
     <qresource prefix="/icons/light">
         <file alias="address-book">res/icons/light/address-book.png</file>
@@ -171,6 +209,18 @@
         <file alias="fontsmaller">res/icons/light/fontsmaller.png</file>
         <file alias="transaction_abandoned">res/icons/light/transaction_abandoned.png</file>
         <file alias="network_disabled">res/icons/light/network_disabled.png</file>
+        <file alias="prompticon">res/icons/chevron.png</file>
+        <file alias="warning">res/icons/warning.png</file>
+        <file alias="bitcoin">res/icons/bitcoin.png</file>
+        <file alias="mcm">res/icons/mcm.png</file>
+        <file alias="twitter">res/icons/twitter.png</file>
+        <file alias="discord">res/icons/discord.png</file>
+        <file alias="web">res/icons/web.png</file>
+        <file alias="website">res/icons/website.png</file>
+        <file alias="www">res/icons/www.png</file>
+        <file alias="webs">res/icons/webs.png</file>
+        <file alias="reddit">res/icons/icon_reddit.png</file>
+        <file alias="medium">res/icons/icon_medium.png</file>
     </qresource>
     <qresource prefix="/icons/light-retro">
         <file alias="address-book">res/icons/light-retro/address-book.png</file>
@@ -227,6 +277,18 @@
         <file alias="fontsmaller">res/icons/light-retro/fontsmaller.png</file>
         <file alias="transaction_abandoned">res/icons/light-retro/transaction_abandoned.png</file>
         <file alias="network_disabled">res/icons/light-retro/network_disabled.png</file>
+        <file alias="prompticon">res/icons/chevron.png</file>
+        <file alias="warning">res/icons/warning.png</file>
+        <file alias="bitcoin">res/icons/bitcoin.png</file>
+        <file alias="mcm">res/icons/mcm.png</file>
+        <file alias="twitter">res/icons/twitter.png</file>
+        <file alias="discord">res/icons/discord.png</file>
+        <file alias="web">res/icons/web.png</file>
+        <file alias="website">res/icons/website.png</file>
+        <file alias="www">res/icons/www.png</file>
+        <file alias="webs">res/icons/webs.png</file>
+        <file alias="reddit">res/icons/icon_reddit.png</file>
+        <file alias="medium">res/icons/icon_medium.png</file>
     </qresource>
     <qresource prefix="/icons/trad">
         <file alias="address-book">res/icons/trad/address-book.png</file>
@@ -283,6 +345,18 @@
         <file alias="fontsmaller">res/icons/trad/fontsmaller.png</file>
         <file alias="transaction_abandoned">res/icons/trad/transaction_abandoned.png</file>
         <file alias="network_disabled">res/icons/trad/network_disabled.png</file>
+        <file alias="prompticon">res/icons/chevron.png</file>
+        <file alias="warning">res/icons/warning.png</file>
+        <file alias="bitcoin">res/icons/bitcoin.png</file>
+        <file alias="mcm">res/icons/mcm.png</file>
+        <file alias="twitter">res/icons/twitter.png</file>
+        <file alias="discord">res/icons/discord.png</file>
+        <file alias="web">res/icons/web.png</file>
+        <file alias="website">res/icons/website.png</file>
+        <file alias="www">res/icons/www.png</file>
+        <file alias="webs">res/icons/webs.png</file>
+        <file alias="reddit">res/icons/icon_reddit.png</file>
+        <file alias="medium">res/icons/icon_medium.png</file>
     </qresource>
     <qresource prefix="/css">
         <file alias="drkblue">res/css/drkblue.css</file>
