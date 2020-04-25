@@ -35,6 +35,8 @@ class WalletFrame;
 class WalletModel;
 class HelpMessageDialog;
 class ModalOverlay;
+class QNetworkAccessManager;
+class QNetworkRequest;
 
 class CWallet;
 
@@ -42,6 +44,8 @@ QT_BEGIN_NAMESPACE
 class QAction;
 class QProgressBar;
 class QProgressDialog;
+class QNetworkAccessManager;
+class QNetworkRequest;
 QT_END_NAMESPACE
 
 /**
@@ -86,7 +90,7 @@ protected:
 private:
     ClientModel *clientModel;
     WalletFrame *walletFrame;
-
+    
     UnitDisplayStatusBarControl *unitDisplayControl;
     QLabel *labelWalletEncryptionIcon;
     QLabel *labelWalletHDStatusIcon;
@@ -97,6 +101,9 @@ private:
     QProgressDialog *progressDialog;
 
     QMenuBar *appMenuBar;
+    
+    QAction* overviewaAction;
+    QAction* annAction;
     QAction *overviewAction;
     QAction *historyAction;
     QAction *masternodeAction;
@@ -128,7 +135,7 @@ private:
     QAction *openAction;
     QAction *showHelpMessageAction;
     QAction *showPrivateSendHelpAction;
-
+     
     QSystemTrayIcon *trayIcon;
     QMenu *trayIconMenu;
     QMenu *dockIconMenu;
@@ -197,7 +204,7 @@ public Q_SLOTS:
        @param[in] ret       pointer to a bool that will be modified to whether Ok was clicked (modal only)
     */
     void message(const QString &title, const QString &message, unsigned int style, bool *ret = NULL);
-
+       
 #ifdef ENABLE_WALLET
     /** Set the hd-enabled status as shown in the UI.
      @param[in] status            current hd enabled status
@@ -219,6 +226,11 @@ public Q_SLOTS:
 
 private Q_SLOTS:
 #ifdef ENABLE_WALLET
+    
+    /** Switch to private send page */
+    void gotoOverviewAPage();
+    /** Switch to announcement page */
+    void gotoAnnView();
     /** Switch to overview (home) page */
     void gotoOverviewPage();
     /** Switch to history (transactions) page */
