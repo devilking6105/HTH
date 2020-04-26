@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1000</width>
-    <height>605</height>
+    <height>756</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -474,213 +474,6 @@
        </item>
       </layout>
      </widget>
-     <widget class="QFrame" name="frame_2">
-      <property name="geometry">
-       <rect>
-        <x>480</x>
-        <y>220</y>
-        <width>461</width>
-        <height>320</height>
-       </rect>
-      </property>
-      <property name="minimumSize">
-       <size>
-        <width>0</width>
-        <height>320</height>
-       </size>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border: transparent</string>
-      </property>
-      <layout class="QVBoxLayout" name="verticalLayout_10">
-       <item>
-        <layout class="QVBoxLayout" name="verticalLayout_8">
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_8">
-           <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
-            <widget class="QLabel" name="label_6">
-             <property name="text">
-              <string>Help The Homeless Worldwide</string>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </item>
-         <item>
-          <widget class="QFrame" name="frame_4">
-           <property name="frameShape">
-            <enum>QFrame::StyledPanel</enum>
-           </property>
-           <property name="frameShadow">
-            <enum>QFrame::Raised</enum>
-           </property>
-           <widget class="QPushButton" name="pushButton_Website_1">
-            <property name="geometry">
-             <rect>
-              <x>10</x>
-              <y>10</y>
-              <width>120</width>
-              <height>30</height>
-             </rect>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>100</width>
-              <height>30</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>120</width>
-              <height>0</height>
-             </size>
-            </property>
-            <property name="sizeIncrement">
-             <size>
-              <width>0</width>
-              <height>0</height>
-             </size>
-            </property>
-            <property name="toolTip">
-             <string>Visit Help The Homeless Coin Website</string>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">&lt;a href=&quot;https://hth.world&quot;&gt;&lt;/a&gt;</string>
-            </property>
-            <property name="text">
-             <string>HTH Coin</string>
-            </property>
-           </widget>
-           <widget class="QPushButton" name="pushButton_Website_4">
-            <property name="geometry">
-             <rect>
-              <x>10</x>
-              <y>100</y>
-              <width>120</width>
-              <height>30</height>
-             </rect>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>100</width>
-              <height>30</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>120</width>
-              <height>30</height>
-             </size>
-            </property>
-            <property name="toolTip">
-             <string>Visit HTH Partners and Donate Today!!!!!!!!</string>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">&lt;a href=&quot;https://hth.world/partners.html&quot;&gt;&lt;/a&gt;</string>
-            </property>
-            <property name="text">
-             <string>Partners</string>
-            </property>
-           </widget>
-           <widget class="QPushButton" name="pushButton_Website">
-            <property name="geometry">
-             <rect>
-              <x>160</x>
-              <y>60</y>
-              <width>120</width>
-              <height>30</height>
-             </rect>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>100</width>
-              <height>30</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>120</width>
-              <height>30</height>
-             </size>
-            </property>
-            <property name="toolTip">
-             <string>Visit Help The Homeless Worldwide A NJ Nonprofit Corporation</string>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">&lt;a href=&quot;https://www.helpthehomelessworldwide.org&quot;&gt;&lt;/a&gt;</string>
-            </property>
-            <property name="text">
-             <string>Nonprofit</string>
-            </property>
-           </widget>
-           <widget class="QPushButton" name="pushButton_Website_2">
-            <property name="geometry">
-             <rect>
-              <x>310</x>
-              <y>10</y>
-              <width>120</width>
-              <height>30</height>
-             </rect>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>100</width>
-              <height>30</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>120</width>
-              <height>30</height>
-             </size>
-            </property>
-            <property name="toolTip">
-             <string>Visit Help The Homeless Coin Exchanges and Trade Today</string>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">&lt;a href=&quot;https://hth.world/exchanges.html&quot;&gt;&lt;/a&gt;</string>
-            </property>
-            <property name="text">
-             <string>Exchanges</string>
-            </property>
-           </widget>
-           <widget class="QPushButton" name="pushButton_Website_3">
-            <property name="geometry">
-             <rect>
-              <x>310</x>
-              <y>100</y>
-              <width>120</width>
-              <height>30</height>
-             </rect>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>100</width>
-              <height>30</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>120</width>
-              <height>30</height>
-             </size>
-            </property>
-            <property name="toolTip">
-             <string>Visit Help The Homeless Coin Explorer and Track Your HTH Coins</string>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">&lt;a href=&quot;https://chainz.cryptoid.info/hth&quot;&gt;&lt;/a&gt;</string>
-            </property>
-            <property name="text">
-             <string>Explorer</string>
-            </property>
-           </widget>
-          </widget>
-         </item>
-        </layout>
-       </item>
-      </layout>
-     </widget>
      <widget class="QFrame" name="frameBlockchainInfo_2">
       <property name="geometry">
        <rect>
@@ -724,7 +517,8 @@
          <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
           <widget class="QLabel" name="label">
            <property name="styleSheet">
-            <string notr="true">border: transparent</string>
+            <string notr="true">border: transparent;
+font-size: 20px;</string>
            </property>
            <property name="text">
             <string>Block Height</string>
@@ -750,7 +544,8 @@
          <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
           <widget class="QLabel" name="label_24hblockchaininfo_1">
            <property name="styleSheet">
-            <string notr="true">border: transparent</string>
+            <string notr="true">border: transparent;
+font-size: 20px;</string>
            </property>
            <property name="text">
             <string>Network Hashrate</string>
@@ -765,7 +560,8 @@
        <item>
         <widget class="QFrame" name="frameBlockchainInfoData_3">
          <property name="styleSheet">
-          <string notr="true">border: transparent</string>
+          <string notr="true">border: transparent;
+; font-size: 15px;</string>
          </property>
          <property name="frameShape">
           <enum>QFrame::StyledPanel</enum>
@@ -776,6 +572,9 @@
          <layout class="QGridLayout" name="gridLayout_5">
           <item row="3" column="2" alignment="Qt::AlignRight|Qt::AlignVCenter">
            <widget class="QLabel" name="label_Nethash_3">
+            <property name="styleSheet">
+             <string notr="true">font-size: 15px;</string>
+            </property>
             <property name="text">
              <string>Nethash MHs:</string>
             </property>
@@ -797,6 +596,9 @@
               <width>130</width>
               <height>16777215</height>
              </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font-size: 15px</string>
             </property>
             <property name="text">
              <string>Current block:</string>
@@ -830,6 +632,9 @@
               <height>16777215</height>
              </size>
             </property>
+            <property name="styleSheet">
+             <string notr="true">font-size: 15px;</string>
+            </property>
             <property name="text">
              <string>0</string>
             </property>
@@ -858,6 +663,215 @@
         </spacer>
        </item>
       </layout>
+     </widget>
+     <widget class="QPushButton" name="pushButton_Website_4">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>430</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>100</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>120</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="toolTip">
+       <string>Visit HTH Partners and Donate Today!!!!!!!!</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">&lt;a href=&quot;https://hth.world/partners.html&quot;&gt;&lt;/a&gt;</string>
+      </property>
+      <property name="text">
+       <string>Partners</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_Website_1">
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>350</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>100</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>120</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="toolTip">
+       <string>Visit Help The Homeless Coin Website</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">&lt;a href=&quot;https://hth.world&quot;&gt;&lt;/a&gt;</string>
+      </property>
+      <property name="text">
+       <string>HTH Coin</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_Website">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>350</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>100</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>120</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="toolTip">
+       <string>Visit Help The Homeless Worldwide A NJ Nonprofit Corporation</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">&lt;a href=&quot;https://www.helpthehomelessworldwide.org&quot;&gt;&lt;/a&gt;</string>
+      </property>
+      <property name="text">
+       <string>Nonprofit</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_Website_3">
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>430</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>100</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>120</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="toolTip">
+       <string>Visit Help The Homeless Coin Explorer and Track Your HTH Coins</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">&lt;a href=&quot;https://chainz.cryptoid.info/hth&quot;&gt;&lt;/a&gt;</string>
+      </property>
+      <property name="text">
+       <string>Explorer</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_Website_2">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>350</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>100</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>120</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="toolTip">
+       <string>Visit Help The Homeless Coin Exchanges and Trade Today</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">&lt;a href=&quot;https://hth.world/exchanges.html&quot;&gt;&lt;/a&gt;</string>
+      </property>
+      <property name="text">
+       <string>AltMarkets</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>280</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-size: 20px;</string>
+      </property>
+      <property name="text">
+       <string>HTH Worldwide</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>280</y>
+        <width>91</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-size: 20px;</string>
+      </property>
+      <property name="text">
+       <string>HTH Coin</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>790</x>
+        <y>280</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-size: 20px;</string>
+      </property>
+      <property name="text">
+       <string>HTH Exchanges</string>
+      </property>
      </widget>
     </widget>
    </item>
