@@ -22,7 +22,6 @@
 #include "walletmodel.h"
 #include "overviewapage.h"
 
-#include "announcementview.h"
 #include "ui_interface.h"
 
 #include <QAction>
@@ -43,7 +42,6 @@ WalletView::WalletView(const PlatformStyle *_platformStyle, QWidget *parent):
 {
     // Create tabs
     overviewPage = new OverviewPage(platformStyle);
-    annView = new AnnouncementView();
     overviewAPage = new OverviewAPage(platformStyle);    
     transactionsPage = new QWidget(this);
     QVBoxLayout *vbox = new QVBoxLayout();
@@ -83,7 +81,6 @@ WalletView::WalletView(const PlatformStyle *_platformStyle, QWidget *parent):
     addWidget(transactionsPage);
     addWidget(receiveCoinsPage);
     addWidget(sendCoinsPage);
-    addWidget(annView);
     addWidget(overviewAPage);    
 
     QSettings settings;
@@ -226,10 +223,6 @@ void WalletView::processNewTransaction(const QModelIndex& parent, int start, int
     QString label = ttm->data(index, TransactionTableModel::LabelRole).toString();
 
     Q_EMIT incomingTransaction(date, walletModel->getOptionsModel()->getDisplayUnit(), amount, type, address, label);
-}
-
-void WalletView::gotoAnnView(){
-    setCurrentWidget(annView);
 }
 
 void WalletView::gotoOverviewAPage()
