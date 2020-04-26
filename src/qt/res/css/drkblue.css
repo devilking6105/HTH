@@ -15,9 +15,9 @@ QMainWindow {
     }
 
 
-      /*************** Frame_3 Logo section*****************/
+      /*************** Frame_2 Logo section*****************/
 
-    QWidget .QFrame#frame_3 { /* logo */
+    QWidget .QFrame#frame_2 { /* logo */
 
         border-image: url(':/images/light/helpthehomeless_logo_horizontal') 0 0 0 0 stretch stretch;
         border-style: none;
