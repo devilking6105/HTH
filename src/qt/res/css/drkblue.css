@@ -22,15 +22,6 @@ padding-bottom: 50px;  /* Originally 20px */
 }
 
 
-      /*************** Frame_2 Logo section*****************/
-
-    QWidget .QFrame#frame_2 { /* logo */
-
-        border-image: url(':/images/light/helpthehomeless_logo_horizontal') 0 0 0 0 stretch stretch;
-        border-style: none;
-    }
-
-/************** End Logo  *********************************/
 
 
 
@@ -38,10 +29,10 @@ padding-bottom: 50px;  /* Originally 20px */
         outline:0;
     }
 
-    WalletFrame {
+ /*   WalletFrame {
         background-color: #181728;
         border-style: none;
-    }
+    } */
 
 
     /* Global Top Style */
