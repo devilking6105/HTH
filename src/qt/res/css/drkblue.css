@@ -9,47 +9,31 @@
 /************** End Logo  *********************************/
 
 
-
-
-WalletFrame {
-border-image: url(':/images/light/drkblue_walletFrame_bg') 0 0 0 0 stretch stretch;
-border-top:0px solid #000;
-margin:0;
-background-color: #181728;
-color: #34bcaa;
-padding-top: 20px;  /* Originally 20px */
-padding-bottom: 50px;  /* Originally 20px */
-}
-
-
-
-
-
     QWidget {
         outline:0;
     }
 
- /*   WalletFrame {
+ /  WalletFrame {
         background-color: #181728;
         border-style: none;
-    } */
+    } 
 
 
     /* Global Top Style */
     QMenuBar {
-background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: .01 #34bcaa, stop: .1 #34bcaa, stop: .95 #debf12, stop: 1 #debf12);
+background-color: #181728;
 color: #000;
 font-weight: bold;
 }
 
 QMenuBar::item {
-background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: .01 #34bcaa, stop: .1 #34bcaa, stop: .95 #debf12, stop: 1 #debf12);
+background-color: #181728;
 color: #000;
 font-weight: bold;
 }
 
 QMenuBar::item:selected {
-background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: .01 #34bcaa, stop: .1 #34bcaa, stop: .95 #debf12, stop: 1 #debf12);
+background-color: #181728;
 }
 
 QMenu {
