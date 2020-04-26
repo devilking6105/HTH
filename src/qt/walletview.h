@@ -20,7 +20,6 @@ class SendCoinsRecipient;
 class TransactionView;
 class WalletModel;
 class AddressBookPage;
-class AnnouncementView;
 class OverviewAPage;
 
 
@@ -63,7 +62,6 @@ public:
 private:
     ClientModel *clientModel;
     WalletModel *walletModel;
-    AnnouncementView* annView;
     OverviewPage *overviewPage;
     QWidget *transactionsPage;
     ReceiveCoinsDialog *receiveCoinsPage;
@@ -83,8 +81,6 @@ public Q_SLOTS:
 
     /** Switch to private send page */	
     void gotoOverviewAPage();
-    /** Switch to annoucement page */
-    void gotoAnnView();
     /** Switch to overview (home) page */
     void gotoOverviewPage();
     /** Switch to history (transactions) page */
