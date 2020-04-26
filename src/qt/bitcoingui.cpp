@@ -471,19 +471,7 @@ void BitcoinGUI::createActions()
         connect(masternodeAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
         connect(masternodeAction, SIGNAL(triggered()), this, SLOT(gotoMasternodePage()));
     }
-     
-    annAction = new QAction(QIcon(":/icons/announcement"), tr("Announcements"), this);
-   /* annAction->setStatusTip(tr("Last announcement")); */
-    annAction->setToolTip(annAction->statusTip());
-    annAction->setCheckable(true);
-    #ifdef Q_OS_MAC
-        annAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_6));
-    #else
-        annAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_6));
-    #endif
-    tabGroup->addAction(annAction);
-
-	 
+     	 
     overviewaAction = new QAction(QIcon(":/icons/coinmix"), tr("&Private Send"), this);
     overviewaAction->setStatusTip(tr("Show Private Send of wallet"));
     overviewaAction->setToolTip(overviewaAction->statusTip());
@@ -510,7 +498,6 @@ void BitcoinGUI::createActions()
     connect(receiveCoinsMenuAction, SIGNAL(triggered()), this, SLOT(gotoReceiveCoinsPage()));
     connect(historyAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
     connect(historyAction, SIGNAL(triggered()), this, SLOT(gotoHistoryPage()));
-    connect(annAction, SIGNAL(triggered()), this, SLOT(gotoAnnView()));
     connect(overviewaAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
     connect(overviewaAction, SIGNAL(triggered()), this, SLOT(gotoOverviewAPage()));	
         
@@ -709,7 +696,7 @@ void BitcoinGUI::createToolBars()
         {
             toolbar->addAction(masternodeAction);
         }
-        toolbar->addAction(annAction);   
+           
 	toolbar->addAction(unlockWalletAction);
 	  
         toolbar->setMovable(false); // remove unused icon in upper left corner
@@ -1009,12 +996,6 @@ void BitcoinGUI::openClicked()
     {
         Q_EMIT receivedURI(dlg.getURI());
     }
-}
-
-void BitcoinGUI::gotoAnnView()
-{
-    annAction->setChecked(true);
-    if (walletFrame) walletFrame->gotoAnnView();
 }
 
 void BitcoinGUI::gotoOverviewAPage()
