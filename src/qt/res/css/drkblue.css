@@ -1,18 +1,25 @@
-/****************************************************************************************/
-                    /*************** GLOBAL STYLE*****************/
-/****************************************************************************************/
+/*************** Frame_3 Logo section*****************/
 
-    * {
-        font-size: 12px;
-	    color: #34bcaa;
+    QWidget .QFrame#frame_3 { /* logo */
+
+        border-image: url(':/images/light/helpthehomeless_logo_horizontal') 0 0 0 0 stretch stretch;
+        border-style: none;
     }
 
+/************** End Logo  *********************************/
 
-QMainWindow {
-        background-color: #181728;
-        color: #34bcaa;
 
-    }
+
+
+WalletFrame {
+border-image: url(':/images/light/drkblue_walletFrame_bg') 0 0 0 0 stretch stretch;
+border-top:0px solid #000;
+margin:0;
+background-color: #181728;
+color: #34bcaa;
+padding-top: 20px;  /* Originally 20px */
+padding-bottom: 50px;  /* Originally 20px */
+}
 
 
       /*************** Frame_2 Logo section*****************/
