@@ -161,7 +161,7 @@ OverviewAPage::OverviewAPage(const PlatformStyle *platformStyle, QWidget *parent
 
     // init "out of sync" warning labels
     ui->labelWalletStatus->setText("(" + tr("out of sync") + ")");  */
-    ui->labelPrivateSendSyncStatus->setText("(" + tr("out of sync") + ")");
+    ui->labelPrivateSendEnabled_2->setText("(" + tr("out of sync") + ")");
  /*   ui->labelTransactionsStatus->setText("(" + tr("out of sync") + ")");  */
 
     // hide PS frame (helps to preserve saved size)
@@ -355,7 +355,7 @@ void OverviewAPage::setWalletModel(WalletModel *model)
 void OverviewAPage::showOutOfSyncWarning(bool fShow)
 {
     ui->listTransactions_2->setVisible(fShow);  
-    ui->labelPrivateSendSyncStatus->setVisible(fShow);   
+    ui->labelPrivateSendEnabled_2->setVisible(fShow);   
     ui->listTransactions_2->setVisible(fShow);  
 }
 
