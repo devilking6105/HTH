@@ -12,10 +12,7 @@
         <file alias="webs">res/icons/webs.png</file>
         <file alias="reddit">res/icons/icon_reddit.png</file>
         <file alias="medium">res/icons/icon_medium.png</file>
-        <file alias="github">res/icons/github.png</file>
-        <file alias="blueunlock">res/icons/lock_open.png</file>
-	<file alias="bluelock">res/icons/lock_closed.png</file>
-	<file alias="announcement">res/icons/announcement.png</file>	
+        <file alias="github">res/icons/github.png</file>	
 	<file alias="coinmix">res/icons/coinmix.png</file>
     </qresource>
     <qresource prefix="/icons/drkblue">
