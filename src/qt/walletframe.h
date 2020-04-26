@@ -65,8 +65,6 @@ public Q_SLOTS:
 
     /** Switch to private send page */
     void gotoOverviewAPage();
-    /** Switch to announcement page */
-    void gotoAnnView();
     /** Switch to overview (home) page */
     void gotoOverviewPage();
     /** Switch to history (transactions) page */
