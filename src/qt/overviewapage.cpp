@@ -122,9 +122,9 @@ public:
     int unit;
     const PlatformStyle *platformStyle;
 
-};
+}; */
 
- #include "overviewapage.moc" */
+ #include "overviewapage.moc"
 
 
 
